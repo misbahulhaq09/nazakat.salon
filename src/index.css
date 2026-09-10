@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  /* Custom minimal luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #282522;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d4b59f;
+  }
+}
+
+/* Custom luxury utilities */
+.font-display {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Luxury hairline borders */
+.border-luxe {
+  border-color: rgba(212, 181, 159, 0.16);
+}
+
+.border-luxe-hover:hover {
+  border-color: rgba(212, 181, 159, 0.4);
+}
+
+/* Subtle glassmorphism */
+.glass-panel {
+  background: rgba(12, 12, 12, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 181, 159, 0.12);
+}
+
+.glass-nav {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(212, 181, 159, 0.15);
+}
+
+/* Hardware accelerated transform utility */
+.gpu-accel {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Hide scrollbars for reels scroll container */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ========================================================= */
+/* NEECHE KA THEME: White / Alabaster Luxury Lower Sections */
+/* ========================================================= */
+.theme-light-sections {
+  background-color: #FAF8F5 !important;
+  color: #181412 !important;
+}
+
+/* Alternating clean white / warm ivory backgrounds for lower sections */
+.theme-light-sections section#founder,
+.theme-light-sections section#training,
+.theme-light-sections section#transformations,
+.theme-light-sections section#instagram {
+  background-color: #FFFFFF !important;
+}
+
+.theme-light-sections section#services,
+.theme-light-sections section#star-visits,
+.theme-light-sections section#shop {
+  background-color: #FAF8F5 !important;
+}
+
+.theme-light-sections footer#contact {
+  background-color: #F4ECE3 !important;
+  border-top: 1px solid rgba(158, 111, 77, 0.22) !important;
+}
+
+/* Typography in lower sections */
+.theme-light-sections h1,
+.theme-light-sections h2,
+.theme-light-sections h3:not(.absolute *),
+.theme-light-sections h4:not(.absolute *),
+.theme-light-sections .text-pure-white:not(.absolute *):not(button.bg-signature-pink *):not(.bg-signature-pink) {
+  color: #181412 !important;
+}
+
+.theme-light-sections p:not(.absolute *),
+.theme-light-sections [class*="text-white/70"]:not(.absolute *),
+.theme-light-sections [class*="text-white/80"]:not(.absolute *),
+.theme-light-sections [class*="text-white/85"]:not(.absolute *),
+.theme-light-sections [class*="text-white/90"]:not(.absolute *) {
+  color: #38302B !important;
+}
+
+.theme-light-sections [class*="text-white/60"]:not(.absolute *),
+.theme-light-sections [class*="text-white/50"]:not(.absolute *),
+.theme-light-sections [class*="text-white/40"]:not(.absolute *) {
+  color: #6E6259 !important;
+}
+
+.theme-light-sections .text-nude-beige:not(.absolute *) {
+  color: #9E6F4D !important;
+}
+
+/* Cards & containers in lower sections */
+.theme-light-sections .bg-luxe-card {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 8px 24px rgba(158, 111, 77, 0.08) !important;
+  border: 1px solid rgba(158, 111, 77, 0.16) !important;
+}
+
+.theme-light-sections .bg-luxe-card:hover {
+  border-color: rgba(255, 59, 141, 0.45) !important;
+}
+
+.theme-light-sections [class*="border-white/"] {
+  border-color: rgba(24, 20, 18, 0.12) !important;
+}
+
+.theme-light-sections blockquote {
+  color: #38302B !important;
+  border-left-color: #9E6F4D !important;
+}
+
+/* Services category pills */
+.theme-light-sections .bg-black\/70 {
+  background-color: #FFFFFF !important;
+  color: #38302B !important;
+  border: 1px solid rgba(158, 111, 77, 0.25) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-light-sections .bg-black\/70:hover {
+  color: #FF3B8D !important;
+  border-color: #FF3B8D !important;
+}
+
+/* Ensure text directly on dark media & video overlays remains white */
+.theme-light-sections video ~ [class*="absolute"] *,
+.theme-light-sections .dark-overlay-content * {
+  color: #FFFFFF !important;
+}
+
+/* Maintain crisp white text on solid pink buttons */
+.bg-signature-pink,
+[class*="bg-signature-pink"]:not([class*="bg-signature-pink/"]) {
+  color: #FFFFFF !important;
+}
+.bg-signature-pink * {
+  color: #FFFFFF !important;
+}
+
+/* Maintain crisp text on all Specular Buttons regardless of light/dark theme */
+.theme-light-sections .specular-button,
+.theme-light-sections .specular-button *,
+.specular-button,
+.specular-button * {
+  color: var(--sb-text-color, #ffffff) !important;
+}
+.theme-light-sections .specular-button svg,
+.specular-button svg {
+  stroke: currentColor !important;
+}

@@ -1,0 +1,68 @@
+.curved-loop-jacket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.curved-loop-jacket--fullscreen {
+  min-height: 100vh;
+}
+
+.curved-loop-svg {
+  user-select: none;
+  width: 100%;
+  aspect-ratio: 100 / 12;
+  overflow: visible;
+  display: block;
+  font-size: 6rem;
+  fill: #181412;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Navbar interactive loop on #D4B59F theme */
+.curved-loop-jacket--navbar {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.curved-loop-jacket--navbar .curved-loop-svg {
+  aspect-ratio: auto;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  font-size: 21px;
+}
+
+.curved-loop-navbar-text {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  fill: #181412;
+}
+
+.curved-loop-nav-item {
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+}
+
+.curved-loop-nav-item:hover .curved-loop-label {
+  fill: #FFFFFF !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.curved-loop-separator {
+  fill: #7D5C45;
+  opacity: 0.85;
+  font-size: 0.85em;
+}
