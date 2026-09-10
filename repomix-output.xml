@@ -1,0 +1,6011 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+public/
+  assets/
+    posters/
+      founder-nazakat-ali.jpg
+      hero-entrance.jpg
+      insta-reel-1-transformation.jpg
+      insta-reel-2-salon-tour.jpg
+      insta-reel-3-skin-glow.jpg
+      insta-reel-4-nail-artistry.jpg
+      insta-reel-5-balayage.jpg
+      insta-reel-6-glow-therapy.jpg
+      service-foot-spa.jpg
+      service-hair-highlights.jpg
+      service-hydra-facial.jpg
+      service-led-phototherapy.jpg
+      service-nail-art.jpg
+      service-scalp-care.jpg
+      shop-haircare-display.jpg
+      shop-kevin-murphy.jpg
+      shop-luxe-ambience.jpg
+      shop-reception-boutique.jpg
+      shop-styling-stations.jpg
+      shop-treatment-shelf.jpg
+      training-academy-hall.jpg
+      training-classroom.jpg
+      training-hair-styling.jpg
+      training-team-culture.jpg
+    before-after-bridal.png
+    before-after-hair-bob.png
+    before-after-hair-curls.png
+    founder-nazakat-ali.mp4
+    founder-nazakat-ali.png
+    hero-entrance.mp4
+    insta-reel-1-transformation.mp4
+    insta-reel-2-salon-tour.mp4
+    insta-reel-3-skin-glow.mp4
+    insta-reel-4-nail-artistry.mp4
+    insta-reel-5-balayage.mp4
+    insta-reel-6-glow-therapy.mp4
+    instagram-profile-bg.png
+    logo.png
+    service-foot-spa.mp4
+    service-hair-care-tips.jpg
+    service-hair-highlights.mp4
+    service-hydra-facial.mp4
+    service-led-phototherapy.mp4
+    service-nail-art.mp4
+    service-nail-poster.jpg
+    service-scalp-care.mp4
+    shop-haircare-display.mp4
+    shop-kevin-murphy.mp4
+    shop-luxe-ambience.mp4
+    shop-reception-boutique.mp4
+    shop-styling-stations.mp4
+    shop-treatment-shelf.mp4
+    star-visit-1.png
+    star-visit-2.png
+    star-visit-3.png
+    sticker.png
+    training-academy-hall.mp4
+    training-classroom.mp4
+    training-hair-styling.mp4
+    training-team-culture.mp4
+    transformation-hair-fixing.jpg
+    treatment-hair-spa.jpg
+  _redirects
+src/
+  assets/
+    sticker.png
+  components/
+    BeforeAfter.jsx
+    BookingModal.jsx
+    BounceCards.css
+    BounceCards.jsx
+    CurvedLoop.css
+    CurvedLoop.jsx
+    DepthCarousel.css
+    DepthCarousel.jsx
+    Footer.jsx
+    Founder.jsx
+    GlareHover.css
+    GlareHover.jsx
+    Hero.jsx
+    InstagramFeed.jsx
+    Navbar.jsx
+    OrbitImages.css
+    OrbitImages.jsx
+    ScrollExpand.css
+    ScrollExpand.jsx
+    Services.jsx
+    Shop.jsx
+    SpecularButton.css
+    SpecularButton.jsx
+    StarVisits.jsx
+    StickerPeel.css
+    StickerPeel.jsx
+    StrokeText.css
+    StrokeText.jsx
+    Training.jsx
+  data/
+    mediaData.js
+  hooks/
+    useInViewVideo.js
+  App.jsx
+  index.css
+  main.jsx
+.gitignore
+“Where elegance is crafted, confidence is restored, and every detail reflects the true art of be.mp4
+“Where’s my babyRight here… in the calm corners of Nazakat ✨🤍A little tour of elegance.”#Nazaka.mp4
+#highlights #balayage #hair #haircolor #haircut #blondehair #blonde #hairstylist #behindthechair.mp4
+✨ “Glow starts here — in a room curated for calmness, hydration, and pure skin renewal. Walk in .mp4
+0dff56e88b7d42f29d2f6845df8716f5.mp4
+2096bf15191c4d0394b1d9cc2d11c2c1.mp4
+38523def2829416ba968382b7b82c18f.mp4
+4078d782ea724171a9e6e8bdf36128d7.mp4
+46b4d93f7e514942aa3b5442cbc43551.mp4
+760a62b91d7b4db5b682860d3355a83e.mp4
+7889ba2eb1784f38934d847a82908a99.mp4
+7bc5755e453d43bfbbb58bf199272756.mp4
+7ffca1e2879649229402120e5677fee6.mp4
+926025ab-4b7d-4591-9611-d8a429fd8883.png
+94483c424af045d8a92a2fe331ffb569.mp4
+a33d8d52-a0d2-4388-a8bd-53218ed5c07a.png
+AQM9YdCSFh7AfDinkG0NalEjo8iQiffTt1tR7zjcrcvPRgh0uBC0fxOjpHmcjJPWrLQmJPsNbvPKuYfjU6NO5WxuO64zw-3okE55Ba4.mp4
+b48050bcde42499f9de5a6ce89b6f401 (1).mp4
+b64f63b31cdf4cd79194b3e0ab3ce547.mp4
+Behind the scenes of the new Terrova website design. 🌿 ✨Clean lines, warm earth tones, and intu (1).mp4
+c7d4a0955b5043fba0054b79359fe875.mp4
+ChatGPT Image Sep 7, 2026, 01_41_22 AM.png
+ChatGPT Image Sep 7, 2026, 06_17_32 AM.png
+ChatGPT Image Sep 7, 2026, 06_25_51 AM.png
+ChatGPT Image Sep 7, 2026, 06_29_45 AM.png
+ChatGPT Image Sep 7, 2026, 07_07_39 AM.png
+e802b76647ce4242ab78e56f5b3eda5b.mp4
+ee7793b37d174066a98b6025499475da.mp4
+IMG-20260907-WA0015.jpg.jpeg
+IMG-20260907-WA0016.jpg.jpeg
+IMG-20260908-WA0017.jpg.jpeg
+IMG-20260908-WA0018.jpg.jpeg
+index.html
+package.json
+postcss.config.js
+SaveClip.App_AQP8p9onmr7nKieOOUeWZooRSD5MCHsBlpLJ0rAY-6aqtMzTxKlDLYN3uTVALZ_r3cwyG-_cQrCRTpF8ItgvAkSmylIdxOtD5uVzGmM.mp4
+tailwind.config.js
+Teammate Grooming Extravaganza at Nazakat Salon Raipur! 💇_♂️💄A day of transformations, laughte.mp4
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/_redirects">
+/*    /index.html   200
+</file>
+
+<file path="src/components/BeforeAfter.jsx">
+import React from 'react'
+import { beforeAfterData } from '../data/mediaData'
+import { ArrowRight } from 'lucide-react'
+import StrokeText from './StrokeText'
+import SpecularButton from './SpecularButton'
+
+export default function BeforeAfter({ onOpenBooking }) {
+  const mainTransformations = beforeAfterData.slice(0, 3)
+  const hairRestorations = beforeAfterData.slice(3)
+
+  return (
+    <section id="transformations" className="relative py-20 sm:py-24 bg-jet-black overflow-hidden border-t border-b border-white/10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Clean Header */}
+        <div className="text-center max-w-2xl mx-auto mb-16 space-y-2">
+          <div className="mb-2 w-full max-w-md mx-auto">
+            <StrokeText
+              text="BEFORE & AFTER"
+              strokeColor="#FF3B8D"
+              fillColor="#FF3B8D"
+              strokeWidth={1.6}
+              fontSize={52}
+              fontWeight={900}
+              letterSpacing={1.5}
+              trigger="scroll"
+              fillMode="wipe"
+              drawDuration={1.2}
+              fillDelay={0.2}
+              align="center"
+            />
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-pure-white tracking-tight">
+            Client Transformations
+          </h2>
+          <p className="text-sm text-white/70">
+            Real results created by Nazakat salon stylists in Raipur.
+          </p>
+        </div>
+
+        {/* The 3 Main Transformations */}
+        <div className="space-y-12 lg:space-y-16">
+          {mainTransformations.map((item, index) => {
+            const isReversed = index % 2 !== 0
+            return (
+              <div
+                key={item.id}
+                className={`grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center ${
+                  isReversed ? 'lg:flex-row-reverse' : ''
+                }`}
+              >
+                {/* Visual Image Showcase */}
+                <div className={`lg:col-span-7 ${isReversed ? 'lg:order-2' : 'lg:order-1'} group`}>
+                  <div className="relative rounded-xl overflow-hidden border border-white/15 bg-luxe-card shadow-xl">
+                    <div className="relative aspect-[16/9] w-full overflow-hidden bg-black">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Direct Text Column */}
+                <div className={`lg:col-span-5 ${isReversed ? 'lg:order-1' : 'lg:order-2'} space-y-3`}>
+                  <div>
+                    <span className="text-xs uppercase tracking-wider text-signature-pink font-semibold">
+                      {item.category}
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-pure-white mt-0.5">
+                      {item.title}
+                    </h3>
+                  </div>
+
+                  <div>
+                    <span className="inline-block px-3 py-1 rounded-full bg-white/10 text-xs text-nude-beige font-medium">
+                      {item.stats}
+                    </span>
+                  </div>
+
+                  <div className="pt-1">
+                    <SpecularButton
+                      onClick={onOpenBooking}
+                      size="sm"
+                      radius={999}
+                      tint="#181412"
+                      tintOpacity={1}
+                      textColor="#FFFFFF"
+                      lineColor="#FF3B8D"
+                      baseColor="#3D1828"
+                      className="text-xs uppercase tracking-wider font-bold shadow-md hover:border-signature-pink transition-all px-5 py-2.5"
+                    >
+                      <span>Book Similar Look</span>
+                      <ArrowRight size={13} />
+                    </SpecularButton>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Hair Fixing & Restoration Cards */}
+        <div className="mt-16 pt-12 border-t border-white/10">
+          <div className="text-center mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-pure-white">
+              Hair Care & Restoration
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            {hairRestorations.map((item) => (
+              <div
+                key={item.id}
+                className="rounded-xl overflow-hidden border border-white/15 bg-luxe-card shadow-lg group"
+              >
+                <div className="relative aspect-[4/5] w-full overflow-hidden bg-black">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute bottom-3 left-4 right-4 bg-black/75 backdrop-blur-sm p-3 rounded-lg border border-white/10">
+                    <span className="text-[10px] uppercase tracking-wider text-signature-pink font-semibold block">
+                      {item.category}
+                    </span>
+                    <h4 className="text-sm font-bold text-pure-white">{item.title}</h4>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
+  )
+}
+</file>
+
+<file path="src/components/BookingModal.jsx">
+import React, { useState } from 'react'
+import { brandData } from '../data/mediaData'
+import { X, Sparkles, Send, CheckCircle2 } from 'lucide-react'
+import SpecularButton from './SpecularButton'
+
+export default function BookingModal({ isOpen, onClose }) {
+  if (!isOpen) return null
+
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    service: 'Hair Artistry & Balayage',
+    date: '',
+    notes: '',
+  })
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setSubmitted(true)
+    // Build pre-filled WhatsApp message
+    const msg = encodeURIComponent(
+      `Hello Nazakat Salon & Academy,\n\nI would like to book a bespoke consultation:\n• Name: ${formData.name}\n• Phone: ${formData.phone}\n• Service: ${formData.service}\n• Preferred Date: ${formData.date || 'Flexible'}\n• Notes: ${formData.notes || 'None'}\n\nPlease confirm availability.`
+    )
+    window.open(`https://wa.me/919826100000?text=${msg}`, '_blank')
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md animate-fadeIn">
+      <div className="relative w-full max-w-lg rounded-2xl border-2 border-[#D4B59F]/50 bg-luxe-card p-6 sm:p-8 shadow-[0_20px_50px_rgba(212,181,159,0.25)] space-y-6">
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute top-5 right-5 p-2 rounded-full text-pure-white/70 hover:text-[#D4B59F] transition-colors cursor-pointer"
+          aria-label="Close modal"
+        >
+          <X size={20} />
+        </button>
+
+        {/* Modal Header */}
+        <div className="space-y-1 text-center sm:text-left">
+          <div className="text-xs uppercase tracking-ultra text-signature-pink font-medium">
+            BESPOKE RESERVATION
+          </div>
+          <h3 className="font-serif text-2xl sm:text-3xl text-pure-white font-normal">
+            Begin Your Transformation
+          </h3>
+          <p className="text-xs text-pure-white/60 font-light">
+            Reserve a salon consultation or inquiry for professional academy admissions.
+          </p>
+        </div>
+
+        {submitted ? (
+          <div className="py-8 text-center space-y-3">
+            <CheckCircle2 size={42} className="text-signature-pink mx-auto" />
+            <h4 className="font-serif text-xl text-pure-white">Consultation Initiated</h4>
+            <p className="text-xs text-pure-white/70 font-light">
+              Connecting you directly with the Nazakat concierge on WhatsApp...
+            </p>
+            <button
+              onClick={() => {
+                setSubmitted(false)
+                onClose()
+              }}
+              className="mt-4 px-6 py-2 rounded-full bg-signature-pink text-white text-xs font-bold uppercase tracking-wider hover:bg-signature-pink-dark transition-all"
+            >
+              Done
+            </button>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="space-y-4 text-xs">
+            <div>
+              <label className="block uppercase tracking-wider text-nude-beige/90 mb-1 font-light">
+                Full Name *
+              </label>
+              <input
+                type="text"
+                required
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                placeholder="Your Name"
+                className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-pure-white placeholder-white/30 focus:border-signature-pink focus:outline-none transition-colors"
+              />
+            </div>
+
+            <div>
+              <label className="block uppercase tracking-wider text-nude-beige/90 mb-1 font-light">
+                Phone / WhatsApp Number *
+              </label>
+              <input
+                type="tel"
+                required
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                placeholder="+91 98260 XXXXX"
+                className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-pure-white placeholder-white/30 focus:border-signature-pink focus:outline-none transition-colors"
+              />
+            </div>
+
+            <div>
+              <label className="block uppercase tracking-wider text-nude-beige/90 mb-1 font-light">
+                Select Department / Interest
+              </label>
+              <select
+                value={formData.service}
+                onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-pure-white focus:border-signature-pink focus:outline-none transition-colors"
+              >
+                <option value="Hair Artistry & Balayage">Hair Artistry & Balayage</option>
+                <option value="Clinical Skin Hydra-Facial">Clinical Skin & Hydra-Facial</option>
+                <option value="Nail Couture & Pedicure">Nail Couture & Pedicure</option>
+                <option value="Couture Bridal & Makeup">Couture Bridal & Makeup</option>
+                <option value="Academy Admission Inquiry">Academy Admission Inquiry</option>
+                <option value="Scalp Therapy & Hair Restoration">Scalp Therapy & Hair Restoration</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block uppercase tracking-wider text-nude-beige/90 mb-1 font-light">
+                Preferred Date (Optional)
+              </label>
+              <input
+                type="date"
+                value={formData.date}
+                onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+                className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-pure-white focus:border-signature-pink focus:outline-none transition-colors"
+              />
+            </div>
+
+            <SpecularButton
+              type="submit"
+              size="md"
+              radius={999}
+              tint="#FF3B8D"
+              tintOpacity={1}
+              textColor="#ffffff"
+              lineColor="#ffffff"
+              baseColor="#D61A6E"
+              intensity={1.2}
+              shineSize={16}
+              shineFade={36}
+              thickness={1.5}
+              followMouse={true}
+              className="w-full text-xs uppercase tracking-luxury font-medium shadow-luxe-glow mt-6"
+            >
+              <Send size={14} />
+              <span>Connect with Concierge</span>
+            </SpecularButton>
+          </form>
+        )}
+      </div>
+    </div>
+  )
+}
+</file>
+
+<file path="src/components/BounceCards.css">
+.bounceCardsContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  position: absolute;
+  width: 190px;
+  aspect-ratio: 1;
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  background-color: #181412;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  will-change: transform;
+}
+
+.card:hover {
+  border-color: #FF3B8D;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), 0 0 20px rgba(255, 59, 141, 0.35);
+  z-index: 10;
+}
+
+.card .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+</file>
+
+<file path="src/components/BounceCards.jsx">
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import './BounceCards.css';
+
+export default function BounceCards({
+  className = '',
+  images = [],
+  containerWidth = 400,
+  containerHeight = 400,
+  animationDelay = 0.5,
+  animationStagger = 0.06,
+  easeType = 'elastic.out(1, 0.8)',
+  transformStyles = [
+    'rotate(10deg) translate(-170px)',
+    'rotate(5deg) translate(-85px)',
+    'rotate(-3deg)',
+    'rotate(-10deg) translate(85px)',
+    'rotate(2deg) translate(170px)'
+  ],
+  enableHover = true
+}) {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.card',
+        { scale: 0 },
+        {
+          scale: 1,
+          stagger: animationStagger,
+          ease: easeType,
+          delay: animationDelay
+        }
+      );
+    }, containerRef);
+    return () => ctx.revert();
+  }, [animationStagger, easeType, animationDelay]);
+
+  const getNoRotationTransform = (transformStr) => {
+    const hasRotate = /rotate\([\s\S]*?\)/.test(transformStr);
+    if (hasRotate) {
+      return transformStr.replace(/rotate\([\s\S]*?\)/, 'rotate(0deg)');
+    } else if (transformStr === 'none') {
+      return 'rotate(0deg)';
+    } else {
+      return `${transformStr} rotate(0deg)`;
+    }
+  };
+
+  const getPushedTransform = (baseTransform, offsetX) => {
+    const translateRegex = /translate\(([-0-9.]+)px\)/;
+    const match = baseTransform.match(translateRegex);
+    if (match) {
+      const currentX = parseFloat(match[1]);
+      const newX = currentX + offsetX;
+      return baseTransform.replace(translateRegex, `translate(${newX}px)`);
+    } else {
+      return baseTransform === 'none' ? `translate(${offsetX}px)` : `${baseTransform} translate(${offsetX}px)`;
+    }
+  };
+
+  const pushSiblings = (hoveredIdx) => {
+    if (!enableHover || !containerRef.current) return;
+
+    const q = gsap.utils.selector(containerRef);
+
+    images.forEach((_, i) => {
+      const target = q(`.card-${i}`);
+      gsap.killTweensOf(target);
+
+      const baseTransform = transformStyles[i] || 'none';
+
+      if (i === hoveredIdx) {
+        const noRotationTransform = getNoRotationTransform(baseTransform);
+        gsap.to(target, {
+          transform: noRotationTransform,
+          duration: 0.4,
+          ease: 'back.out(1.4)',
+          overwrite: 'auto'
+        });
+      } else {
+        const offsetX = i < hoveredIdx ? -160 : 160;
+        const pushedTransform = getPushedTransform(baseTransform, offsetX);
+
+        const distance = Math.abs(hoveredIdx - i);
+        const delay = distance * 0.05;
+
+        gsap.to(target, {
+          transform: pushedTransform,
+          duration: 0.4,
+          ease: 'back.out(1.4)',
+          delay,
+          overwrite: 'auto'
+        });
+      }
+    });
+  };
+
+  const resetSiblings = () => {
+    if (!enableHover || !containerRef.current) return;
+
+    const q = gsap.utils.selector(containerRef);
+
+    images.forEach((_, i) => {
+      const target = q(`.card-${i}`);
+      gsap.killTweensOf(target);
+      const baseTransform = transformStyles[i] || 'none';
+      gsap.to(target, {
+        transform: baseTransform,
+        duration: 0.4,
+        ease: 'back.out(1.4)',
+        overwrite: 'auto'
+      });
+    });
+  };
+
+  return (
+    <div
+      className={`bounceCardsContainer ${className}`}
+      ref={containerRef}
+      style={{
+        position: 'relative',
+        width: containerWidth,
+        height: containerHeight
+      }}
+    >
+      {images.map((src, idx) => (
+        <div
+          key={idx}
+          className={`card card-${idx}`}
+          style={{
+            transform: transformStyles[idx] ?? 'none'
+          }}
+          onMouseEnter={() => pushSiblings(idx)}
+          onMouseLeave={resetSiblings}
+        >
+          <img className="image" src={src} alt={`card-${idx}`} loading="lazy" />
+        </div>
+      ))}
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/CurvedLoop.css">
+.curved-loop-jacket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.curved-loop-jacket--fullscreen {
+  min-height: 100vh;
+}
+
+.curved-loop-svg {
+  user-select: none;
+  width: 100%;
+  aspect-ratio: 100 / 12;
+  overflow: visible;
+  display: block;
+  font-size: 6rem;
+  fill: #181412;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Navbar interactive loop on #D4B59F theme */
+.curved-loop-jacket--navbar {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.curved-loop-jacket--navbar .curved-loop-svg {
+  aspect-ratio: auto;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  font-size: 21px;
+}
+
+.curved-loop-navbar-text {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  fill: #181412;
+}
+
+.curved-loop-nav-item {
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+}
+
+.curved-loop-nav-item:hover .curved-loop-label {
+  fill: #FFFFFF !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.curved-loop-separator {
+  fill: #7D5C45;
+  opacity: 0.85;
+  font-size: 0.85em;
+}
+</file>
+
+<file path="src/components/CurvedLoop.jsx">
+import React, { useRef, useEffect, useState, useMemo, useId } from 'react';
+import './CurvedLoop.css';
+
+const CurvedLoop = ({
+  marqueeText = '',
+  speed = 2,
+  className = '',
+  curveAmount = 400,
+  direction = 'left',
+  interactive = true,
+  items = [],
+  onItemClick,
+  pauseOnHover = true,
+  viewBox = '0 0 1440 120',
+  pathD: customPathD,
+  jacketClassName = '',
+  style,
+  ...rest
+}) => {
+  const hasItems = Array.isArray(items) && items.length > 0;
+
+  // Measure text string for a single repetition cycle
+  const text = useMemo(() => {
+    if (hasItems) {
+      return items.map(item => `${item.label}  ✦  `).join('');
+    }
+    const hasTrailing = /\s|\u00A0$/.test(marqueeText);
+    return (hasTrailing ? marqueeText.replace(/\s+$/, '') : marqueeText) + '\u00A0';
+  }, [hasItems, items, marqueeText]);
+
+  const measureRef = useRef(null);
+  const textPathRef = useRef(null);
+  const pathRef = useRef(null);
+  const [spacing, setSpacing] = useState(0);
+  const [offset, setOffset] = useState(0);
+  const uid = useId();
+  const pathId = `curve-${uid.replace(/:/g, '')}`;
+  
+  // Default path or custom SVG quadratic curve
+  const pathD = customPathD || `M-100,40 Q500,${40 + curveAmount} 1540,40`;
+
+  const dragRef = useRef(false);
+  const startXRef = useRef(0);
+  const lastXRef = useRef(0);
+  const dirRef = useRef(direction);
+  const velRef = useRef(0);
+  const hasDraggedRef = useRef(false);
+  const isHoveredRef = useRef(false);
+
+  const textLength = spacing;
+  const ready = spacing > 0;
+
+  // Calculate repeat count to ensure continuous loop across wide viewports
+  const totalCycles = textLength ? Math.max(3, Math.ceil(3600 / textLength) + 2) : 1;
+
+  const totalText = textLength
+    ? Array(Math.ceil(1800 / textLength) + 2)
+        .fill(text)
+        .join('')
+    : text;
+
+  // Measure text length accurately
+  useEffect(() => {
+    if (measureRef.current) {
+      setSpacing(measureRef.current.getComputedTextLength());
+    }
+  }, [text, className]);
+
+  useEffect(() => {
+    if (!spacing) return;
+    if (textPathRef.current) {
+      const initial = -spacing;
+      textPathRef.current.setAttribute('startOffset', initial + 'px');
+      setOffset(initial);
+    }
+  }, [spacing]);
+
+  // Infinite Animation Loop
+  useEffect(() => {
+    if (!spacing || !ready) return;
+    let frame = 0;
+    const step = () => {
+      if (!dragRef.current && textPathRef.current) {
+        if (!isHoveredRef.current || !pauseOnHover) {
+          const delta = dirRef.current === 'right' ? speed : -speed;
+          const currentOffset = parseFloat(textPathRef.current.getAttribute('startOffset') || '0');
+          let newOffset = currentOffset + delta;
+
+          const wrapPoint = spacing;
+          if (newOffset <= -wrapPoint) newOffset += wrapPoint;
+          if (newOffset > 0) newOffset -= wrapPoint;
+
+          textPathRef.current.setAttribute('startOffset', newOffset + 'px');
+          setOffset(newOffset);
+        }
+      }
+      frame = requestAnimationFrame(step);
+    };
+    frame = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(frame);
+  }, [spacing, speed, ready, pauseOnHover]);
+
+  const onPointerDown = e => {
+    if (!interactive) return;
+    dragRef.current = true;
+    hasDraggedRef.current = false;
+    startXRef.current = e.clientX;
+    lastXRef.current = e.clientX;
+    velRef.current = 0;
+    if (e.target.setPointerCapture && e.pointerId !== undefined) {
+      try {
+        e.target.setPointerCapture(e.pointerId);
+      } catch (err) {}
+    }
+  };
+
+  const onPointerMove = e => {
+    if (!interactive || !dragRef.current || !textPathRef.current) return;
+    const dx = e.clientX - lastXRef.current;
+    if (Math.abs(e.clientX - startXRef.current) > 6) {
+      hasDraggedRef.current = true;
+    }
+    lastXRef.current = e.clientX;
+    velRef.current = dx;
+
+    const currentOffset = parseFloat(textPathRef.current.getAttribute('startOffset') || '0');
+    let newOffset = currentOffset + dx;
+
+    const wrapPoint = spacing;
+    if (newOffset <= -wrapPoint) newOffset += wrapPoint;
+    if (newOffset > 0) newOffset -= wrapPoint;
+
+    textPathRef.current.setAttribute('startOffset', newOffset + 'px');
+    setOffset(newOffset);
+  };
+
+  const activeItemRef = useRef(null);
+  const lastTriggeredClickRef = useRef(0);
+
+  const triggerItemClick = (item, e) => {
+    if (!item) return;
+    const now = Date.now();
+    if (now - lastTriggeredClickRef.current < 250) return;
+    lastTriggeredClickRef.current = now;
+
+    if (onItemClick) {
+      onItemClick(item.href, item, e);
+    } else if (item.href) {
+      const el = document.querySelector(item.href);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const endDrag = (e) => {
+    if (!interactive) return;
+    const wasDragging = hasDraggedRef.current;
+    dragRef.current = false;
+    
+    // If pointer released without dragging, trigger navigation for the pressed item
+    if (!wasDragging && activeItemRef.current) {
+      triggerItemClick(activeItemRef.current, e);
+    }
+    activeItemRef.current = null;
+
+    if (Math.abs(velRef.current) > 0.5) {
+      dirRef.current = velRef.current > 0 ? 'right' : 'left';
+    }
+  };
+
+  const handleItemClick = (e, item) => {
+    if (hasDraggedRef.current) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    triggerItemClick(item, e);
+  };
+
+  const cursorStyle = interactive ? (dragRef.current ? 'grabbing' : 'grab') : 'auto';
+
+  return (
+    <div
+      className={`curved-loop-jacket ${jacketClassName}`.trim()}
+      style={{
+        visibility: ready ? 'visible' : 'hidden',
+        cursor: cursorStyle,
+        ...style
+      }}
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={endDrag}
+      onPointerLeave={() => {
+        isHoveredRef.current = false;
+        endDrag();
+      }}
+      onMouseEnter={() => {
+        if (pauseOnHover) isHoveredRef.current = true;
+      }}
+      {...rest}
+    >
+      <svg className="curved-loop-svg" viewBox={viewBox}>
+        {/* Hidden measurement text */}
+        <text
+          ref={measureRef}
+          xmlSpace="preserve"
+          className={className}
+          style={{ visibility: 'hidden', opacity: 0, pointerEvents: 'none' }}
+        >
+          {text}
+        </text>
+
+        <defs>
+          <path ref={pathRef} id={pathId} d={pathD} fill="none" stroke="transparent" />
+        </defs>
+
+        {ready && (
+          <text fontWeight="bold" xmlSpace="preserve" className={className}>
+            <textPath ref={textPathRef} href={`#${pathId}`} startOffset={offset + 'px'} xmlSpace="preserve">
+              {hasItems
+                ? Array.from({ length: totalCycles }).map((_, cycleIdx) => (
+                    <React.Fragment key={cycleIdx}>
+                      {items.map((item, itemIdx) => (
+                        <tspan
+                          key={`${cycleIdx}-${itemIdx}`}
+                          onPointerDown={() => {
+                            activeItemRef.current = item;
+                          }}
+                          onClick={e => handleItemClick(e, item)}
+                          className="curved-loop-nav-item"
+                          style={{ cursor: 'pointer', pointerEvents: 'auto' }}
+                        >
+                          <tspan className="curved-loop-label">{item.label}</tspan>
+                          <tspan className="curved-loop-separator" style={{ pointerEvents: 'none' }}>
+                            {'  ✦  '}
+                          </tspan>
+                        </tspan>
+                      ))}
+                    </React.Fragment>
+                  ))
+                : totalText}
+            </textPath>
+          </text>
+        )}
+      </svg>
+    </div>
+  );
+};
+
+export default CurvedLoop;
+</file>
+
+<file path="src/components/DepthCarousel.css">
+.depth-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: var(--dc-perspective, 1400px);
+  perspective-origin: 50% 50%;
+  touch-action: pan-y;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+
+.depth-carousel:active {
+  cursor: grabbing;
+}
+
+.depth-carousel:focus-visible {
+  outline: 2px solid rgba(255, 59, 141, 0.5);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.depth-carousel__stage {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.depth-carousel__card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  overflow: hidden;
+  background: #0b0d12;
+  box-shadow:
+    0 30px 60px -20px rgba(0, 0, 0, 0.65),
+    0 8px 20px -10px rgba(0, 0, 0, 0.5);
+  will-change: transform, opacity, filter;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: border-color 0.3s ease;
+}
+
+.depth-carousel__card:hover {
+  border-color: rgba(255, 59, 141, 0.5);
+}
+
+.depth-carousel__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.depth-carousel__tint {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.depth-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3000;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(18, 16, 15, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.depth-carousel__arrow:hover {
+  background: #FF3B8D;
+  border-color: #FF3B8D;
+  color: #fff;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.depth-carousel__arrow:active {
+  transform: translateY(-50%) scale(0.94);
+}
+
+.depth-carousel__arrow--prev {
+  left: 16px;
+}
+
+.depth-carousel__arrow--next {
+  right: 16px;
+}
+
+.depth-carousel__dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3000;
+  display: flex;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(14, 12, 11, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.depth-carousel__dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition:
+    width 0.25s ease,
+    background 0.25s ease;
+}
+
+.depth-carousel__dot.is-active {
+  width: 22px;
+  background: #FF3B8D;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .depth-carousel__card {
+    will-change: auto;
+  }
+  .depth-carousel__arrow,
+  .depth-carousel__dot {
+    transition: none;
+  }
+}
+</file>
+
+<file path="src/components/DepthCarousel.jsx">
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import gsap from 'gsap';
+import './DepthCarousel.css';
+
+const DEFAULT_ITEMS = [
+  { image: 'https://picsum.photos/seed/depth1/800/1000', alt: 'Slide 1' },
+  { image: 'https://picsum.photos/seed/depth2/800/1000', alt: 'Slide 2' },
+  { image: 'https://picsum.photos/seed/depth3/800/1000', alt: 'Slide 3' },
+  { image: 'https://picsum.photos/seed/depth4/800/1000', alt: 'Slide 4' },
+  { image: 'https://picsum.photos/seed/depth5/800/1000', alt: 'Slide 5' },
+  { image: 'https://picsum.photos/seed/depth6/800/1000', alt: 'Slide 6' }
+];
+
+const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
+const normalizeItem = it => (typeof it === 'string' ? { image: it, alt: '' } : it);
+
+const DepthCarousel = ({
+  items = DEFAULT_ITEMS,
+  cardWidth = 300,
+  cardHeight = 380,
+  radius = 18,
+  tint = '#05060a',
+  depth = 220,
+  spread = 90,
+  tilt = 22,
+  tiltDirection = 'right',
+  perspective = 1400,
+  visibleCards = 4,
+  falloff = 0.2,
+  blur = 6,
+  duration = 700,
+  ease = 'power3.out',
+  autoplay = false,
+  autoplayDelay = 3200,
+  loop = true,
+  showControls = true,
+  showIndicators = true,
+  onChange,
+  className = ''
+}) => {
+  const data = useMemo(() => (Array.isArray(items) ? items : []).map(normalizeItem), [items]);
+  const count = data.length;
+
+  const rootRef = useRef(null);
+  const stageRef = useRef(null);
+  const cardRefs = useRef([]);
+  const overlayRefs = useRef([]);
+
+  const posRef = useRef(0);
+  const focusRef = useRef(0);
+  const tweenRef = useRef(null);
+  const scaleRef = useRef(1);
+  const cfgRef = useRef({});
+  const onChangeRef = useRef(onChange);
+
+  const dragRef = useRef(null);
+  const wheelTimerRef = useRef(null);
+  const autoTimerRef = useRef(null);
+  const reducedRef = useRef(false);
+
+  const [active, setActive] = useState(0);
+
+  onChangeRef.current = onChange;
+  cfgRef.current = {
+    count,
+    depth,
+    spread,
+    tilt,
+    tiltDirection,
+    visibleCards,
+    falloff,
+    blur,
+    duration,
+    ease,
+    loop,
+    cardWidth,
+    autoplayDelay
+  };
+
+  const layout = useCallback(pos => {
+    const cfg = cfgRef.current;
+    const n = cfg.count;
+    if (!n) return;
+    const dir = cfg.tiltDirection === 'left' ? -1 : 1;
+    const sc = scaleRef.current;
+
+    for (let i = 0; i < n; i++) {
+      const el = cardRefs.current[i];
+      if (!el) continue;
+
+      let d = i - pos;
+      if (cfg.loop && n > 1) {
+        d = ((d % n) + n) % n;
+        if (d > n / 2) d -= n;
+      }
+
+      const back = Math.max(0, d);
+      const az = Math.abs(d);
+      const shown = az <= cfg.visibleCards + 0.5;
+
+      const tz = -cfg.depth * d;
+      const tx = dir * cfg.spread * d;
+      const ry = dir * cfg.tilt * clamp(d, 0, 1);
+
+      let opacity = d < 0 ? Math.max(0, 1 + d) : 1;
+      if (!shown) opacity = 0;
+
+      const brightness = Math.max(0.15, 1 - back * cfg.falloff);
+      const blurPx = cfg.blur > 0 ? Math.min(cfg.blur, (back / Math.max(1, cfg.visibleCards)) * cfg.blur) : 0;
+      const zi = Math.round(2000 - d * 20);
+
+      el.style.transform = `translate(-50%, -50%) scale(${sc}) translateX(${tx.toFixed(2)}px) translateZ(${tz.toFixed(2)}px) rotateY(${ry.toFixed(3)}deg)`;
+      el.style.opacity = opacity.toFixed(3);
+      el.style.filter = `brightness(${brightness.toFixed(3)}) blur(${blurPx.toFixed(2)}px)`;
+      el.style.zIndex = String(zi);
+      el.style.pointerEvents = shown && opacity > 0.05 ? 'auto' : 'none';
+
+      const ov = overlayRefs.current[i];
+      if (ov) ov.style.opacity = clamp(back * cfg.falloff * 1.25, 0, 0.86).toFixed(3);
+    }
+  }, []);
+
+  const notify = useCallback(
+    idx => {
+      setActive(idx);
+      onChangeRef.current?.(idx, data[idx]);
+    },
+    [data]
+  );
+
+  const tweenTo = useCallback(
+    (target, animate) => {
+      tweenRef.current?.kill();
+      const cfg = cfgRef.current;
+      const proxy = { p: posRef.current };
+      const dur = animate && !reducedRef.current ? cfg.duration / 1000 : 0;
+      tweenRef.current = gsap.to(proxy, {
+        p: target,
+        duration: dur,
+        ease: cfg.ease,
+        onUpdate: () => {
+          posRef.current = proxy.p;
+          layout(proxy.p);
+        },
+        onComplete: () => {
+          const n = cfg.count;
+          if (n > 0) posRef.current = ((posRef.current % n) + n) % n;
+          layout(posRef.current);
+        }
+      });
+    },
+    [layout]
+  );
+
+  const setFocus = useCallback(
+    (rawIndex, animate = true) => {
+      const cfg = cfgRef.current;
+      const n = cfg.count;
+      if (!n) return;
+      const idx = cfg.loop ? ((rawIndex % n) + n) % n : clamp(rawIndex, 0, n - 1);
+      let delta = idx - posRef.current;
+      if (cfg.loop && n > 1) {
+        delta = ((delta % n) + n) % n;
+        if (delta > n / 2) delta -= n;
+      }
+      tweenTo(posRef.current + delta, animate);
+      if (idx !== focusRef.current) {
+        focusRef.current = idx;
+        notify(idx);
+      }
+    },
+    [tweenTo, notify]
+  );
+
+  const navigateBy = useCallback(step => setFocus(focusRef.current + step, true), [setFocus]);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    const ro = new ResizeObserver(entries => {
+      const w = entries[0].contentRect.width;
+      const cfg = cfgRef.current;
+      const needed = cfg.cardWidth + Math.abs(cfg.spread) * 2 + 120;
+      scaleRef.current = clamp(w / needed, 0.4, 1);
+      layout(posRef.current);
+    });
+    ro.observe(root);
+    return () => ro.disconnect();
+  }, [layout]);
+
+  useEffect(() => {
+    const el = rootRef.current;
+    if (!el) return;
+    const onWheel = e => {
+      const cfg = cfgRef.current;
+      if (cfg.count < 2) return;
+      e.preventDefault();
+      tweenRef.current?.kill();
+      const raw = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+      const delta = e.deltaMode === 1 ? raw * 24 : raw;
+      const step = clamp(delta / (cfg.cardWidth * 0.9), -0.6, 0.6);
+      posRef.current += step;
+      layout(posRef.current);
+      if (wheelTimerRef.current) clearTimeout(wheelTimerRef.current);
+      wheelTimerRef.current = setTimeout(() => setFocus(Math.round(posRef.current), true), 130);
+    };
+    el.addEventListener('wheel', onWheel, { passive: false });
+    return () => {
+      el.removeEventListener('wheel', onWheel);
+      if (wheelTimerRef.current) clearTimeout(wheelTimerRef.current);
+    };
+  }, [layout, setFocus]);
+
+  const onPointerDown = useCallback(e => {
+    const cfg = cfgRef.current;
+    if (cfg.count < 2) return;
+    tweenRef.current?.kill();
+    dragRef.current = {
+      x: e.clientX,
+      startPos: posRef.current,
+      lastX: e.clientX,
+      lastT: performance.now(),
+      v: 0,
+      moved: false,
+      id: e.pointerId
+    };
+  }, []);
+
+  const onPointerMove = useCallback(
+    e => {
+      const drag = dragRef.current;
+      if (!drag) return;
+      const cfg = cfgRef.current;
+      const stepPx = Math.max(cfg.cardWidth * 0.55 * scaleRef.current, 40);
+      const dx = e.clientX - drag.x;
+      if (!drag.moved && Math.abs(dx) > 4) {
+        drag.moved = true;
+        rootRef.current?.setPointerCapture(drag.id);
+      }
+      if (!drag.moved) return;
+      const now = performance.now();
+      const dt = Math.max(now - drag.lastT, 1);
+      drag.v = (e.clientX - drag.lastX) / dt;
+      drag.lastX = e.clientX;
+      drag.lastT = now;
+      posRef.current = drag.startPos - dx / stepPx;
+      layout(posRef.current);
+    },
+    [layout]
+  );
+
+  const onPointerEnd = useCallback(() => {
+    const drag = dragRef.current;
+    if (!drag) return;
+    dragRef.current = null;
+    if (!drag.moved) return;
+    const cfg = cfgRef.current;
+    const stepPx = Math.max(cfg.cardWidth * 0.55 * scaleRef.current, 40);
+    const projected = posRef.current - (drag.v * 180) / stepPx;
+    setFocus(Math.round(projected), true);
+  }, [setFocus]);
+
+  const onKeyDown = useCallback(
+    e => {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        navigateBy(-1);
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        navigateBy(1);
+      }
+    },
+    [navigateBy]
+  );
+
+  const onCardClick = useCallback(
+    index => {
+      if (dragRef.current?.moved) return;
+      setFocus(index, true);
+    },
+    [setFocus]
+  );
+
+  useEffect(() => {
+    reducedRef.current = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!autoplay || reducedRef.current || count < 2) return;
+    const root = rootRef.current;
+    let hovered = false;
+    let focused = false;
+    const stop = () => {
+      if (autoTimerRef.current) clearInterval(autoTimerRef.current);
+      autoTimerRef.current = null;
+    };
+    const start = () => {
+      stop();
+      autoTimerRef.current = window.setInterval(
+        () => {
+          if (!hovered && !focused) navigateBy(1);
+        },
+        Math.max(cfgRef.current.autoplayDelay, 600)
+      );
+    };
+    const onEnter = () => {
+      hovered = true;
+    };
+    const onLeave = () => {
+      hovered = false;
+    };
+    const onFocusIn = () => {
+      focused = true;
+    };
+    const onFocusOut = () => {
+      focused = false;
+    };
+    root?.addEventListener('mouseenter', onEnter);
+    root?.addEventListener('mouseleave', onLeave);
+    root?.addEventListener('focusin', onFocusIn);
+    root?.addEventListener('focusout', onFocusOut);
+    start();
+    return () => {
+      stop();
+      root?.removeEventListener('mouseenter', onEnter);
+      root?.removeEventListener('mouseleave', onLeave);
+      root?.removeEventListener('focusin', onFocusIn);
+      root?.removeEventListener('focusout', onFocusOut);
+    };
+  }, [autoplay, autoplayDelay, count, navigateBy]);
+
+  useEffect(() => {
+    layout(posRef.current);
+  }, [layout, depth, spread, tilt, tiltDirection, visibleCards, falloff, blur, cardWidth, cardHeight, radius, count]);
+
+  useEffect(
+    () => () => {
+      tweenRef.current?.kill();
+      if (wheelTimerRef.current) clearTimeout(wheelTimerRef.current);
+      if (autoTimerRef.current) clearInterval(autoTimerRef.current);
+    },
+    []
+  );
+
+  return (
+    <div
+      ref={rootRef}
+      className={`depth-carousel ${className}`.trim()}
+      style={{ '--dc-perspective': `${perspective}px` }}
+      role="group"
+      aria-roledescription="carousel"
+      aria-label="Depth carousel"
+      tabIndex={0}
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={onPointerEnd}
+      onPointerCancel={onPointerEnd}
+      onKeyDown={onKeyDown}
+    >
+      <div className="depth-carousel__stage" ref={stageRef}>
+        {data.map((item, i) => (
+          <div
+            key={i}
+            className="depth-carousel__card"
+            ref={el => (cardRefs.current[i] = el)}
+            style={{ width: cardWidth, height: cardHeight, borderRadius: radius }}
+            aria-roledescription="slide"
+            aria-label={`${i + 1} of ${count}`}
+            aria-hidden={active !== i}
+            onClick={() => onCardClick(i)}
+          >
+            <img className="depth-carousel__img" src={item.image} alt={item.alt || ''} draggable={false} />
+            <span
+              className="depth-carousel__tint"
+              ref={el => (overlayRefs.current[i] = el)}
+              style={{ background: tint }}
+            />
+            {item.title && (
+              <div className="depth-carousel__info absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/95 via-black/60 to-transparent text-left pointer-events-none z-10">
+                {item.category && (
+                  <span className="inline-block px-2.5 py-0.5 rounded-full bg-black/70 border border-white/20 text-[10px] uppercase font-semibold text-nude-beige mb-1">
+                    {item.category}
+                  </span>
+                )}
+                <h3 className="text-sm font-bold text-pure-white line-clamp-1">{item.title}</h3>
+                {item.tagline && <p className="text-[11px] text-signature-pink font-medium line-clamp-1">{item.tagline}</p>}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {showControls && count > 1 && (
+        <>
+          <button
+            type="button"
+            className="depth-carousel__arrow depth-carousel__arrow--prev"
+            aria-label="Previous slide"
+            onClick={() => navigateBy(-1)}
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path
+                d="M15 5l-7 7 7 7"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            type="button"
+            className="depth-carousel__arrow depth-carousel__arrow--next"
+            aria-label="Next slide"
+            onClick={() => navigateBy(1)}
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path
+                d="M9 5l7 7-7 7"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </>
+      )}
+
+      {showIndicators && count > 1 && (
+        <div className="depth-carousel__dots" role="tablist" aria-label="Slides">
+          {data.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              role="tab"
+              aria-selected={active === i}
+              aria-label={`Go to slide ${i + 1}`}
+              className={`depth-carousel__dot${active === i ? ' is-active' : ''}`}
+              onClick={() => setFocus(i, true)}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default DepthCarousel;
+</file>
+
+<file path="src/components/Footer.jsx">
+import React from 'react'
+import { brandData } from '../data/mediaData'
+import { Instagram, MapPin, Phone, Sparkles, ArrowUp } from 'lucide-react'
+import SpecularButton from './SpecularButton'
+
+export default function Footer({ onOpenBooking }) {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  return (
+    <footer id="contact" className="relative bg-jet-black border-t border-nude-beige/15 pt-20 pb-12 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Minimal Luxury Sign-off Callout */}
+        <div className="text-center max-w-2xl mx-auto mb-16 space-y-6">
+          {/* Logo badge */}
+          <div className="w-16 h-16 rounded-full overflow-hidden border border-nude-beige/40 p-0.5 mx-auto bg-black">
+            <img src={brandData.logo} alt="Nazakat Logo" className="w-full h-full object-cover rounded-full" />
+          </div>
+
+          <div className="space-y-2">
+            <h2 className="font-serif text-3xl sm:text-5xl text-pure-white font-normal tracking-wide">
+              NAZAKAT
+            </h2>
+            <p className="font-display text-lg sm:text-xl text-nude-beige tracking-ultra font-light">
+              SALON & ACADEMY
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 text-xs tracking-ultra uppercase text-pure-white/70 font-light">
+            <span>Hair</span>
+            <span className="text-signature-pink">•</span>
+            <span>Skin</span>
+            <span className="text-signature-pink">•</span>
+            <span>Nails</span>
+            <span className="text-signature-pink">•</span>
+            <span>Bridal</span>
+          </div>
+
+          <p className="text-xs sm:text-sm text-nude-beige font-light tracking-widest uppercase">
+            Raipur, Chhattisgarh
+          </p>
+
+          <div className="pt-2">
+            <SpecularButton
+              onClick={onOpenBooking}
+              size="md"
+              radius={999}
+              tint="#FF3B8D"
+              tintOpacity={1}
+              textColor="#ffffff"
+              lineColor="#ffffff"
+              baseColor="#D61A6E"
+              intensity={1.2}
+              shineSize={16}
+              shineFade={36}
+              thickness={1.5}
+              followMouse={true}
+              className="text-xs uppercase tracking-luxury font-medium shadow-luxe-glow"
+            >
+              <span>Book Bespoke Experience</span>
+            </SpecularButton>
+          </div>
+        </div>
+
+        {/* Minimal Location & Social Info Strip */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-10 border-t border-b border-nude-beige/10 text-xs text-pure-white/70">
+          <div className="flex items-center gap-3">
+            <MapPin size={18} className="text-signature-pink shrink-0" />
+            <div>
+              <p className="text-pure-white font-medium">Flagship Destination</p>
+              <p className="text-white/50 font-light">Raipur, Chhattisgarh, India</p>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-start md:justify-center gap-3">
+            <Instagram size={18} className="text-signature-pink shrink-0" />
+            <div>
+              <p className="text-pure-white font-medium">Instagram</p>
+              <a
+                href={brandData.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-nude-beige hover:text-signature-pink transition-colors"
+              >
+                {brandData.instagram}
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-start md:justify-end gap-3">
+            <Phone size={18} className="text-signature-pink shrink-0" />
+            <div>
+              <p className="text-pure-white font-medium">Direct Concierge</p>
+              <a
+                href={brandData.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-nude-beige hover:text-signature-pink transition-colors"
+              >
+                Inquire on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright & Scroll to Top */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-pure-white/40 font-light">
+          <p>© {new Date().getFullYear()} Nazakat Salon & Academy. All rights reserved.</p>
+          <button
+            onClick={scrollToTop}
+            className="flex items-center gap-1.5 text-pure-white/60 hover:text-nude-beige transition-colors uppercase tracking-wider"
+          >
+            <span>Back to top</span>
+            <ArrowUp size={12} />
+          </button>
+        </div>
+
+      </div>
+    </footer>
+  )
+}
+</file>
+
+<file path="src/components/Founder.jsx">
+import React, { useState, useEffect, useRef } from 'react'
+import { founderData } from '../data/mediaData'
+import { Award, Users, Sparkles, BookOpen } from 'lucide-react'
+import StrokeText from './StrokeText'
+import GlareHover from './GlareHover'
+
+function AnimatedCounter({ target, suffix = '', label }) {
+  const [count, setCount] = useState(0)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          let start = 0
+          const duration = 1800
+          const stepTime = 30
+          const totalSteps = duration / stepTime
+          const increment = target / totalSteps
+
+          const timer = setInterval(() => {
+            start += increment
+            if (start >= target) {
+              setCount(target)
+              clearInterval(timer)
+            } else {
+              setCount(Math.floor(start))
+            }
+          }, stepTime)
+
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.25 }
+    )
+
+    if (ref.current) observer.observe(ref.current)
+    return () => observer.disconnect()
+  }, [target])
+
+  return (
+    <div ref={ref} className="p-4 rounded-xl bg-white border border-[#9E6F4D]/20 shadow-sm hover:shadow-md hover:border-signature-pink/40 transition-all duration-300">
+      <span className="block font-serif text-2xl sm:text-3xl font-bold text-[#181412]">
+        {count.toLocaleString()}{suffix}
+      </span>
+      <span className="text-[11px] text-[#5C524C] uppercase tracking-wider font-medium mt-0.5 block">
+        {label}
+      </span>
+    </div>
+  )
+}
+
+export default function Founder() {
+  return (
+    <section id="founder" className="relative py-20 sm:py-28 bg-white text-[#181412] overflow-hidden border-t border-b border-[#181412]/10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
+          {/* Left Column: Authentic Founder Graphic Banner with GlareHover */}
+          <div className="lg:col-span-7 relative reveal-media">
+            <GlareHover
+              width="100%"
+              height="auto"
+              background="#ffffff"
+              borderRadius="1rem"
+              borderColor="rgba(24, 20, 18, 0.15)"
+              glareColor="#ffffff"
+              glareOpacity={0.45}
+              glareAngle={-30}
+              glareSize={280}
+              transitionDuration={750}
+              playOnce={false}
+              className="shadow-2xl group w-full"
+            >
+              <div className="relative aspect-video w-full bg-white flex items-center justify-center overflow-hidden">
+                <img
+                  src={founderData.image || "/assets/founder-nazakat-ali.png"}
+                  alt="Nazakat Ali - Founder & Creative Director"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+                
+                {/* Minimal clean label at bottom */}
+                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between pointer-events-none z-10">
+                  <span className="text-xs uppercase tracking-wider text-white font-medium drop-shadow-md">
+                    Nazakat Ali • Founder
+                  </span>
+                  <span className="w-2 h-2 rounded-full bg-signature-pink shadow-md" />
+                </div>
+              </div>
+            </GlareHover>
+          </div>
+
+          {/* Right Column: Founder Info + Terrova-style Bento Stats Counters */}
+          <div className="lg:col-span-5 space-y-6 reveal-text">
+            <div>
+              <div className="mb-3 w-full">
+                <StrokeText
+                  text="MEET OUR FOUNDER"
+                  strokeColor="#FF3B8D"
+                  fillColor="#FF3B8D"
+                  strokeWidth={1.6}
+                  fontSize={52}
+                  fontWeight={900}
+                  letterSpacing={1.5}
+                  trigger="scroll"
+                  fillMode="wipe"
+                  drawDuration={1.2}
+                  fillDelay={0.2}
+                  align="left"
+                />
+              </div>
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#181412] tracking-tight">
+                Nazakat Ali
+              </h2>
+              <p className="text-xs sm:text-sm text-[#9E6F4D] uppercase tracking-wider font-semibold mt-1">
+                Founder & Creative Director
+              </p>
+            </div>
+
+            <div className="h-[2px] w-16 bg-signature-pink" />
+
+            {/* Direct Quote */}
+            <blockquote className="text-sm sm:text-base text-[#38302B] border-l-2 border-[#9E6F4D] pl-4 py-1 leading-relaxed italic">
+              "{founderData.quote}"
+            </blockquote>
+
+            {/* Terrova Bento Stats Cards with Live Counting Numbers */}
+            <div className="grid grid-cols-2 gap-3 pt-2">
+              <AnimatedCounter target={15} suffix="+" label="Years Mastery" />
+              <AnimatedCounter target={10000} suffix="+" label="Happy Clients" />
+              <AnimatedCounter target={50} suffix="+" label="Masterclasses" />
+              <AnimatedCounter target={100} suffix="%" label="Bespoke Care" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  )
+}
+</file>
+
+<file path="src/components/GlareHover.css">
+.glare-hover {
+  width: var(--gh-width);
+  height: var(--gh-height);
+  background: var(--gh-bg);
+  border-radius: var(--gh-br);
+  border: 1px solid var(--gh-border);
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.glare-hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--gh-angle),
+    hsla(0, 0%, 0%, 0) 60%,
+    var(--gh-rgba) 70%,
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0) 100%
+  );
+  transition: var(--gh-duration) ease;
+  background-size:
+    var(--gh-size) var(--gh-size),
+    100% 100%;
+  background-repeat: no-repeat;
+  background-position:
+    -100% -100%,
+    0 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.glare-hover:hover {
+  cursor: pointer;
+}
+
+.glare-hover:hover::before {
+  background-position:
+    100% 100%,
+    0 0;
+}
+
+.glare-hover--play-once::before {
+  transition: none;
+}
+
+.glare-hover--play-once:hover::before {
+  transition: var(--gh-duration) ease;
+  background-position:
+    100% 100%,
+    0 0;
+}
+</file>
+
+<file path="src/components/GlareHover.jsx">
+import './GlareHover.css';
+
+const GlareHover = ({
+  width = '500px',
+  height = '500px',
+  background = '#000',
+  borderRadius = '10px',
+  borderColor = '#333',
+  children,
+  glareColor = '#ffffff',
+  glareOpacity = 0.5,
+  glareAngle = -45,
+  glareSize = 250,
+  transitionDuration = 650,
+  playOnce = false,
+  className = '',
+  style = {}
+}) => {
+  const hex = glareColor.replace('#', '');
+  let rgba = glareColor;
+  if (/^[0-9A-Fa-f]{6}$/.test(hex)) {
+    const r = parseInt(hex.slice(0, 2), 16);
+    const g = parseInt(hex.slice(2, 4), 16);
+    const b = parseInt(hex.slice(4, 6), 16);
+    rgba = `rgba(${r}, ${g}, ${b}, ${glareOpacity})`;
+  } else if (/^[0-9A-Fa-f]{3}$/.test(hex)) {
+    const r = parseInt(hex[0] + hex[0], 16);
+    const g = parseInt(hex[1] + hex[1], 16);
+    const b = parseInt(hex[2] + hex[2], 16);
+    rgba = `rgba(${r}, ${g}, ${b}, ${glareOpacity})`;
+  }
+
+  const vars = {
+    '--gh-width': width,
+    '--gh-height': height,
+    '--gh-bg': background,
+    '--gh-br': borderRadius,
+    '--gh-angle': `${glareAngle}deg`,
+    '--gh-duration': `${transitionDuration}ms`,
+    '--gh-size': `${glareSize}%`,
+    '--gh-rgba': rgba,
+    '--gh-border': borderColor
+  };
+
+  return (
+    <div
+      className={`glare-hover ${playOnce ? 'glare-hover--play-once' : ''} ${className}`}
+      style={{ ...vars, ...style }}
+    >
+      {children}
+    </div>
+  );
+};
+
+export default GlareHover;
+</file>
+
+<file path="src/components/Hero.jsx">
+import React from 'react'
+import { brandData } from '../data/mediaData'
+import ScrollExpand from './ScrollExpand'
+import { ArrowRight, ArrowDown } from 'lucide-react'
+import SpecularButton from './SpecularButton'
+
+export default function Hero({ onOpenBooking }) {
+  const scrollToFounder = () => {
+    const el = document.getElementById('founder')
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  return (
+    <section className="relative w-full bg-black">
+      <ScrollExpand
+        src="/assets/shop-styling-stations.mp4"
+        poster="/assets/posters/shop-styling-stations.jpg"
+        mediaType="video"
+        title="NAZAKAT"
+        scrollHint="Scroll to Enter"
+        useWindowScroll={true}
+        startWidth={44}
+        startHeight={58}
+        startRadius={24}
+        endRadius={0}
+        mediaZoom={1.35}
+        scrollDistance={1.1}
+        holdDistance={0.25}
+        smoothing={0.08}
+        overlayScrim={0.55}
+      >
+        {/* Full-bleed Content that reveals as the frame expands */}
+        <div className="flex flex-col items-center justify-center max-w-4xl mx-auto text-center px-4 space-y-4 sm:space-y-5 pt-12 sm:pt-16">
+          
+          {/* Official Brand Emblem Badge */}
+          <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-[#D4B59F] p-1.5 bg-black/90 shadow-[0_0_35px_rgba(212,181,159,0.45)]">
+            <img
+              src={brandData.logo}
+              alt="Nazakat Official Emblem"
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
+
+          {/* Grand Typography */}
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white font-normal leading-[1.04]">
+            NAZAKAT
+            <span className="block text-xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-[0.25em] text-[#D4B59F] mt-2 font-display">
+              SALON & ACADEMY
+            </span>
+          </h1>
+
+          {/* Brand Pillars */}
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm tracking-ultra uppercase text-white/85 font-light">
+            <span>Hair</span>
+            <span className="text-[#FF3B8D]">•</span>
+            <span>Skin</span>
+            <span className="text-[#FF3B8D]">•</span>
+            <span>Nails</span>
+            <span className="text-[#FF3B8D]">•</span>
+            <span>Bridal</span>
+          </div>
+
+          {/* Action CTA Buttons with Specular Light Reflection */}
+          <div className="pt-2 flex flex-wrap items-center justify-center gap-3.5">
+            <SpecularButton
+              size="md"
+              radius={999}
+              tint="#FF3B8D"
+              tintOpacity={1}
+              blur={0}
+              textColor="#ffffff"
+              lineColor="#ffffff"
+              baseColor="#D61A6E"
+              intensity={1.2}
+              shineSize={14}
+              shineFade={36}
+              thickness={1.5}
+              speed={0.4}
+              followMouse={true}
+              proximity={220}
+              autoAnimate={false}
+              onClick={onOpenBooking}
+              className="font-bold uppercase tracking-widest text-xs shadow-luxe-glow"
+            >
+              <span>Book Appointment</span>
+              <ArrowRight size={14} />
+            </SpecularButton>
+
+            <SpecularButton
+              size="md"
+              radius={999}
+              tint="#141210"
+              tintOpacity={0.88}
+              blur={10}
+              textColor="#FFFFFF"
+              lineColor="#FF3B8D"
+              baseColor="#333333"
+              onClick={scrollToFounder}
+              className="border border-white/25 hover:border-signature-pink text-xs font-bold uppercase tracking-wider transition-all shadow-md px-6 py-3"
+            >
+              <span>Explore Salon</span>
+              <ArrowDown size={14} />
+            </SpecularButton>
+          </div>
+
+        </div>
+      </ScrollExpand>
+    </section>
+  )
+}
+</file>
+
+<file path="src/components/InstagramFeed.jsx">
+import React, { useState, useEffect } from 'react'
+import { instagramData, brandData } from '../data/mediaData'
+import { useInViewVideo } from '../hooks/useInViewVideo'
+import { Instagram, Play, Pause, Volume2, VolumeX, ArrowUpRight } from 'lucide-react'
+import OrbitImages from './OrbitImages'
+import StrokeText from './StrokeText'
+import SpecularButton from './SpecularButton'
+
+const orbitImages = [
+  {
+    image: "/assets/posters/insta-reel-1-transformation.jpg",
+    title: "Bridal Glam",
+  },
+  {
+    image: "/assets/posters/insta-reel-2-salon-tour.jpg",
+    title: "Salon Tour",
+  },
+  {
+    image: "/assets/posters/insta-reel-3-skin-glow.jpg",
+    title: "Skin Glow",
+  },
+  {
+    image: "/assets/posters/insta-reel-4-nail-artistry.jpg",
+    title: "Couture Nails",
+  },
+  {
+    image: "/assets/posters/insta-reel-5-balayage.jpg",
+    title: "Balayage",
+  },
+  {
+    image: "/assets/posters/insta-reel-6-glow-therapy.jpg",
+    title: "LED Therapy",
+  },
+]
+
+function InstagramReelCard({ reel }) {
+  const { videoRef } = useInViewVideo({ threshold: 0.3 })
+  const [isPlaying, setIsPlaying] = useState(true)
+  const [isMuted, setIsMuted] = useState(true)
+
+  const togglePlay = (e) => {
+    e.stopPropagation()
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play()
+        setIsPlaying(true)
+      } else {
+        videoRef.current.pause()
+        setIsPlaying(false)
+      }
+    }
+  }
+
+  const toggleMute = (e) => {
+    e.stopPropagation()
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted
+      setIsMuted(videoRef.current.muted)
+    }
+  }
+
+  return (
+    <div className="group relative rounded-xl overflow-hidden border border-white/15 bg-luxe-card shadow-lg hover:border-signature-pink/50 transition-all duration-500">
+      {/* 9:16 Reel Aspect Ratio */}
+      <div className="relative aspect-[9/16] w-full overflow-hidden bg-black">
+        <video
+          ref={videoRef}
+          src={reel.video}
+          poster={reel.poster}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+        />
+
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/20 pointer-events-none" />
+
+        {/* Audio control */}
+        <div className="absolute top-3 right-3 z-10">
+          <button
+            onClick={toggleMute}
+            className="p-1.5 rounded-full bg-black/60 text-white/80 hover:text-signature-pink border border-white/20 transition-colors"
+            title={isMuted ? "Unmute" : "Mute"}
+          >
+            {isMuted ? <VolumeX size={13} /> : <Volume2 size={13} />}
+          </button>
+        </div>
+
+        {/* Bottom Title Bar */}
+        <div className="absolute bottom-3 left-3 right-3 z-10 space-y-1">
+          <p className="text-xs font-semibold text-pure-white line-clamp-2 leading-snug">
+            {reel.title}
+          </p>
+          <div className="flex items-center justify-between pt-0.5">
+            <span className="text-[10px] text-signature-pink font-medium">{brandData.instagram}</span>
+            <button
+              onClick={togglePlay}
+              className="p-1 text-white/70 hover:text-white"
+            >
+              {isPlaying ? <Pause size={12} /> : <Play size={12} />}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default function InstagramFeed() {
+  const [screenSize, setScreenSize] = useState(() => {
+    if (typeof window === 'undefined') return 'desktop'
+    if (window.innerWidth < 640) return 'mobile'
+    if (window.innerWidth < 1024) return 'tablet'
+    return 'desktop'
+  })
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setScreenSize('mobile')
+      } else if (window.innerWidth < 1024) {
+        setScreenSize('tablet')
+      } else {
+        setScreenSize('desktop')
+      }
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  const orbitConfig = {
+    mobile: {
+      baseWidth: 640,
+      radiusX: 255,
+      radiusY: 195,
+      aspectRatio: "1.15 / 1",
+      itemWidth: 46,
+      itemHeight: 82,
+      strokeFontSize: 36,
+    },
+    tablet: {
+      baseWidth: 900,
+      radiusX: 370,
+      radiusY: 200,
+      aspectRatio: "1.5 / 1",
+      itemWidth: 58,
+      itemHeight: 104,
+      strokeFontSize: 44,
+    },
+    desktop: {
+      baseWidth: 1200,
+      radiusX: 480,
+      radiusY: 230,
+      aspectRatio: "1.9 / 1",
+      itemWidth: 68,
+      itemHeight: 120,
+      strokeFontSize: 52,
+    },
+  }[screenSize]
+
+  return (
+    <section id="instagram" className="relative py-16 sm:py-24 bg-jet-black overflow-hidden border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Clean Header with StrokeText */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-5">
+          <div className="max-w-2xl space-y-2">
+            <div className="mb-2 w-full max-w-xs">
+              <StrokeText
+                text="INSTAGRAM"
+                strokeColor="#FF3B8D"
+                fillColor="#FF3B8D"
+                strokeWidth={1.6}
+                fontSize={orbitConfig.strokeFontSize}
+                fontWeight={900}
+                letterSpacing={1.5}
+                trigger="scroll"
+                fillMode="wipe"
+                drawDuration={1.2}
+                fillDelay={0.2}
+                align="left"
+              />
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-pure-white tracking-tight">
+              Latest from Instagram
+            </h2>
+            <p className="text-sm text-white/70 pt-1">
+              Daily salon transformations and reels from Raipur.
+            </p>
+          </div>
+
+          <SpecularButton
+            href={brandData.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            size="sm"
+            radius={999}
+            tint="#181412"
+            tintOpacity={1}
+            textColor="#FFFFFF"
+            lineColor="#FF3B8D"
+            baseColor="#522036"
+            className="self-start md:self-end border border-signature-pink text-xs uppercase tracking-wider font-bold shadow-md shrink-0 hover:bg-signature-pink hover:text-white transition-all px-5 py-2.5"
+          >
+            <span className="text-signature-pink font-extrabold group-hover:text-white">FOLLOW @NAZAKAT_SALON</span>
+            <ArrowUpRight size={14} className="text-signature-pink" />
+          </SpecularButton>
+        </div>
+
+        {/* OrbitImages Component Showcase with Instagram Profile as Background */}
+        <div className="relative my-6 sm:my-12 py-3 sm:py-10 overflow-hidden rounded-2xl sm:rounded-3xl bg-black border border-white/10 shadow-2xl">
+          {/* Background Wallpaper: Authentic Instagram Profile Page (Softly Blurred Depth) */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 flex items-center justify-center">
+            <img
+              src="/assets/instagram-profile-bg.png"
+              alt="Nazakat Instagram Profile"
+              className="w-full h-full object-cover object-center opacity-80 filter blur-[3.5px] scale-105"
+            />
+            {/* Soft edge vignette so the container borders blend smoothly */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/50 pointer-events-none" />
+            <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+          </div>
+
+          <OrbitImages
+            images={orbitImages}
+            shape="ellipse"
+            baseWidth={orbitConfig.baseWidth}
+            radiusX={orbitConfig.radiusX}
+            radiusY={orbitConfig.radiusY}
+            rotation={-5}
+            duration={30}
+            itemWidth={orbitConfig.itemWidth}
+            itemHeight={orbitConfig.itemHeight}
+            responsive={true}
+            aspectRatio={orbitConfig.aspectRatio}
+            showPath={true}
+            pathColor="rgba(255, 59, 141, 0.32)"
+            pathWidth={1.8}
+            className="w-full max-w-6xl mx-auto relative z-10"
+            centerContent={
+              <div className="flex flex-col items-center justify-center p-2.5 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl bg-black/90 backdrop-blur-xl border border-white/20 shadow-2xl text-center space-y-1 sm:space-y-2 w-[138px] xs:w-[155px] sm:w-[210px] md:w-[260px] pointer-events-auto transition-transform hover:scale-105 duration-300">
+                <div className="relative w-9 h-9 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full p-0.5 sm:p-1 bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] shadow-lg shrink-0">
+                  <img
+                    src="/assets/logo.png"
+                    alt="Nazakat Salon"
+                    className="w-full h-full object-cover rounded-full bg-black"
+                  />
+                  <div className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 rounded-full bg-signature-pink border border-black flex items-center justify-center text-white">
+                    <Instagram className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3" />
+                  </div>
+                </div>
+
+                <div className="w-full px-1">
+                  <div className="flex items-center justify-center gap-1">
+                    <span className="text-white font-bold text-[11px] sm:text-sm md:text-base tracking-wide truncate">
+                      @nazakat_salon
+                    </span>
+                    {/* Official Instagram Verified Blue Badge */}
+                    <svg viewBox="0 0 24 24" className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 shrink-0 fill-[#0095F6]" aria-label="Verified">
+                      <path d="M10.52 2.45a2.25 2.25 0 0 1 2.96 0l1.04.91c.42.37.96.58 1.52.6l1.38.05a2.25 2.25 0 0 1 2.16 2.16l.05 1.38c.02.56.23 1.1.6 1.52l.91 1.04a2.25 2.25 0 0 1 0 2.96l-.91 1.04a2.25 2.25 0 0 0-.6 1.52l-.05 1.38a2.25 2.25 0 0 1-2.16 2.16l-1.38.05c-.56.02-1.1.23-1.52.6l-1.04.91a2.25 2.25 0 0 1-2.96 0l-1.04-.91a2.25 2.25 0 0 0-1.52-.6l-1.38-.05a2.25 2.25 0 0 1-2.16-2.16l-.05-1.38a2.25 2.25 0 0 0-.6-1.52l-.91-1.04a2.25 2.25 0 0 1 0-2.96l.91-1.04c.37-.42.58-.96.6-1.52l.05-1.38a2.25 2.25 0 0 1 2.16-2.16l1.38-.05c.56-.02 1.1-.23 1.52-.6l1.04-.91ZM16.28 9.22a.75.75 0 0 0-1.06-1.06L10.5 12.88 8.78 11.16a.75.75 0 0 0-1.06 1.06l2.25 2.25c.3.3.77.3 1.06 0l5.25-5.25Z" />
+                    </svg>
+                  </div>
+                  <p className="text-[8.5px] sm:text-[10px] md:text-[11px] text-white/60 truncate leading-tight">
+                    Raipur's #1 Luxury Salon
+                  </p>
+                </div>
+
+                <a
+                  href={brandData.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-gradient-to-r from-[#FF3B8D] to-[#D61A6E] text-white text-[8.5px] sm:text-[10px] md:text-[11px] font-bold uppercase tracking-wider flex items-center gap-1 shadow-md hover:shadow-signature-pink/40 hover:opacity-95 transition-all"
+                >
+                  <Instagram className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
+                  <span>Follow on IG</span>
+                </a>
+              </div>
+            }
+          />
+        </div>
+
+        {/* 6 Reels Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-5">
+          {instagramData.map((reel) => (
+            <InstagramReelCard key={reel.id} reel={reel} />
+          ))}
+        </div>
+
+      </div>
+    </section>
+  )
+}
+</file>
+
+<file path="src/components/Navbar.jsx">
+import React, { useState, useEffect } from 'react'
+import { brandData } from '../data/mediaData'
+import { Menu, X, Sparkles, Instagram } from 'lucide-react'
+import CurvedLoop from './CurvedLoop'
+import SpecularButton from './SpecularButton'
+
+export default function Navbar({ onOpenBooking }) {
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 40)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const navLinks = [
+    { label: 'Services', href: '#services' },
+    { label: 'Founder', href: '#founder' },
+    { label: 'Academy', href: '#training' },
+    { label: 'Star Visits', href: '#star-visits' },
+    { label: 'Transformations', href: '#transformations' },
+    { label: 'Boutique', href: '#shop' },
+    { label: 'Instagram', href: '#instagram' },
+    { label: 'Contact', href: '#contact' },
+  ]
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault()
+    setMobileMenuOpen(false)
+    const el = document.querySelector(href)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-[#D4B59F] border-b border-[#bda08b] text-[#181412] shadow-md ${
+        isScrolled
+          ? 'py-2.5 bg-[#D4B59F]/95 backdrop-blur-md shadow-lg'
+          : 'py-4'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        {/* Brand Logo & Wordmark */}
+        <a
+          href="#"
+          className="flex items-center gap-3.5 sm:gap-4 group focus:outline-none shrink-0 mr-4 md:mr-8 lg:mr-10 xl:mr-14"
+          onClick={(e) => {
+            e.preventDefault()
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          }}
+        >
+          {/* Enhanced luxury emblem badge */}
+          <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-[#181412]/35 p-[2px] bg-black shadow-md group-hover:border-[#181412] transition-all duration-300">
+            <img
+              src={brandData.logo}
+              alt="Nazakat Logo"
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
+          <div className="flex flex-col">
+            <span className="font-serif tracking-[0.24em] text-base sm:text-lg lg:text-xl font-bold text-[#181412] group-hover:text-black transition-colors duration-300 leading-tight">
+              NAZAKAT
+            </span>
+            <span className="text-[8px] sm:text-[9.5px] tracking-[0.32em] text-[#523B2C] uppercase font-bold mt-0.5 whitespace-nowrap">
+              Salon & Academy • Raipur
+            </span>
+          </div>
+        </a>
+
+        {/* Desktop Interactive CurvedLoop Navigation Links */}
+        <div className="hidden lg:flex items-center justify-center flex-1 h-12 max-w-2xl xl:max-w-3xl mx-2 xl:mx-6 overflow-hidden">
+          <CurvedLoop
+            items={navLinks}
+            onItemClick={(href) => {
+              const el = document.querySelector(href)
+              if (el) el.scrollIntoView({ behavior: 'smooth' })
+            }}
+            speed={1.4}
+            curveAmount={18}
+            direction="left"
+            interactive={true}
+            pauseOnHover={true}
+            viewBox="0 0 1200 60"
+            pathD="M-100,28 Q600,48 1300,28"
+            className="curved-loop-navbar-text"
+            jacketClassName="curved-loop-jacket--navbar"
+          />
+        </div>
+
+        {/* Action Buttons */}
+        <div className="hidden sm:flex items-center gap-3 shrink-0">
+          <a
+            href={brandData.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 text-[#181412] hover:text-white hover:scale-110 transition-all"
+            title="Follow on Instagram"
+            aria-label="Nazakat Instagram"
+          >
+            <Instagram size={18} />
+          </a>
+
+          <SpecularButton
+            onClick={onOpenBooking}
+            size="sm"
+            radius={999}
+            tint="#181412"
+            tintOpacity={1}
+            textColor="#ffffff"
+            lineColor="#FF3B8D"
+            baseColor="#3d2c22"
+            intensity={1.2}
+            shineSize={14}
+            shineFade={35}
+            thickness={1.4}
+            followMouse={true}
+            className="text-xs font-bold uppercase tracking-wider whitespace-nowrap shadow-md"
+          >
+            <span>Book Appointment</span>
+          </SpecularButton>
+        </div>
+
+        {/* Mobile Hamburger Toggle */}
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="lg:hidden p-2 text-[#181412] hover:text-black focus:outline-none"
+          aria-label="Toggle Navigation Menu"
+        >
+          {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+        </button>
+      </div>
+
+      {/* Mobile Drawer Menu */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden bg-[#D4B59F] border-b border-[#bda08b] shadow-2xl px-6 py-6 mt-3 space-y-4 animate-fadeIn">
+          <div className="flex flex-col space-y-3 pb-4 border-b border-[#181412]/20">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="text-sm uppercase tracking-wider font-bold text-[#181412] hover:text-white py-1 transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+
+          <div className="pt-2 flex flex-col gap-3">
+            <SpecularButton
+              onClick={() => {
+                setMobileMenuOpen(false)
+                onOpenBooking()
+              }}
+              size="md"
+              radius={999}
+              tint="#181412"
+              tintOpacity={1}
+              textColor="#ffffff"
+              lineColor="#FF3B8D"
+              baseColor="#3d2c22"
+              intensity={1.2}
+              shineSize={16}
+              shineFade={35}
+              thickness={1.5}
+              followMouse={true}
+              className="w-full text-xs font-bold tracking-widest uppercase shadow-lg"
+            >
+              <span>Book Bespoke Experience</span>
+            </SpecularButton>
+            <a
+              href={brandData.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-center text-[#523B2C] font-semibold py-1 flex items-center justify-center gap-2 tracking-wider hover:text-[#181412]"
+            >
+              <Instagram size={14} />
+              {brandData.instagram}
+            </a>
+          </div>
+        </div>
+      )}
+    </header>
+  )
+}
+</file>
+
+<file path="src/components/OrbitImages.css">
+.orbit-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orbit-scaling-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.orbit-scaling-container--responsive {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center center;
+}
+
+.orbit-rotation-wrapper {
+  width: 100%;
+  height: 100%;
+  transform-origin: center center;
+  position: relative;
+}
+
+.orbit-path-svg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.orbit-item {
+  position: absolute;
+  will-change: transform;
+  user-select: none;
+}
+
+.orbit-center-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+  pointer-events: none;
+}
+
+/* 9:16 Portrait Reel Card Style - Non-round, non-oval */
+.orbit-reel-card {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 59, 141, 0.65);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75), 0 0 15px rgba(255, 59, 141, 0.35);
+  background-color: #12100e;
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.orbit-reel-card:hover {
+  transform: scale(1.18);
+  border-color: #FF3B8D;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 59, 141, 0.75);
+  z-index: 30;
+}
+
+.orbit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+</file>
+
+<file path="src/components/OrbitImages.jsx">
+// Component created by Dominik Koch
+// https://x.com/dominikkoch
+
+import { useMemo, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { motion, useMotionValue, useTransform, animate } from 'motion/react';
+import './OrbitImages.css';
+
+function generateEllipsePath(cx, cy, rx, ry) {
+  return `M ${cx - rx} ${cy} A ${rx} ${ry} 0 1 0 ${cx + rx} ${cy} A ${rx} ${ry} 0 1 0 ${cx - rx} ${cy}`;
+}
+
+function generateCirclePath(cx, cy, r) {
+  return generateEllipsePath(cx, cy, r, r);
+}
+
+function generateSquarePath(cx, cy, size) {
+  const h = size / 2;
+  return `M ${cx - h} ${cy - h} L ${cx + h} ${cy - h} L ${cx + h} ${cy + h} L ${cx - h} ${cy + h} Z`;
+}
+
+function generateRectanglePath(cx, cy, w, h) {
+  const hw = w / 2;
+  const hh = h / 2;
+  return `M ${cx - hw} ${cy - hh} L ${cx + hw} ${cy - hh} L ${cx + hw} ${cy + hh} L ${cx - hw} ${cy + hh} Z`;
+}
+
+function generateTrianglePath(cx, cy, size) {
+  const height = (size * Math.sqrt(3)) / 2;
+  const hs = size / 2;
+  return `M ${cx} ${cy - height / 1.5} L ${cx + hs} ${cy + height / 3} L ${cx - hs} ${cy + height / 3} Z`;
+}
+
+function generateStarPath(cx, cy, outerR, innerR, points) {
+  const step = Math.PI / points;
+  let path = '';
+  for (let i = 0; i < 2 * points; i++) {
+    const r = i % 2 === 0 ? outerR : innerR;
+    const angle = i * step - Math.PI / 2;
+    const x = cx + r * Math.cos(angle);
+    const y = cy + r * Math.sin(angle);
+    path += i === 0 ? `M ${x} ${y}` : ` L ${x} ${y}`;
+  }
+  return path + ' Z';
+}
+
+function generateHeartPath(cx, cy, size) {
+  const s = size / 30;
+  return `M ${cx} ${cy + 12 * s} C ${cx - 20 * s} ${cy - 5 * s}, ${cx - 12 * s} ${cy - 18 * s}, ${cx} ${cy - 8 * s} C ${cx + 12 * s} ${cy - 18 * s}, ${cx + 20 * s} ${cy - 5 * s}, ${cx} ${cy + 12 * s}`;
+}
+
+function generateInfinityPath(cx, cy, w, h) {
+  const hw = w / 2;
+  const hh = h / 2;
+  return `M ${cx} ${cy} C ${cx + hw * 0.5} ${cy - hh}, ${cx + hw} ${cy - hh}, ${cx + hw} ${cy} C ${cx + hw} ${cy + hh}, ${cx + hw * 0.5} ${cy + hh}, ${cx} ${cy} C ${cx - hw * 0.5} ${cy + hh}, ${cx - hw} ${cy + hh}, ${cx - hw} ${cy} C ${cx - hw} ${cy - hh}, ${cx - hw * 0.5} ${cy - hh}, ${cx} ${cy}`;
+}
+
+function generateWavePath(cx, cy, w, amplitude, waves) {
+  const pts = [];
+  const segs = waves * 20;
+  const hw = w / 2;
+  for (let i = 0; i <= segs; i++) {
+    const x = cx - hw + (w * i) / segs;
+    const y = cy + Math.sin((i / segs) * waves * 2 * Math.PI) * amplitude;
+    pts.push(i === 0 ? `M ${x} ${y}` : `L ${x} ${y}`);
+  }
+  for (let i = segs; i >= 0; i--) {
+    const x = cx - hw + (w * i) / segs;
+    const y = cy - Math.sin((i / segs) * waves * 2 * Math.PI) * amplitude;
+    pts.push(`L ${x} ${y}`);
+  }
+  return pts.join(' ') + ' Z';
+}
+
+function OrbitItem({ item, index, totalItems, path, itemWidth, itemHeight, rotation, progress, fill }) {
+  const itemOffset = fill ? (index / totalItems) * 100 : 0;
+
+  const offsetDistance = useTransform(progress, (p) => {
+    const offset = (((p + itemOffset) % 100) + 100) % 100;
+    return `${offset}%`;
+  });
+
+  return (
+    <motion.div
+      className="orbit-item"
+      style={{
+        width: itemWidth,
+        height: itemHeight,
+        offsetPath: `path("${path}")`,
+        offsetRotate: '0deg',
+        offsetAnchor: 'center center',
+        offsetDistance,
+      }}
+    >
+      <div style={{ width: '100%', height: '100%', transform: `rotate(${-rotation}deg)` }}>
+        {item}
+      </div>
+    </motion.div>
+  );
+}
+
+export default function OrbitImages({
+  images = [],
+  altPrefix = 'Orbiting image',
+  shape = 'ellipse',
+  customPath,
+  baseWidth = 1400,
+  radiusX = 700,
+  radiusY = 170,
+  radius = 300,
+  starPoints = 5,
+  starInnerRatio = 0.5,
+  rotation = -8,
+  duration = 40,
+  itemSize = 64,
+  itemWidth,
+  itemHeight,
+  direction = 'normal',
+  fill = true,
+  width = 100,
+  height = 100,
+  className = '',
+  showPath = false,
+  pathColor = 'rgba(0,0,0,0.1)',
+  pathWidth = 2,
+  easing = 'linear',
+  paused = false,
+  centerContent,
+  responsive = false,
+  aspectRatio = '1 / 1',
+  style = {},
+}) {
+  const containerRef = useRef(null);
+  const [scale, setScale] = useState(null);
+
+  const designCenterX = baseWidth / 2;
+  const designCenterY = baseWidth / 2;
+
+  const path = useMemo(() => {
+    switch (shape) {
+      case 'circle':
+        return generateCirclePath(designCenterX, designCenterY, radius);
+      case 'ellipse':
+        return generateEllipsePath(designCenterX, designCenterY, radiusX, radiusY);
+      case 'square':
+        return generateSquarePath(designCenterX, designCenterY, radius * 2);
+      case 'rectangle':
+        return generateRectanglePath(designCenterX, designCenterY, radiusX * 2, radiusY * 2);
+      case 'triangle':
+        return generateTrianglePath(designCenterX, designCenterY, radius * 2);
+      case 'star':
+        return generateStarPath(designCenterX, designCenterY, radius, radius * starInnerRatio, starPoints);
+      case 'heart':
+        return generateHeartPath(designCenterX, designCenterY, radius * 2);
+      case 'infinity':
+        return generateInfinityPath(designCenterX, designCenterY, radiusX * 2, radiusY * 2);
+      case 'wave':
+        return generateWavePath(designCenterX, designCenterY, radiusX * 2, radiusY, 3);
+      case 'custom':
+        return customPath || generateCirclePath(designCenterX, designCenterY, radius);
+      default:
+        return generateEllipsePath(designCenterX, designCenterY, radiusX, radiusY);
+    }
+  }, [shape, customPath, designCenterX, designCenterY, radiusX, radiusY, radius, starPoints, starInnerRatio]);
+
+  useLayoutEffect(() => {
+    if (!responsive || !containerRef.current) return;
+    const updateScale = () => {
+      if (!containerRef.current) return;
+      setScale(containerRef.current.clientWidth / baseWidth);
+    };
+    updateScale();
+    const observer = new ResizeObserver(updateScale);
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, [responsive, baseWidth]);
+
+  const progress = useMotionValue(0);
+
+  useEffect(() => {
+    if (paused) return;
+    const controls = animate(progress, direction === 'reverse' ? -100 : 100, {
+      duration,
+      ease: easing,
+      repeat: Infinity,
+      repeatType: 'loop',
+    });
+    return () => controls.stop();
+  }, [progress, duration, easing, direction, paused]);
+
+  const finalItemWidth = itemWidth || itemSize;
+  const finalItemHeight = itemHeight || (itemWidth ? Math.round(itemWidth * 16 / 9) : itemSize);
+
+  const containerWidth = responsive ? '100%' : (typeof width === 'number' ? width : '100%');
+  const containerHeight = responsive ? 'auto' : (typeof height === 'number' ? height : (typeof width === 'number' ? width : 'auto'));
+
+  const items = images.map((item, index) => {
+    const isObject = typeof item === 'object' && item !== null;
+    const src = isObject ? (item.image || item.poster || item.src) : item;
+    const title = isObject ? item.title : '';
+
+    return (
+      <div key={src + index} className="orbit-reel-card group">
+        <img
+          src={src}
+          alt={`${altPrefix} ${index + 1}`}
+          draggable={false}
+          className="orbit-image"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/25 pointer-events-none" />
+
+        {/* Instagram Reel Play Watermark Icon */}
+        <div className="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white/90 border border-white/20">
+          <svg viewBox="0 0 24 24" className="w-2 h-2 fill-white translate-x-[0.5px]">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+
+        {title ? (
+          <div className="absolute bottom-1.5 left-1.5 right-1.5 text-center pointer-events-none">
+            <span className="text-[9px] font-semibold text-white/95 truncate block drop-shadow-md">
+              {title}
+            </span>
+          </div>
+        ) : null}
+      </div>
+    );
+  });
+
+  return (
+    <div
+      ref={containerRef}
+      className={`orbit-container ${className}`}
+      style={{
+        width: containerWidth,
+        height: containerHeight,
+        aspectRatio: responsive ? (style?.aspectRatio || aspectRatio) : undefined,
+        ...style
+      }}
+      aria-hidden="true"
+    >
+      <div
+        className={responsive ? 'orbit-scaling-container orbit-scaling-container--responsive' : 'orbit-scaling-container'}
+        style={{
+          width: responsive ? baseWidth : '100%',
+          height: responsive ? baseWidth : '100%',
+          transform: responsive && scale !== null ? `translate(-50%, -50%) scale(${scale})` : undefined,
+          visibility: responsive && scale === null ? 'hidden' : undefined,
+        }}
+      >
+        <div
+          className="orbit-rotation-wrapper"
+          style={{ transform: `rotate(${rotation}deg)` }}
+        >
+          {showPath && (
+            <svg
+              width="100%"
+              height="100%"
+              viewBox={`0 0 ${baseWidth} ${baseWidth}`}
+              className="orbit-path-svg"
+            >
+              <path d={path} fill="none" stroke={pathColor} strokeWidth={pathWidth / (scale ?? 1)} />
+            </svg>
+          )}
+
+          {items.map((item, index) => (
+            <OrbitItem
+              key={index}
+              item={item}
+              index={index}
+              totalItems={items.length}
+              path={path}
+              itemWidth={finalItemWidth}
+              itemHeight={finalItemHeight}
+              rotation={rotation}
+              progress={progress}
+              fill={fill}
+            />
+          ))}
+        </div>
+      </div>
+
+      {centerContent && (
+        <div className="orbit-center-content">
+          {centerContent}
+        </div>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/ScrollExpand.css">
+.scroll-expand {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-expand--scroller {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior: contain;
+}
+
+.scroll-expand--scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-expand__track {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+}
+
+.scroll-expand__stage {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000000;
+  --se-title-size: 3.5rem;
+}
+
+.scroll-expand__frame {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(21% 29% 21% 29% round 24px);
+  will-change: clip-path;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 40px rgba(212, 181, 159, 0.2);
+}
+
+.scroll-expand__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+  transform-origin: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.scroll-expand__scrim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.8) 100%);
+  opacity: 0;
+}
+
+.scroll-expand__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6%;
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.scroll-expand__title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 6%;
+  text-align: center;
+  font-size: var(--se-title-size);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  line-height: 1.1;
+  color: #fff;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  will-change: opacity, transform;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.scroll-expand__hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(212, 181, 159, 0.85);
+  pointer-events: none;
+  will-change: opacity, transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+</file>
+
+<file path="src/components/ScrollExpand.jsx">
+import React, { useCallback, useEffect, useRef } from 'react';
+import './ScrollExpand.css';
+
+const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
+
+const smoothstep = (edge0, edge1, x) => {
+  const t = clamp((x - edge0) / (edge1 - edge0 || 1e-6), 0, 1);
+  return t * t * (3 - 2 * t);
+};
+
+const ScrollExpand = ({
+  src = '',
+  mediaType = 'image',
+  poster = '',
+  alt = '',
+  title = '',
+  scrollHint = '',
+  startWidth = 42,
+  startHeight = 58,
+  startRadius = 24,
+  endRadius = 0,
+  mediaZoom = 1.35,
+  scrollDistance = 1.2,
+  holdDistance = 0.35,
+  smoothing = 0.1,
+  overlayScrim = 0.45,
+  useWindowScroll = false,
+  enabled = true,
+  children,
+  className = '',
+  style,
+  ...rest
+}) => {
+  const rootRef = useRef(null);
+  const trackRef = useRef(null);
+  const stageRef = useRef(null);
+  const frameRef = useRef(null);
+  const mediaRef = useRef(null);
+  const titleRef = useRef(null);
+  const overlayRef = useRef(null);
+  const scrimRef = useRef(null);
+  const hintRef = useRef(null);
+
+  const propsRef = useRef({});
+  propsRef.current = {
+    startWidth,
+    startHeight,
+    startRadius,
+    endRadius,
+    mediaZoom,
+    scrollDistance,
+    holdDistance,
+    smoothing,
+    overlayScrim,
+    useWindowScroll,
+    enabled
+  };
+
+  const applyProgress = useCallback(p => {
+    const frame = frameRef.current;
+    const media = mediaRef.current;
+    if (!frame || !media) return;
+    const c = propsRef.current;
+
+    const e = smoothstep(0, 1, p);
+
+    const w = c.startWidth + (100 - c.startWidth) * e;
+    const h = c.startHeight + (100 - c.startHeight) * e;
+    const ix = Math.max(0, (100 - w) / 2);
+    const iy = Math.max(0, (100 - h) / 2);
+    const r = c.startRadius + (c.endRadius - c.startRadius) * e;
+    frame.style.clipPath = `inset(${iy}% ${ix}% ${iy}% ${ix}% round ${r}px)`;
+
+    media.style.transform = `scale(${c.mediaZoom + (1 - c.mediaZoom) * e})`;
+
+    if (scrimRef.current) scrimRef.current.style.opacity = `${c.overlayScrim * e}`;
+
+    if (titleRef.current) {
+      const out = smoothstep(0.4, 0.88, p);
+      titleRef.current.style.opacity = `${1 - out}`;
+      titleRef.current.style.transform = `translate3d(0, ${-28 * out}px, 0) scale(${1 + 0.06 * out})`;
+    }
+
+    if (hintRef.current) {
+      const gone = smoothstep(0, 0.12, p);
+      hintRef.current.style.opacity = `${1 - gone}`;
+      hintRef.current.style.transform = `translate3d(0, ${8 * gone}px, 0)`;
+    }
+
+    if (overlayRef.current) {
+      const inn = smoothstep(0.68, 1, p);
+      overlayRef.current.style.opacity = `${inn}`;
+      overlayRef.current.style.transform = `translate3d(0, ${18 * (1 - inn)}px, 0)`;
+      overlayRef.current.style.pointerEvents = inn > 0.8 ? 'auto' : 'none';
+    }
+  }, []);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    const track = trackRef.current;
+    const stage = stageRef.current;
+    if (!root || !track || !stage) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let raf = 0;
+    let current = 0;
+    let target = 0;
+    let stageH = 0;
+    let running = false;
+
+    const measure = () => {
+      const c = propsRef.current;
+      stageH = c.useWindowScroll ? window.innerHeight : root.clientHeight;
+      if (stageH <= 0) return;
+      stage.style.height = `${stageH}px`;
+      track.style.height = `${stageH * (1 + Math.max(0, c.scrollDistance) + Math.max(0, c.holdDistance))}px`;
+
+      const w = root.clientWidth || stageH;
+      stage.style.setProperty('--se-title-size', `${clamp(w * 0.075, 22, 78)}px`);
+    };
+
+    const readProgress = () => {
+      const c = propsRef.current;
+      if (!c.enabled) return 1;
+      const span = stageH * Math.max(0.01, c.scrollDistance);
+      if (c.useWindowScroll) {
+        const top = track.getBoundingClientRect().top;
+        return clamp(-top / span, 0, 1);
+      }
+      return clamp(root.scrollTop / span, 0, 1);
+    };
+
+    const tick = () => {
+      const c = propsRef.current;
+      const k = c.smoothing <= 0 ? 1 : 1 - Math.exp(-1 / (60 * c.smoothing));
+      current += (target - current) * k;
+      if (Math.abs(target - current) < 0.0004) {
+        current = target;
+        running = false;
+      }
+      applyProgress(current);
+      raf = running ? requestAnimationFrame(tick) : 0;
+    };
+
+    const kick = () => {
+      if (running) return;
+      running = true;
+      if (!raf) raf = requestAnimationFrame(tick);
+    };
+
+    const onScroll = () => {
+      target = readProgress();
+      if (propsRef.current.smoothing <= 0 || reduceMotion) {
+        current = target;
+        applyProgress(current);
+        return;
+      }
+      kick();
+    };
+
+    const onResize = () => {
+      measure();
+      target = readProgress();
+      current = target;
+      applyProgress(current);
+    };
+
+    measure();
+    target = readProgress();
+    current = target;
+    applyProgress(current);
+
+    const scroller = useWindowScroll ? window : root;
+    scroller.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onResize);
+    const ro = new ResizeObserver(onResize);
+    ro.observe(root);
+
+    return () => {
+      if (raf) cancelAnimationFrame(raf);
+      scroller.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onResize);
+      ro.disconnect();
+    };
+  }, [applyProgress, useWindowScroll]);
+
+  useEffect(() => {
+    if (mediaType === 'video' && mediaRef.current) {
+      mediaRef.current.play().catch(() => {});
+    }
+  }, [mediaType, src]);
+
+  const media =
+    mediaType === 'video' ? (
+      <video
+        ref={mediaRef}
+        className="scroll-expand__media"
+        src={src}
+        poster={poster}
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+    ) : (
+      <img ref={mediaRef} className="scroll-expand__media" src={src} alt={alt} draggable={false} />
+    );
+
+  return (
+    <div
+      ref={rootRef}
+      className={`scroll-expand ${useWindowScroll ? '' : 'scroll-expand--scroller'} ${className}`.trim()}
+      style={style}
+      {...rest}
+    >
+      <div ref={trackRef} className="scroll-expand__track">
+        <div ref={stageRef} className="scroll-expand__stage">
+          <div ref={frameRef} className="scroll-expand__frame">
+            {media}
+            <div ref={scrimRef} className="scroll-expand__scrim" />
+            {children ? (
+              <div ref={overlayRef} className="scroll-expand__overlay">
+                {children}
+              </div>
+            ) : null}
+          </div>
+          {title ? (
+            <div ref={titleRef} className="scroll-expand__title">
+              {title}
+            </div>
+          ) : null}
+          {scrollHint ? (
+            <div ref={hintRef} className="scroll-expand__hint">
+              {scrollHint}
+            </div>
+          ) : null}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ScrollExpand;
+</file>
+
+<file path="src/components/Services.jsx">
+import React, { useState, useEffect, useRef } from 'react'
+import { servicesData } from '../data/mediaData'
+import { ArrowRight, ChevronRight, ChevronLeft } from 'lucide-react'
+import StrokeText from './StrokeText'
+import SpecularButton from './SpecularButton'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger)
+}
+
+// 1-2 line clean, simple, bold descriptions for each service (no clutter)
+const cleanServiceData = [
+  {
+    id: "hair",
+    number: "01",
+    name: "Hair Artistry & Balayage",
+    shortDesc: "Custom French balayage, precision haircuts, and restorative scalp therapy crafted for effortless luxury.",
+    video: "/assets/service-hair-highlights.mp4",
+    poster: "/assets/posters/service-hair-highlights.jpg",
+  },
+  {
+    id: "skin",
+    number: "02",
+    name: "Clinical Skin & Hydra-Facial",
+    shortDesc: "Deep hydra-facial treatments, clinical LED renewal, and cellular skincare in a calming private sanctuary.",
+    video: "/assets/service-hydra-facial.mp4",
+    poster: "/assets/posters/service-hydra-facial.jpg",
+  },
+  {
+    id: "nail",
+    number: "03",
+    name: "Nail Couture & Pedicure",
+    shortDesc: "Bespoke hand-painted gel nail extensions, bridal manicures, and restorative organic spa pedicures.",
+    video: "/assets/service-nail-art.mp4",
+    poster: "/assets/service-nail-poster.jpg",
+  },
+  {
+    id: "bridal",
+    number: "04",
+    name: "Bridal & Couture Makeup",
+    shortDesc: "Signature high-definition bridal artistry, editorial red-carpet glam, and personalized luxury makeup.",
+    video: "/assets/insta-reel-1-transformation.mp4",
+    poster: "/assets/before-after-bridal.png",
+  },
+]
+
+export default function Services({ onOpenBooking }) {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const sectionRef = useRef(null)
+  const pinContainerRef = useRef(null)
+  const videoRef = useRef(null)
+  const scrollTriggerInstance = useRef(null)
+
+  const activeService = cleanServiceData[activeIndex]
+
+  // Setup GSAP Pinning: Scrolling automatically selects 01 -> 02 -> 03 -> 04
+  useEffect(() => {
+    if (!sectionRef.current || !pinContainerRef.current) return
+    const isMobile = window.innerWidth < 768
+
+    const ctx = gsap.context(() => {
+      const st = ScrollTrigger.create({
+        id: 'services-scroll-trigger',
+        trigger: sectionRef.current,
+        pin: pinContainerRef.current,
+        start: 'top top',
+        end: () => `+=${isMobile ? window.innerHeight * 1.6 : window.innerHeight * 2.2}`,
+        scrub: 0.3,
+        anticipatePin: 1,
+        onUpdate: (self) => {
+          const p = self.progress
+          let nextIdx = 0
+          if (p < 0.25) nextIdx = 0
+          else if (p < 0.50) nextIdx = 1
+          else if (p < 0.75) nextIdx = 2
+          else nextIdx = 3
+
+          setActiveIndex((prev) => (prev !== nextIdx ? nextIdx : prev))
+        },
+      })
+
+      scrollTriggerInstance.current = st
+    }, sectionRef)
+
+    return () => ctx.revert()
+  }, [])
+
+  // Auto-play active video on change
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0
+      videoRef.current.play().catch(() => {})
+    }
+  }, [activeIndex])
+
+  // Clicking a tab scrolls to the matching pinned stage
+  const handleSelectTab = (index) => {
+    setActiveIndex(index)
+    if (scrollTriggerInstance.current) {
+      const st = scrollTriggerInstance.current
+      const progressSteps = [0.08, 0.35, 0.62, 0.90]
+      const targetScroll = st.start + progressSteps[index] * (st.end - st.start)
+      window.scrollTo({ top: targetScroll, behavior: 'smooth' })
+    }
+  }
+
+  const handleNext = () => {
+    const next = (activeIndex + 1) % cleanServiceData.length
+    handleSelectTab(next)
+  }
+
+  const handlePrev = () => {
+    const prev = (activeIndex - 1 + cleanServiceData.length) % cleanServiceData.length
+    handleSelectTab(prev)
+  }
+
+  return (
+    <section id="services" ref={sectionRef} className="relative bg-[#FAF8F5] text-[#181412]">
+      {/* Pinned Stage Container */}
+      <div
+        ref={pinContainerRef}
+        className="w-full min-h-screen flex flex-col justify-center py-12 sm:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      >
+        <div className="max-w-7xl mx-auto w-full">
+          
+          {/* Top Header: Simple & Bold */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12 border-b border-[#181412]/10 pb-6">
+            <div className="max-w-xl space-y-2">
+              <div className="mb-2 w-full max-w-md">
+                <StrokeText
+                  text="OUR SERVICES"
+                  strokeColor="#FF3B8D"
+                  fillColor="#FF3B8D"
+                  strokeWidth={1.6}
+                  fontSize={52}
+                  fontWeight={900}
+                  letterSpacing={1.5}
+                  trigger="scroll"
+                  fillMode="wipe"
+                  drawDuration={1.2}
+                  fillDelay={0.2}
+                  align="left"
+                />
+              </div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#181412] tracking-tight">
+                Discover Salon Services
+              </h2>
+            </div>
+
+            {/* Circular Arrow Buttons to cycle manually */}
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                onClick={handlePrev}
+                type="button"
+                className="w-10 h-10 rounded-full border border-[#181412]/20 hover:border-signature-pink hover:bg-signature-pink hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm cursor-pointer"
+                aria-label="Previous"
+              >
+                <ChevronLeft size={18} />
+              </button>
+              <button
+                onClick={handleNext}
+                type="button"
+                className="w-10 h-10 rounded-full border border-[#181412]/20 hover:border-signature-pink hover:bg-signature-pink hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm cursor-pointer"
+                aria-label="Next"
+              >
+                <ChevronRight size={18} />
+              </button>
+            </div>
+          </div>
+
+          {/* Main Grid: Left Accordion + Right Circular Lens */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+            
+            {/* Left Column: Clean, simple, bold Accordion (auto-selected on scroll) */}
+            <div className="lg:col-span-6 space-y-3">
+              {cleanServiceData.map((service, index) => {
+                const isActive = activeIndex === index
+
+                return (
+                  <div
+                    key={service.id}
+                    onClick={() => handleSelectTab(index)}
+                    className={`rounded-2xl transition-all duration-500 cursor-pointer overflow-hidden border ${
+                      isActive
+                        ? 'bg-white border-[#181412]/25 shadow-lg p-5 sm:p-6'
+                        : 'bg-white/60 hover:bg-white border-[#181412]/10 p-4 sm:p-5'
+                    }`}
+                  >
+                    {/* Header Row */}
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-3.5">
+                        <span className={`text-sm font-bold transition-colors duration-300 ${
+                          isActive ? 'text-signature-pink' : 'text-[#8A7A70]'
+                        }`}>
+                          {service.number}
+                        </span>
+                        <h3 className="text-lg sm:text-xl font-bold text-[#181412] tracking-normal">
+                          {service.name}
+                        </h3>
+                      </div>
+
+                      <div className={`w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${
+                        isActive
+                          ? 'bg-signature-pink text-white rotate-90 shadow-sm'
+                          : 'bg-[#FAF8F5] text-[#5C524C] border border-[#181412]/15'
+                      }`}>
+                        <ChevronRight size={13} />
+                      </div>
+                    </div>
+
+                    {/* 1-2 Lines of Bold, Clean Text (No clutter, no bullet points) */}
+                    {isActive && (
+                      <div className="mt-3 pt-3 border-t border-[#181412]/10 space-y-3.5 animate-fadeIn">
+                        <p className="text-sm font-semibold text-[#2C2420] leading-relaxed">
+                          {service.shortDesc}
+                        </p>
+
+                        <div>
+                          <SpecularButton
+                            size="sm"
+                            radius={999}
+                            tint="#FF3B8D"
+                            tintOpacity={1}
+                            textColor="#ffffff"
+                            lineColor="#ffffff"
+                            baseColor="#D61A6E"
+                            intensity={1.2}
+                            shineSize={14}
+                            shineFade={35}
+                            thickness={1.4}
+                            followMouse={true}
+                            onClick={(e) => {
+                              e.stopPropagation()
+                              onOpenBooking()
+                            }}
+                            className="text-xs font-bold uppercase tracking-wider shadow-sm"
+                          >
+                            <span>Book Experience</span>
+                            <ArrowRight size={13} />
+                          </SpecularButton>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+
+            {/* Right Column: Terrova Circular Lens & Sleek Number */}
+            <div className="lg:col-span-6 relative flex items-center justify-center py-4">
+              
+              {/* Circular Lens Frame */}
+              <div className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] rounded-full p-2 bg-gradient-to-tr from-[#9E6F4D]/25 via-white to-signature-pink/30 shadow-2xl">
+                <div className="w-full h-full rounded-full overflow-hidden bg-black relative">
+                  <video
+                    ref={videoRef}
+                    key={activeService.id}
+                    src={activeService.video}
+                    poster={activeService.poster}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                </div>
+              </div>
+
+              {/* Terrova Clean Big Numeral at Bottom Right of Circle */}
+              <div className="absolute bottom-2 right-2 sm:right-6 select-none pointer-events-none">
+                <span className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-[#181412] tracking-tight">
+                  {activeService.number}
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  )
+}
+</file>
+
+<file path="src/components/Shop.jsx">
+import React from 'react'
+import { shopData } from '../data/mediaData'
+import { useInViewVideo } from '../hooks/useInViewVideo'
+import { ArrowRight } from 'lucide-react'
+import StrokeText from './StrokeText'
+import SpecularButton from './SpecularButton'
+
+function ShopVideoCard({ item, onOpenBooking }) {
+  const { videoRef } = useInViewVideo({ threshold: 0.25 })
+
+  return (
+    <div className="group relative rounded-xl overflow-hidden border border-white/15 bg-luxe-card shadow-lg hover:border-nude-beige/50 transition-all duration-500">
+      {/* Video Container */}
+      <div className="relative aspect-video w-full overflow-hidden bg-black">
+        <video
+          ref={videoRef}
+          src={item.video}
+          poster={item.poster}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+        
+        {/* Category Tag */}
+        <div className="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-[10px] uppercase text-nude-beige font-medium">
+          {item.category}
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="p-4 space-y-2">
+        <h3 className="text-base font-bold text-pure-white group-hover:text-nude-beige transition-colors">
+          {item.title}
+        </h3>
+        <p className="text-xs text-signature-pink font-medium">
+          {item.tagline}
+        </p>
+
+        <div className="pt-2 border-t border-white/10 flex items-center justify-between">
+          <span className="text-xs text-white/50">Salon Exclusive</span>
+          <SpecularButton
+            onClick={onOpenBooking}
+            size="sm"
+            radius={999}
+            tint="#181412"
+            tintOpacity={1}
+            textColor="#FFFFFF"
+            lineColor="#FF3B8D"
+            baseColor="#2A1E24"
+            className="text-[11px] uppercase tracking-wider font-bold shadow-md hover:border-signature-pink transition-all px-4 py-2"
+          >
+            <span>Inquire</span>
+            <ArrowRight size={12} />
+          </SpecularButton>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default function Shop({ onOpenBooking }) {
+  return (
+    <section id="shop" className="relative py-20 sm:py-24 bg-luxe-black overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Clean Header */}
+        <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <div className="mb-2 w-full max-w-xs mx-auto">
+            <StrokeText
+              text="EXCLUSIVE SHOP"
+              strokeColor="#FF3B8D"
+              fillColor="#FF3B8D"
+              strokeWidth={1.6}
+              fontSize={48}
+              fontWeight={900}
+              letterSpacing={1.5}
+              trigger="scroll"
+              fillMode="wipe"
+              drawDuration={1.2}
+              fillDelay={0.2}
+              align="center"
+            />
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-pure-white tracking-tight">
+            Curated Salon Products
+          </h2>
+          <p className="text-sm text-white/70">
+            Professional hair & skin care brands available at Nazakat Salon Raipur.
+          </p>
+        </div>
+
+        {/* 6 Video Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {shopData.map((item) => (
+            <ShopVideoCard key={item.id} item={item} onOpenBooking={onOpenBooking} />
+          ))}
+        </div>
+
+      </div>
+    </section>
+  )
+}
+</file>
+
+<file path="src/components/SpecularButton.css">
+.specular-button {
+  --sb-radius: 999px;
+  --sb-tint: #181412;
+  --sb-tint-opacity: 1;
+  --sb-blur: 0px;
+  --sb-text-color: #ffffff;
+  --sb-line-color: #FF3B8D;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --sb-glow-opacity: 0;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  margin: 0;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: var(--sb-text-color, #ffffff) !important;
+  background-color: var(--sb-tint, #181412);
+  border-radius: var(--sb-radius, 999px);
+  cursor: pointer;
+  outline: none;
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.25s ease,
+              background-color 0.25s ease,
+              border-color 0.25s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+  isolation: isolate;
+  text-decoration: none;
+}
+
+/* Specular light rim along border following mouse */
+.specular-button::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: radial-gradient(
+    95px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    var(--sb-line-color, #FF3B8D),
+    rgba(255, 255, 255, 0.5) 25%,
+    transparent 70%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: var(--sb-glow-opacity, 0);
+  transition: opacity 0.25s ease;
+  z-index: 1;
+}
+
+/* Soft interior specular light flare */
+.specular-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    130px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 255, 255, 0.14),
+    transparent 65%
+  );
+  pointer-events: none;
+  opacity: var(--sb-glow-opacity, 0);
+  transition: opacity 0.25s ease;
+  z-index: 1;
+}
+
+.specular-button:hover {
+  transform: translateY(-1.5px) scale(1.02);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.32),
+    0 0 18px -2px rgba(255, 59, 141, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 59, 141, 0.5);
+}
+
+.specular-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.specular-button:focus-visible {
+  outline: 2px solid #FF3B8D;
+  outline-offset: 3px;
+}
+
+.specular-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Sizes */
+.specular-button--sm {
+  font-size: 0.72rem;
+  padding: 8px 18px;
+}
+
+.specular-button--md {
+  font-size: 0.82rem;
+  padding: 12px 26px;
+}
+
+.specular-button--lg {
+  font-size: 0.95rem;
+  padding: 14px 32px;
+}
+
+/* Text and Icon Label */
+.specular-button__label {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  color: var(--sb-text-color, #ffffff) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+
+.specular-button__label * {
+  color: inherit !important;
+  stroke: currentColor;
+}
+</file>
+
+<file path="src/components/SpecularButton.jsx">
+import React, { useRef, useCallback } from 'react';
+import './SpecularButton.css';
+
+const SpecularButton = ({
+  children = 'Get Started',
+  size = 'md',
+  radius = 999,
+  tint = '#181412',
+  tintOpacity = 1,
+  blur = 0,
+  textColor = '#ffffff',
+  lineColor = '#FF3B8D',
+  baseColor = '#333333',
+  intensity = 1.2,
+  shineSize = 14,
+  shineFade = 36,
+  thickness = 1.4,
+  speed = 0.35,
+  followMouse = true,
+  proximity = 250,
+  autoAnimate = false,
+  disabled = false,
+  onClick,
+  className = '',
+  type = 'button',
+  href,
+  target,
+  rel,
+  style = {},
+  ...rest
+}) => {
+  const btnRef = useRef(null);
+
+  const handlePointerMove = useCallback((e) => {
+    if (!followMouse) return;
+    const btn = btnRef.current;
+    if (!btn) return;
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    btn.style.setProperty('--mouse-x', `${x}px`);
+    btn.style.setProperty('--mouse-y', `${y}px`);
+    btn.style.setProperty('--sb-glow-opacity', '1');
+  }, [followMouse]);
+
+  const handlePointerEnter = useCallback((e) => {
+    handlePointerMove(e);
+  }, [handlePointerMove]);
+
+  const handlePointerLeave = useCallback(() => {
+    const btn = btnRef.current;
+    if (btn) {
+      btn.style.setProperty('--sb-glow-opacity', '0');
+    }
+  }, []);
+
+  const Comp = href ? 'a' : 'button';
+
+  return (
+    <Comp
+      ref={btnRef}
+      href={href}
+      target={target}
+      rel={rel}
+      type={href ? undefined : type}
+      disabled={disabled}
+      onClick={onClick}
+      onPointerMove={handlePointerMove}
+      onPointerEnter={handlePointerEnter}
+      onPointerLeave={handlePointerLeave}
+      className={`specular-button specular-button--${size}${className ? ` ${className}` : ''}`}
+      style={{
+        '--sb-radius': typeof radius === 'number' ? `${radius}px` : radius,
+        '--sb-tint': tint,
+        '--sb-tint-opacity': tintOpacity,
+        '--sb-blur': `${blur}px`,
+        '--sb-text-color': textColor,
+        '--sb-line-color': lineColor,
+        '--sb-base-color': baseColor,
+        ...style
+      }}
+      {...rest}
+    >
+      <span className="specular-button__label">{children}</span>
+    </Comp>
+  );
+};
+
+export default SpecularButton;
+</file>
+
+<file path="src/components/StarVisits.jsx">
+import React from 'react'
+import { starVisitsData } from '../data/mediaData'
+import StrokeText from './StrokeText'
+
+export default function StarVisits() {
+  return (
+    <section id="star-visits" className="relative py-20 sm:py-24 bg-luxe-black overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Clean Header */}
+        <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <div className="mb-2 w-full max-w-sm mx-auto">
+            <StrokeText
+              text="STAR VISITS"
+              strokeColor="#FF3B8D"
+              fillColor="#FF3B8D"
+              strokeWidth={1.6}
+              fontSize={52}
+              fontWeight={900}
+              letterSpacing={1.5}
+              trigger="scroll"
+              fillMode="wipe"
+              drawDuration={1.2}
+              fillDelay={0.2}
+              align="center"
+            />
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-pure-white tracking-tight">
+            Celebrity & Guest Visits
+          </h2>
+          <p className="text-sm text-white/70">
+            Memorable visits to Nazakat Salon & Academy Raipur.
+          </p>
+        </div>
+
+        {/* 3-Image Gallery Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          {starVisitsData.map((star, index) => (
+            <div
+              key={star.id}
+              className="group relative rounded-xl overflow-hidden border border-white/15 bg-luxe-card shadow-xl transition-all duration-500 hover:border-nude-beige/50"
+            >
+              {/* Image Frame */}
+              <div className="relative aspect-[9/16] w-full overflow-hidden bg-black">
+                <img
+                  src={star.image}
+                  alt={star.title}
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
+                />
+                
+                {/* Subtle vignette */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+
+                {/* Number badge */}
+                <div className="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-xs text-nude-beige font-medium">
+                  0{index + 1}
+                </div>
+
+                {/* Minimal Label at Bottom */}
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-base font-bold text-pure-white">
+                    {star.title}
+                  </h3>
+                  <p className="text-xs text-nude-beige mt-0.5">
+                    {star.subtitle}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  )
+}
+</file>
+
+<file path="src/components/StickerPeel.css">
+:root {
+  --sticker-rotate: 30deg;
+  --sticker-p: 10px;
+  --sticker-peelback-hover: 30%;
+  --sticker-peelback-active: 40%;
+  --sticker-peel-easing: power3.out;
+  --sticker-peel-hover-easing: power2.out;
+  --sticker-start: calc(-1 * var(--sticker-p));
+  --sticker-end: calc(100% + var(--sticker-p));
+  --sticker-shadow-opacity: 0.6;
+  --sticker-lighting-constant: 0.1;
+  --peel-direction: 0deg;
+}
+
+.sticker-container {
+  position: relative;
+  transform: rotate(var(--peel-direction));
+  transform-origin: center;
+}
+
+.sticker-container * {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sticker-main {
+  clip-path: polygon(
+    var(--sticker-start) var(--sticker-start),
+    var(--sticker-end) var(--sticker-start),
+    var(--sticker-end) var(--sticker-end),
+    var(--sticker-start) var(--sticker-end)
+  );
+  transition: clip-path 0.6s ease-out;
+  filter: var(--filter-drop-shadow, url(#dropShadow));
+}
+
+.sticker-main > * {
+  transform: rotate(calc(-1 * var(--peel-direction)));
+}
+
+.sticker-lighting {
+  filter: var(--filter-point-light, url(#pointLight));
+}
+
+.sticker-container:hover .sticker-main,
+.sticker-container.touch-active .sticker-main {
+  clip-path: polygon(
+    var(--sticker-start) var(--sticker-peelback-hover),
+    var(--sticker-end) var(--sticker-peelback-hover),
+    var(--sticker-end) var(--sticker-end),
+    var(--sticker-start) var(--sticker-end)
+  );
+}
+
+.sticker-container:active .sticker-main {
+  clip-path: polygon(
+    var(--sticker-start) var(--sticker-peelback-active),
+    var(--sticker-end) var(--sticker-peelback-active),
+    var(--sticker-end) var(--sticker-end),
+    var(--sticker-start) var(--sticker-end)
+  );
+}
+
+.sticker-image {
+  transform: rotate(var(--sticker-rotate));
+}
+
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: calc(-100% - var(--sticker-p) - var(--sticker-p));
+  clip-path: polygon(
+    var(--sticker-start) var(--sticker-start),
+    var(--sticker-end) var(--sticker-start),
+    var(--sticker-end) var(--sticker-start),
+    var(--sticker-start) var(--sticker-start)
+  );
+  transform: scaleY(-1);
+  transition: all 0.6s ease-out;
+}
+
+.flap > * {
+  transform: rotate(calc(-1 * var(--peel-direction)));
+}
+
+.sticker-container:hover .flap,
+.sticker-container.touch-active .flap {
+  clip-path: polygon(
+    var(--sticker-start) var(--sticker-start),
+    var(--sticker-end) var(--sticker-start),
+    var(--sticker-end) var(--sticker-peelback-hover),
+    var(--sticker-start) var(--sticker-peelback-hover)
+  );
+  top: calc(-100% + 2 * var(--sticker-peelback-hover) - 1px);
+}
+
+.sticker-container:active .flap {
+  clip-path: polygon(
+    var(--sticker-start) var(--sticker-start),
+    var(--sticker-end) var(--sticker-start),
+    var(--sticker-end) var(--sticker-peelback-active),
+    var(--sticker-start) var(--sticker-peelback-active)
+  );
+  top: calc(-100% + 2 * var(--sticker-peelback-active) - 1px);
+}
+
+.flap-lighting {
+  filter: var(--filter-point-light-flipped, url(#pointLightFlipped));
+}
+
+.flap-image {
+  transform: rotate(var(--sticker-rotate));
+  filter: var(--filter-expand-and-fill, url(#expandAndFill));
+}
+
+.draggable {
+  position: absolute;
+  cursor: grab;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 40;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+/* Rounded luxury sticker styling */
+.rounded-sticker .sticker-image,
+.rounded-sticker .flap-image {
+  border-radius: 50%;
+  border: 3px solid #D4B59F;
+  box-shadow: 0 0 30px rgba(212, 181, 159, 0.35);
+  box-sizing: border-box;
+}
+
+/* Mobile-specific optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .draggable {
+    cursor: default;
+  }
+
+  .sticker-container {
+    touch-action: none;
+  }
+}
+
+.sticker-image,
+.flap-image {
+  width: var(--sticker-width, 200px);
+  height: auto;
+  display: block;
+}
+
+.sticker-main,
+.flap {
+  will-change: clip-path, transform;
+}
+
+.sticker-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  z-index: 10;
+}
+</file>
+
+<file path="src/components/StickerPeel.jsx">
+import { useRef, useEffect, useMemo, useId } from 'react';
+import { gsap } from 'gsap';
+import { Draggable } from 'gsap/Draggable';
+import './StickerPeel.css';
+
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(Draggable);
+}
+
+const StickerPeel = ({
+  imageSrc,
+  rotate = 30,
+  peelBackHoverPct = 30,
+  peelBackActivePct = 40,
+  peelEasing = 'power3.out',
+  peelHoverEasing = 'power2.out',
+  width = 200,
+  shadowIntensity = 0.6,
+  lightingIntensity = 0.1,
+  initialPosition = 'center',
+  peelDirection = 0,
+  className = '',
+  bounds
+}) => {
+  const containerRef = useRef(null);
+  const dragTargetRef = useRef(null);
+  const pointLightRef = useRef(null);
+  const pointLightFlippedRef = useRef(null);
+  const draggableInstanceRef = useRef(null);
+
+  const rawId = useId();
+  const cleanId = rawId.replace(/[^a-zA-Z0-9_-]/g, '');
+  const pointLightId = `pointLight-${cleanId}`;
+  const pointLightFlippedId = `pointLightFlipped-${cleanId}`;
+  const dropShadowId = `dropShadow-${cleanId}`;
+  const expandAndFillId = `expandAndFill-${cleanId}`;
+
+  const defaultPadding = 10;
+
+  useEffect(() => {
+    const target = dragTargetRef.current;
+    if (!target) return;
+
+    let startX = 0;
+    let startY = 0;
+
+    if (initialPosition === 'center') {
+      return;
+    }
+
+    if (typeof initialPosition === 'object' && initialPosition.x !== undefined && initialPosition.y !== undefined) {
+      startX = initialPosition.x;
+      startY = initialPosition.y;
+    } else if (typeof initialPosition === 'string' && target.parentNode) {
+      const parentRect = target.parentNode.getBoundingClientRect();
+      const targetRect = target.getBoundingClientRect();
+      const maxX = Math.max(0, parentRect.width - (width || targetRect.width || 200));
+      const maxY = Math.max(0, parentRect.height - (width || targetRect.height || 200));
+
+      if (initialPosition === 'top-left') {
+        startX = 24;
+        startY = 24;
+      } else if (initialPosition === 'top-right') {
+        startX = maxX - 24;
+        startY = 24;
+      } else if (initialPosition === 'bottom-left') {
+        startX = 24;
+        startY = maxY - 24;
+      } else if (initialPosition === 'bottom-right') {
+        startX = maxX - 24;
+        startY = maxY - 24;
+      }
+    }
+
+    gsap.set(target, { x: startX, y: startY });
+  }, [initialPosition, width]);
+
+  useEffect(() => {
+    const target = dragTargetRef.current;
+    if (!target) return;
+    const boundsEl = bounds 
+      ? (typeof bounds === 'string' ? (target.closest(bounds) || bounds) : bounds)
+      : (target.closest('section') || target.parentNode);
+
+    draggableInstanceRef.current = Draggable.create(target, {
+      type: 'x,y',
+      bounds: boundsEl,
+      onDrag() {
+        const rot = gsap.utils.clamp(-24, 24, this.deltaX * 0.4);
+        gsap.to(target, { rotation: rot, duration: 0.15, ease: 'power1.out' });
+      },
+      onDragEnd() {
+        const rotationEase = 'power2.out';
+        const duration = 0.8;
+        gsap.to(target, { rotation: 0, duration, ease: rotationEase });
+      }
+    })[0];
+
+    const handleResize = () => {
+      if (draggableInstanceRef.current) {
+        draggableInstanceRef.current.update();
+
+        const currentX = gsap.getProperty(target, 'x');
+        const currentY = gsap.getProperty(target, 'y');
+
+        if (boundsEl) {
+          const boundsRect = boundsEl.getBoundingClientRect();
+          const targetRect = target.getBoundingClientRect();
+
+          const maxX = boundsRect.width - targetRect.width;
+          const maxY = boundsRect.height - targetRect.height;
+
+          const newX = Math.max(0, Math.min(currentX, maxX));
+          const newY = Math.max(0, Math.min(currentY, maxY));
+
+          if (newX !== currentX || newY !== currentY) {
+            gsap.to(target, {
+              x: newX,
+              y: newY,
+              duration: 0.3,
+              ease: 'power2.out'
+            });
+          }
+        }
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('orientationchange', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('orientationchange', handleResize);
+      if (draggableInstanceRef.current) {
+        draggableInstanceRef.current.kill();
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const updateLight = e => {
+      const rect = containerRef.current?.getBoundingClientRect();
+      if (!rect) return;
+
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      gsap.set(pointLightRef.current, { attr: { x, y } });
+
+      const normalizedAngle = Math.abs(peelDirection % 360);
+      if (normalizedAngle !== 180) {
+        gsap.set(pointLightFlippedRef.current, { attr: { x, y: rect.height - y } });
+      } else {
+        gsap.set(pointLightFlippedRef.current, { attr: { x: -1000, y: -1000 } });
+      }
+    };
+
+    const container = containerRef.current;
+    if (container) {
+      container.addEventListener('mousemove', updateLight);
+      return () => container.removeEventListener('mousemove', updateLight);
+    }
+  }, [peelDirection]);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const handleTouchStart = () => {
+      container.classList.add('touch-active');
+    };
+
+    const handleTouchEnd = () => {
+      container.classList.remove('touch-active');
+    };
+
+    container.addEventListener('touchstart', handleTouchStart);
+    container.addEventListener('touchend', handleTouchEnd);
+    container.addEventListener('touchcancel', handleTouchEnd);
+
+    return () => {
+      container.removeEventListener('touchstart', handleTouchStart);
+      container.removeEventListener('touchend', handleTouchEnd);
+      container.removeEventListener('touchcancel', handleTouchEnd);
+    };
+  }, []);
+
+  const cssVars = useMemo(
+    () => ({
+      '--sticker-rotate': `${rotate}deg`,
+      '--sticker-p': `${defaultPadding}px`,
+      '--sticker-peelback-hover': `${peelBackHoverPct}%`,
+      '--sticker-peelback-active': `${peelBackActivePct}%`,
+      '--sticker-peel-easing': peelEasing,
+      '--sticker-peel-hover-easing': peelHoverEasing,
+      '--sticker-width': `${width}px`,
+      '--sticker-shadow-opacity': shadowIntensity,
+      '--sticker-lighting-constant': lightingIntensity,
+      '--peel-direction': `${peelDirection}deg`,
+      '--filter-drop-shadow': `url(#${dropShadowId})`,
+      '--filter-point-light': `url(#${pointLightId})`,
+      '--filter-point-light-flipped': `url(#${pointLightFlippedId})`,
+      '--filter-expand-and-fill': `url(#${expandAndFillId})`
+    }),
+    [
+      rotate,
+      peelBackHoverPct,
+      peelBackActivePct,
+      peelEasing,
+      peelHoverEasing,
+      width,
+      shadowIntensity,
+      lightingIntensity,
+      peelDirection,
+      dropShadowId,
+      pointLightId,
+      pointLightFlippedId,
+      expandAndFillId
+    ]
+  );
+
+  return (
+    <div className={`draggable ${className}`} ref={dragTargetRef} style={cssVars}>
+      <svg width="0" height="0" className="absolute pointer-events-none opacity-0">
+        <defs>
+          <filter id={pointLightId}>
+            <feGaussianBlur stdDeviation="1" result="blur" />
+            <feSpecularLighting
+              result="spec"
+              in="blur"
+              specularExponent="100"
+              specularConstant={lightingIntensity}
+              lightingColor="white"
+            >
+              <fePointLight ref={pointLightRef} x="100" y="100" z="300" />
+            </feSpecularLighting>
+            <feComposite in="spec" in2="SourceGraphic" result="lit" />
+            <feComposite in="lit" in2="SourceAlpha" operator="in" />
+          </filter>
+
+          <filter id={pointLightFlippedId}>
+            <feGaussianBlur stdDeviation="10" result="blur" />
+            <feSpecularLighting
+              result="spec"
+              in="blur"
+              specularExponent="100"
+              specularConstant={lightingIntensity * 7}
+              lightingColor="white"
+            >
+              <fePointLight ref={pointLightFlippedRef} x="100" y="100" z="300" />
+            </feSpecularLighting>
+            <feComposite in="spec" in2="SourceGraphic" result="lit" />
+            <feComposite in="lit" in2="SourceAlpha" operator="in" />
+          </filter>
+
+          <filter id={dropShadowId}>
+            <feDropShadow
+              dx="2"
+              dy="4"
+              stdDeviation={3 * shadowIntensity}
+              floodColor="black"
+              floodOpacity={shadowIntensity}
+            />
+          </filter>
+
+          <filter id={expandAndFillId}>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shape" />
+            <feFlood floodColor="rgb(179,179,179)" result="flood" />
+            <feComposite operator="in" in="flood" in2="shape" />
+          </filter>
+        </defs>
+      </svg>
+
+      <div className="sticker-container" ref={containerRef}>
+        <div className="sticker-main">
+          <div className="sticker-lighting">
+            <img
+              src={imageSrc}
+              alt="Sticker"
+              className="sticker-image"
+              draggable="false"
+              onContextMenu={e => e.preventDefault()}
+            />
+          </div>
+        </div>
+
+        <div className="flap">
+          <div className="flap-lighting">
+            <img
+              src={imageSrc}
+              alt="Sticker Flap"
+              className="flap-image"
+              draggable="false"
+              onContextMenu={e => e.preventDefault()}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default StickerPeel;
+</file>
+
+<file path="src/components/StrokeText.css">
+.stroke-text {
+  display: block;
+  width: 100%;
+  line-height: 0;
+}
+
+.stroke-text--hover {
+  cursor: pointer;
+}
+
+.stroke-text__svg {
+  display: block;
+  width: 100%;
+  height: var(--stroke-text-height, 160px);
+}
+
+.stroke-text__stroke,
+.stroke-text__fill {
+  user-select: none;
+}
+</file>
+
+<file path="src/components/StrokeText.jsx">
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+import './StrokeText.css';
+
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
+
+const DEFAULT_TEXT = 'Draw Attention';
+
+const StrokeText = ({
+  text = DEFAULT_TEXT,
+  strokeColor = '#FF3B8D',
+  fillColor = '#FF3B8D',
+  strokeWidth = 1.4,
+  drawDuration = 1.2,
+  fillDelay = 0.2,
+  stagger = 0.04,
+  ease = 'power2.out',
+  trigger = 'scroll',
+  fillMode = 'wipe',
+  fontSize = 128,
+  fontWeight = 800,
+  letterSpacing = 0,
+  reverse = false,
+  className = '',
+  style = {},
+  align = 'left'
+}) => {
+  const rootRef = useRef(null);
+  const strokeTextRef = useRef(null);
+  const wipeRectRef = useRef(null);
+
+  const [box, setBox] = useState(null);
+
+  const rawId = useId();
+  const wipeId = `stroke-text-wipe-${rawId.replace(/[^a-zA-Z0-9_-]/g, '')}`;
+
+  const characters = useMemo(() => Array.from(String(text ?? '')), [text]);
+
+  const dash = Math.max(fontSize * 7, 200);
+
+  const fontStyle = useMemo(
+    () => ({
+      fontSize: `${fontSize}px`,
+      fontWeight,
+      letterSpacing: typeof letterSpacing === 'number' ? `${letterSpacing}px` : letterSpacing,
+      fontFamily: "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+    }),
+    [fontSize, fontWeight, letterSpacing]
+  );
+
+  useLayoutEffect(() => {
+    const node = strokeTextRef.current;
+    if (!node) return undefined;
+
+    let cancelled = false;
+
+    const measure = () => {
+      if (cancelled || !strokeTextRef.current) return;
+      let bbox;
+      try {
+        bbox = strokeTextRef.current.getBBox();
+      } catch {
+        return;
+      }
+      if (!bbox || !bbox.width) return;
+
+      const pad = Math.max(Number(strokeWidth) || 1, fontSize * 0.1);
+      const next = {
+        x: bbox.x - pad,
+        y: bbox.y - pad,
+        width: bbox.width + pad * 2,
+        height: bbox.height + pad * 2
+      };
+
+      setBox(prev =>
+        prev &&
+        Math.abs(prev.x - next.x) < 0.5 &&
+        Math.abs(prev.width - next.width) < 0.5 &&
+        Math.abs(prev.y - next.y) < 0.5
+          ? prev
+          : next
+      );
+    };
+
+    measure();
+    if (typeof document !== 'undefined' && document.fonts?.ready) {
+      document.fonts.ready.then(measure).catch(() => {});
+    }
+
+    return () => {
+      cancelled = true;
+    };
+  }, [characters, fontSize, fontWeight, letterSpacing, strokeWidth]);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    if (typeof window === 'undefined' || !root || !box) return undefined;
+
+    const strokes = gsap.utils.toArray(root.querySelectorAll('[data-stroke-char]'));
+    const fills = gsap.utils.toArray(root.querySelectorAll('[data-fill-char]'));
+    const wipe = wipeRectRef.current;
+    if (!strokes.length) return undefined;
+
+    const fillEnabled = fillMode !== 'none';
+    const useWipe = fillEnabled && fillMode === 'wipe';
+    const fillDuration = Math.max(0.4, drawDuration * 0.5);
+    const staggerConfig = reverse ? { each: stagger, from: 'end' } : stagger;
+    const targets = [...strokes, ...fills, wipe].filter(Boolean);
+
+    const setStart = () => {
+      gsap.killTweensOf(targets);
+      gsap.set(strokes, { strokeDasharray: dash, strokeDashoffset: dash });
+      gsap.set(fills, { opacity: useWipe ? 1 : 0 });
+      if (wipe) gsap.set(wipe, { attr: { width: 0 } });
+    };
+
+    const setEnd = () => {
+      gsap.killTweensOf(targets);
+      gsap.set(strokes, { strokeDasharray: dash, strokeDashoffset: 0 });
+      gsap.set(fills, { opacity: fillEnabled ? 1 : 0 });
+      if (wipe) gsap.set(wipe, { attr: { width: fillEnabled ? box.width : 0 } });
+    };
+
+    const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) {
+      setEnd();
+      return () => gsap.killTweensOf(targets);
+    }
+
+    const build = () => {
+      setStart();
+      const tl = gsap.timeline({
+        paused: true,
+        repeat: trigger === 'loop' ? -1 : 0,
+        repeatDelay: trigger === 'loop' ? 0.9 : 0,
+        defaults: { overwrite: 'auto' }
+      });
+
+      tl.to(strokes, { strokeDashoffset: 0, duration: drawDuration, ease, stagger: staggerConfig }, 0);
+
+      if (useWipe && wipe) {
+        tl.to(
+          wipe,
+          { attr: { width: box.width }, duration: fillDuration, ease: 'power2.inOut' },
+          drawDuration + fillDelay
+        );
+      } else if (fillEnabled) {
+        tl.to(
+          fills,
+          { opacity: 1, duration: fillDuration, ease: 'power2.out', stagger: staggerConfig },
+          drawDuration + fillDelay
+        );
+      }
+
+      return tl;
+    };
+
+    let timeline = null;
+    let scrollTrigger = null;
+    let removeHover = null;
+
+    if (trigger === 'hover') {
+      setEnd();
+      const play = () => {
+        timeline?.kill();
+        timeline = build();
+        timeline.play(0);
+      };
+      root.addEventListener('pointerenter', play);
+      removeHover = () => root.removeEventListener('pointerenter', play);
+    } else {
+      timeline = build();
+      if (trigger === 'scroll') {
+        const playTimeline = () => {
+          if (timeline && timeline.paused()) {
+            timeline.play(0);
+          }
+        };
+
+        scrollTrigger = ScrollTrigger.create({
+          trigger: root,
+          start: 'top 88%',
+          once: true,
+          onEnter: playTimeline
+        });
+
+        // If the element is already in the viewport upon mount/measure, trigger immediately
+        const rect = root.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.92 && rect.bottom > 0) {
+          playTimeline();
+        }
+      } else {
+        timeline.play(0);
+      }
+    }
+
+    // Interactive replay on hover
+    const handleReplayHover = () => {
+      if (trigger !== 'hover') {
+        timeline?.kill();
+        timeline = build();
+        timeline.play(0);
+      }
+    };
+    root.addEventListener('pointerenter', handleReplayHover);
+
+    return () => {
+      root.removeEventListener('pointerenter', handleReplayHover);
+      removeHover?.();
+      scrollTrigger?.kill();
+      timeline?.kill();
+      gsap.killTweensOf(targets);
+    };
+  }, [box, dash, drawDuration, fillDelay, stagger, ease, trigger, fillMode, reverse]);
+
+  const viewBox = box ? `${box.x} ${box.y} ${box.width} ${box.height}` : `0 ${-fontSize} 600 ${fontSize * 1.3}`;
+  const computedHeight = box ? Math.round(box.height) : Math.round(fontSize * 1.3);
+  const aspectAlign = align === 'center' ? 'xMidYMid meet' : align === 'right' ? 'xMaxYMid meet' : 'xMinYMid meet';
+
+  return (
+    <span
+      ref={rootRef}
+      className={`stroke-text ${trigger === 'hover' ? 'stroke-text--hover' : ''} ${className}`.trim()}
+      style={{
+        '--stroke-text-height': `${computedHeight}px`,
+        ...style
+      }}
+      role="img"
+      aria-label={String(text ?? '')}
+    >
+      <svg className="stroke-text__svg" viewBox={viewBox} preserveAspectRatio={aspectAlign} aria-hidden="true">
+        {fillMode === 'wipe' && box && (
+          <defs>
+            <clipPath id={wipeId} clipPathUnits="userSpaceOnUse">
+              <rect ref={wipeRectRef} x={box.x} y={box.y} width="0" height={box.height} />
+            </clipPath>
+          </defs>
+        )}
+
+        <text
+          ref={strokeTextRef}
+          className="stroke-text__stroke"
+          x="0"
+          y="0"
+          fill="none"
+          stroke={strokeColor}
+          strokeWidth={strokeWidth}
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          style={fontStyle}
+        >
+          {characters.map((char, index) => (
+            <tspan data-stroke-char key={`s-${index}`}>
+              {char}
+            </tspan>
+          ))}
+        </text>
+
+        <text
+          className="stroke-text__fill"
+          x="0"
+          y="0"
+          fill={fillColor}
+          stroke="none"
+          style={fontStyle}
+          clipPath={fillMode === 'wipe' && box ? `url(#${wipeId})` : undefined}
+        >
+          {characters.map((char, index) => (
+            <tspan data-fill-char key={`f-${index}`}>
+              {char}
+            </tspan>
+          ))}
+        </text>
+      </svg>
+    </span>
+  );
+};
+
+export default StrokeText;
+</file>
+
+<file path="src/components/Training.jsx">
+import React, { useState, useEffect, useRef } from 'react'
+import { trainingData } from '../data/mediaData'
+import { ArrowUpRight } from 'lucide-react'
+import StrokeText from './StrokeText'
+import SpecularButton from './SpecularButton'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger)
+}
+
+function TrainingVideoPlayer({ video, isActive }) {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const v = videoRef.current
+    if (!v) return
+    if (isActive) {
+      const playPromise = v.play()
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          v.muted = true
+          v.play().catch(() => {})
+        })
+      }
+    } else {
+      v.pause()
+    }
+  }, [isActive])
+
+  return (
+    <div className="relative rounded-xl overflow-hidden border border-white/15 bg-black shadow-2xl">
+      <div className="aspect-video w-full relative">
+        <video
+          ref={videoRef}
+          src={video.video}
+          poster={video.poster}
+          autoPlay={isActive}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
+        <div className="absolute bottom-3 left-4 right-4 pointer-events-none">
+          <p className="text-sm sm:text-base font-semibold text-pure-white">{video.title}</p>
+          <p className="text-xs text-nude-beige">{video.subtitle}</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default function Training({ onOpenBooking }) {
+  const [selectedVideoIndex, setSelectedVideoIndex] = useState(0)
+  const sectionRef = useRef(null)
+  const pinContainerRef = useRef(null)
+  const videoPanelsRef = useRef([])
+  const scrollTriggerRef = useRef(null)
+
+  // Stage progress targets for click shortcut:
+  // 0: Lecture Hall, 1: Hair Crafting, 2: Studio Classroom, 3: Teammate Grooming
+  const stageTargets = [0.05, 0.36, 0.69, 0.95]
+
+  const handleItemClick = (idx) => {
+    if (!scrollTriggerRef.current) return
+    const st = scrollTriggerRef.current
+    const targetProgress = stageTargets[idx]
+    const targetScroll = st.start + targetProgress * (st.end - st.start)
+    window.scrollTo({
+      top: targetScroll,
+      behavior: 'smooth',
+    })
+  }
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768
+    const panels = videoPanelsRef.current.filter(Boolean)
+    if (!sectionRef.current || !pinContainerRef.current || panels.length < 4) return
+
+    const ctx = gsap.context(() => {
+      // Set initial video card panel states: Panel 0 visible, Panels 1, 2, 3 hidden
+      gsap.set(panels[0], { autoAlpha: 1, y: 0, scale: 1 })
+      gsap.set([panels[1], panels[2], panels[3]], {
+        autoAlpha: 0,
+        y: 20,
+        scale: 0.98,
+      })
+
+      const tl = gsap.timeline({
+        defaults: { ease: 'power2.out' },
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          pin: pinContainerRef.current,
+          start: 'top top',
+          end: () => `+=${isMobile ? window.innerHeight * 1.1 : window.innerHeight * 1.4}`,
+          scrub: 0.3,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+          onUpdate: (self) => {
+            const p = self.progress
+            let idx = 0
+            if (p < 0.25) idx = 0
+            else if (p < 0.52) idx = 1
+            else if (p < 0.78) idx = 2
+            else idx = 3
+
+            setSelectedVideoIndex((prev) => (prev !== idx ? idx : prev))
+          },
+        },
+      })
+
+      scrollTriggerRef.current = tl.scrollTrigger
+
+      // Responsive timeline mapping scroll progress across 4 training videos:
+      // Total duration = 100
+      // 0 - 8: Video 0 (Lecture Hall) settled
+      // 8 - 32: Video 0 -> Video 1 transition
+      // 32 - 40: Video 1 (Hair Crafting) settled
+      // 40 - 64: Video 1 -> Video 2 transition
+      // 64 - 72: Video 2 (Studio Classroom) settled
+      // 72 - 94: Video 2 -> Video 3 transition
+      // 94 - 100: Video 3 (Teammate Grooming) settled
+      tl
+        .to({}, { duration: 8 })
+        .to(panels[0], { autoAlpha: 0, y: -20, scale: 0.98, duration: 24 }, 8)
+        .to(panels[1], { autoAlpha: 1, y: 0, scale: 1, duration: 24 }, 8)
+        .to({}, { duration: 8 })
+        .to(panels[1], { autoAlpha: 0, y: -20, scale: 0.98, duration: 24 }, 40)
+        .to(panels[2], { autoAlpha: 1, y: 0, scale: 1, duration: 24 }, 40)
+        .to({}, { duration: 8 })
+        .to(panels[2], { autoAlpha: 0, y: -20, scale: 0.98, duration: 22 }, 72)
+        .to(panels[3], { autoAlpha: 1, y: 0, scale: 1, duration: 22 }, 72)
+        .to({}, { duration: 6 })
+    }, sectionRef)
+
+    return () => {
+      ctx.revert()
+    }
+  }, [])
+
+  return (
+    <section id="training" ref={sectionRef} className="relative bg-jet-black overflow-hidden border-t border-b border-white/10">
+      {/* Pinned Cinematic Stage */}
+      <div ref={pinContainerRef} className="w-full flex flex-col justify-center py-10 sm:py-14 md:py-16 px-4 sm:px-6 lg:px-8">
+        
+        {/* Header Section */}
+        <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row md:items-end justify-between mb-8 gap-5">
+          <div className="max-w-2xl space-y-2">
+            <div className="mb-2 w-full max-w-xs">
+              <StrokeText
+                text="ACADEMY"
+                strokeColor="#FF3B8D"
+                fillColor="#FF3B8D"
+                strokeWidth={1.6}
+                fontSize={52}
+                fontWeight={900}
+                letterSpacing={1.5}
+                trigger="scroll"
+                fillMode="wipe"
+                drawDuration={1.2}
+                fillDelay={0.2}
+                align="left"
+              />
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-pure-white tracking-tight">
+              Nazakat Academy
+            </h2>
+            <p className="text-sm text-white/70 pt-1">
+              Professional Hair Dressing, Skin Aesthetics & Makeup Courses in Raipur.
+            </p>
+          </div>
+
+          <SpecularButton
+            onClick={onOpenBooking}
+            size="sm"
+            radius={999}
+            tint="#181412"
+            tintOpacity={1}
+            textColor="#FFFFFF"
+            lineColor="#FF3B8D"
+            baseColor="#2A1E24"
+            className="self-start md:self-end text-xs uppercase tracking-wider font-bold shadow-md shrink-0 hover:border-signature-pink transition-all px-5 py-2.5"
+          >
+            <span>Inquire Admissions</span>
+            <ArrowUpRight size={14} />
+          </SpecularButton>
+        </div>
+
+        {/* Live Video Stage & Switcher */}
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center mb-10">
+          
+          {/* Main Visual Stage (Stacked CSS Grid) */}
+          <div className="lg:col-span-8">
+            <div className="grid grid-cols-1 grid-rows-1 w-full items-center">
+              {trainingData.videos.map((vid, index) => {
+                const isCurrentActive = index === selectedVideoIndex
+                return (
+                  <div
+                    key={vid.id}
+                    ref={(el) => (videoPanelsRef.current[index] = el)}
+                    className="col-start-1 row-start-1 w-full will-change-[transform,opacity]"
+                    style={{
+                      opacity: index === 0 ? 1 : 0,
+                      visibility: index === 0 ? 'visible' : 'hidden',
+                      transform: index === 0 ? 'none' : 'translate3d(0, 20px, 0)',
+                    }}
+                  >
+                    <TrainingVideoPlayer video={vid} isActive={isCurrentActive} />
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+
+          {/* Right-Side Training Video Indicators */}
+          <div className="lg:col-span-4 space-y-2.5">
+            <span className="text-xs uppercase tracking-wider text-nude-beige font-semibold block mb-1">
+              Training Videos:
+            </span>
+            {trainingData.videos.map((vid, idx) => {
+              const isSelected = idx === selectedVideoIndex
+              return (
+                <div
+                  key={vid.id}
+                  onClick={() => handleItemClick(idx)}
+                  className={`p-3.5 rounded-xl cursor-pointer border transition-all duration-300 flex items-center justify-between ${
+                    isSelected
+                      ? 'bg-luxe-card border-nude-beige shadow-md ring-1 ring-signature-pink/30'
+                      : 'bg-black/40 border-white/5 hover:border-white/20'
+                  }`}
+                >
+                  <div className="space-y-0.5">
+                    <p className={`text-xs sm:text-sm font-semibold transition-colors duration-300 ${isSelected ? 'text-signature-pink' : 'text-pure-white'}`}>
+                      {vid.title}
+                    </p>
+                    <p className="text-xs text-white/60 truncate max-w-[240px]">
+                      {vid.subtitle}
+                    </p>
+                  </div>
+                  <span className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${isSelected ? 'bg-signature-pink scale-110 shadow-sm' : 'bg-white/20'}`} />
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+</file>
+
+<file path="src/data/mediaData.js">
+export const brandData = {
+  name: "NAZAKAT",
+  subtitle: "SALON & ACADEMY",
+  pillars: "Hair • Skin • Nails • Bridal",
+  academyText: "Makeup Artistry & Professional Academy",
+  tagline: "You're in good hands!",
+  location: "Raipur, Chhattisgarh",
+  instagram: "@nazakat_salon",
+  instagramUrl: "https://www.instagram.com/nazakat_salon",
+  phone: "+91 98261 00000",
+  whatsapp: "https://wa.me/919826100000?text=Hello%20Nazakat%20Salon,%20I%20would%20like%20to%20book%20an%20appointment",
+  logo: "/assets/logo.png",
+  heroVideo: "/assets/hero-entrance.mp4",
+  heroPoster: "/assets/posters/hero-entrance.jpg",
+}
+
+export const founderData = {
+  name: "Nazakat Ali",
+  title: "Founder & Creative Director",
+  brand: "Nazakat Salon & Academy",
+  quote: "Elegance is never an accident; it is the deliberate craft of listening to your essence and elevating your confidence.",
+  description: "Guided by a vision to redefine luxury hair, skin, and beauty education in Central India, Nazakat Ali founded the flagship salon and academy in Raipur. With uncompromising standards, global techniques, and a passion for mentoring next-generation artists, Nazakat represents the apex of modern grooming and bespoke beauty.",
+  video: "/assets/founder-nazakat-ali.mp4",
+  poster: "/assets/posters/founder-nazakat-ali.jpg",
+  image: "/assets/founder-nazakat-ali.png",
+}
+
+export const starVisitsData = [
+  {
+    id: 1,
+    image: "/assets/star-visit-1.png",
+    title: "Honored Guest at Nazakat",
+    subtitle: "A Memorable Visit to Nazakat",
+    caption: "Welcoming celebrated icons to experience Raipur's premier salon sanctuary.",
+  },
+  {
+    id: 2,
+    image: "/assets/star-visit-2.png",
+    title: "L'Oréal Professional Academy Visit",
+    subtitle: "A Memorable Visit to Nazakat",
+    caption: "Global beauty educators & industry luminaries at the Nazakat Academy floor.",
+  },
+  {
+    id: 3,
+    image: "/assets/star-visit-3.png",
+    title: "Celebrity Stylist & Industry Visionaries",
+    subtitle: "A Memorable Visit to Nazakat",
+    caption: "Moments of artistry, camaraderie, and industry excellence celebrated together.",
+  }
+]
+
+export const beforeAfterData = [
+  {
+    id: "bridal",
+    category: "Bridal Transformation",
+    title: "The Regal Royal Bride",
+    description: "Bespoke bridal makeup artistry harmonizing traditional radiance with timeless cinematic grace.",
+    image: "/assets/before-after-bridal.png",
+    stats: "HD Airbrush • Royal Crimson & Gold",
+  },
+  {
+    id: "balayage",
+    category: "Hair Transformation",
+    title: "Sculpted Sun-Kissed Balayage",
+    description: "Multi-dimensional golden blonde contouring paired with lustrous voluminous waves.",
+    image: "/assets/before-after-hair-curls.png",
+    stats: "Micro-Balayage • Silk Gloss Bond",
+  },
+  {
+    id: "bob-cut",
+    category: "Haircut & Highlights",
+    title: "Precision Parisian Lob & Mochaccino Ribbons",
+    description: "Architectural bob cut paired with bespoke subtle illumination ribbons.",
+    image: "/assets/before-after-hair-bob.png",
+    stats: "Precision Cut • Ash Mochaccino",
+  },
+  {
+    id: "hair-fixing",
+    category: "Restoration & Fixing",
+    title: "New Hair Life",
+    description: "Non-surgical hair restoration and volumetric densification for effortless youth.",
+    image: "/assets/transformation-hair-fixing.jpg",
+    stats: "Hair Fixing • Natural Hairline",
+  },
+  {
+    id: "hair-treatment",
+    category: "Hair Therapy & Spa",
+    title: "Keratin & Moisture Revival",
+    description: "Intensive anti-frizz molecular reconstruction restoring mirror-like smoothness.",
+    image: "/assets/treatment-hair-spa.jpg",
+    stats: "Keratin Therapy • Damage Repair",
+  }
+]
+
+export const servicesData = [
+  {
+    id: "hair",
+    name: "HAIR ARTISTRY",
+    tagline: "Cut • Color • Balayage • Scalp Therapy",
+    description: "Every cut is a sculpting session, every shade is custom formulated. From seamless French balayage to deeply restorative Japanese scalp spa rituals.",
+    primaryVideo: "/assets/service-hair-highlights.mp4",
+    primaryPoster: "/assets/posters/service-hair-highlights.jpg",
+    secondaryVideo: "/assets/service-scalp-care.mp4",
+    secondaryPoster: "/assets/posters/service-scalp-care.jpg",
+    featureImage: "/assets/service-hair-care-tips.jpg",
+    items: [
+      "Custom Multi-Dimensional Balayage",
+      "Precision French & Editorial Haircuts",
+      "Signature Scalp Detox & Hydro-Therapy",
+      "Keratin & Molecular Bond Reconstruction",
+      "Global Blonding & Color Correction"
+    ]
+  },
+  {
+    id: "skin",
+    name: "CLINICAL SKIN & SPA",
+    tagline: "Hydra-Facial • LED Renewal • Calming Sanctuary",
+    description: "A private skin room curated for tranquility, intense hydration, and clinical cellular renewal. Advanced modalities meet soothing therapeutic touch.",
+    primaryVideo: "/assets/service-hydra-facial.mp4",
+    primaryPoster: "/assets/posters/service-hydra-facial.jpg",
+    secondaryVideo: "/assets/service-led-phototherapy.mp4",
+    secondaryPoster: "/assets/posters/service-led-phototherapy.jpg",
+    items: [
+      "Advanced Multi-Step Hydra-Dermabrasion",
+      "Photodynamic LED Blue/Red Spectrum Therapy",
+      "Oxygen Infusion & Hyaluronic Quench",
+      "Deep Pore Clinical Clarifying Facials",
+      "Lymphatic Facial Drainage & Glow Lift"
+    ]
+  },
+  {
+    id: "nails",
+    name: "NAIL COUTURE & PEDICURE",
+    tagline: "Gel Sculpting • Custom Artistry • Hydro Pedicure",
+    description: "Your nails are your signature accessory. Precision Russian cuticle care, bespoke extensions, and rejuvenating hydro-chromatherapy foot spa rituals.",
+    primaryVideo: "/assets/service-nail-art.mp4",
+    primaryPoster: "/assets/posters/service-nail-art.jpg",
+    secondaryVideo: "/assets/service-foot-spa.mp4",
+    secondaryPoster: "/assets/posters/service-foot-spa.jpg",
+    featureImage: "/assets/service-nail-poster.jpg",
+    items: [
+      "Signature Gel Extensions & Sculpting",
+      "Hand-Painted Editorial Nail Artistry",
+      "Therapeutic Hydro-Foot Spa & Massage",
+      "Russian Dry Manicure & Nail Strengthening",
+      "Luxe Paraffin Hand & Foot Conditioning"
+    ]
+  },
+  {
+    id: "bridal",
+    name: "BRIDAL & MAKEUP ARTISTRY",
+    tagline: "High Definition • Bespoke Draping • Timeless Radiance",
+    description: "Crafting memorable bridal looks that photograph flawlessly while feeling weightless and natural. Dedicated bridal chambers for complete privacy.",
+    primaryVideo: "/assets/insta-reel-1-transformation.mp4",
+    primaryPoster: "/assets/posters/insta-reel-1-transformation.jpg",
+    items: [
+      "Airbrush & HD Bridal Master Looks",
+      "Pre-Bridal Skincare & Glow Regimens",
+      "Couture Hair Architecture & Dupatta Draping",
+      "Reception & Engagement Glamour Sessions",
+      "Groom Styling & High-Definition Touchups"
+    ]
+  }
+]
+
+export const trainingData = {
+  title: "PROFESSIONAL ACADEMY",
+  subtitle: "NAZAKAT ACADEMY OF HAIR & BEAUTY ARTISTRY",
+  tagline: "Where Passion Transforms Into World-Class Artistry",
+  description: "Nazakat Academy in Raipur is designed for aspiring hairstylists, beauty therapists, and makeup artists who demand professional excellence. Equipped with international standard training classrooms, digital demonstration screens, and individual mannequin styling stations.",
+  videos: [
+    {
+      id: "classroom",
+      title: "Interactive Academy Lecture Hall",
+      subtitle: "Theoretical mastery meets live AV demonstrations",
+      video: "/assets/training-classroom.mp4",
+      poster: "/assets/posters/training-classroom.jpg",
+    },
+    {
+      id: "styling",
+      title: "Hands-On Precision Hair Crafting",
+      subtitle: "Sectioning, texturizing, and balayage technique practice",
+      video: "/assets/training-hair-styling.mp4",
+      poster: "/assets/posters/training-hair-styling.jpg",
+    },
+    {
+      id: "hall",
+      title: "Full Studio Salon Classroom",
+      subtitle: "Ergonomic student stations & illuminated mirrors",
+      video: "/assets/training-academy-hall.mp4",
+      poster: "/assets/posters/training-academy-hall.jpg",
+    },
+    {
+      id: "culture",
+      title: "Teammate Grooming & Salon Culture",
+      subtitle: "Confidence, stage presence, and client consultation mastery",
+      video: "/assets/training-team-culture.mp4",
+      poster: "/assets/posters/training-team-culture.jpg",
+    }
+  ],
+  curriculum: [
+    { title: "Master Hair Dressing & Cut Engineering", duration: "12 Weeks", tag: "Advanced" },
+    { title: "Color Theory & Creative Balayage", duration: "8 Weeks", tag: "Signature" },
+    { title: "Clinical Aesthetics & Skin Therapy", duration: "6 Weeks", tag: "Certified" },
+    { title: "Couture Bridal & HD Makeup Artistry", duration: "10 Weeks", tag: "Professional" }
+  ]
+}
+
+export const shopData = [
+  {
+    id: 1,
+    title: "Schwarzkopf & Olaplex Boutique",
+    category: "Hair Chemistry",
+    tagline: "Bond Maintenance & Color Protection",
+    video: "/assets/shop-haircare-display.mp4",
+    poster: "/assets/posters/shop-haircare-display.jpg",
+    description: "Authorized salon-exclusive formulations preserving structural integrity and vibrancy.",
+  },
+  {
+    id: 2,
+    title: "Curated Skincare Showcase",
+    category: "Skin Aesthetics",
+    tagline: "Clinical Grade Serums & Botanical Hydrators",
+    video: "/assets/shop-reception-boutique.mp4",
+    poster: "/assets/posters/shop-reception-boutique.jpg",
+    description: "Formulated for home care continuity following clinic treatments.",
+  },
+  {
+    id: 3,
+    title: "Kevin Murphy Luxury Bar",
+    category: "Organic Luxury",
+    tagline: "Weightless Care, Intense Performance",
+    video: "/assets/shop-kevin-murphy.mp4",
+    poster: "/assets/posters/shop-kevin-murphy.jpg",
+    description: "Sulphate-free, paraben-free formulations infused with essential oils.",
+  },
+  {
+    id: 4,
+    title: "Therapeutic Backbar Collection",
+    category: "Scalp Health",
+    tagline: "Deep Repair Ampoules & Mask Elixirs",
+    video: "/assets/shop-treatment-shelf.mp4",
+    poster: "/assets/posters/shop-treatment-shelf.jpg",
+    description: "High-concentration professional treatments for extreme damage repair.",
+  },
+  {
+    id: 5,
+    title: "Gold Suite Styling Boutique",
+    category: "Finishing & Hold",
+    tagline: "Thermal Shields, High-Gloss Serums",
+    video: "/assets/shop-styling-stations.mp4",
+    poster: "/assets/posters/shop-styling-stations.jpg",
+    description: "The tools and finishes utilized by Nazakat master stylists daily.",
+  },
+  {
+    id: 6,
+    title: "Nazakat Private Reserve",
+    category: "Signature Essentials",
+    tagline: "Bespoke Salon Rituals for Home",
+    video: "/assets/shop-luxe-ambience.mp4",
+    poster: "/assets/posters/shop-luxe-ambience.jpg",
+    description: "Specially selected curated salon kits recommended during client consultation.",
+  }
+]
+
+export const instagramData = [
+  {
+    id: 1,
+    title: "New Look Transformation",
+    tag: "#NazakatElegance",
+    video: "/assets/insta-reel-1-transformation.mp4",
+    poster: "/assets/posters/insta-reel-1-transformation.jpg",
+  },
+  {
+    id: 2,
+    title: "The Calm Corners of Nazakat",
+    tag: "#SalonTour",
+    video: "/assets/insta-reel-2-salon-tour.mp4",
+    poster: "/assets/posters/insta-reel-2-salon-tour.jpg",
+  },
+  {
+    id: 3,
+    title: "Glow Starts Here — Skin Renewal",
+    tag: "#SkinGlow",
+    video: "/assets/insta-reel-3-skin-glow.mp4",
+    poster: "/assets/posters/insta-reel-3-skin-glow.jpg",
+  },
+  {
+    id: 4,
+    title: "Couture Nail Artistry in Motion",
+    tag: "#NailDesign",
+    video: "/assets/insta-reel-4-nail-artistry.mp4",
+    poster: "/assets/posters/insta-reel-4-nail-artistry.jpg",
+  },
+  {
+    id: 5,
+    title: "Seamless Sun-Kissed Balayage",
+    tag: "#HairGoals",
+    video: "/assets/insta-reel-5-balayage.mp4",
+    poster: "/assets/posters/insta-reel-5-balayage.jpg",
+  },
+  {
+    id: 6,
+    title: "LED Skin Renewal Ritual",
+    tag: "#SkinCareMagic",
+    video: "/assets/insta-reel-6-glow-therapy.mp4",
+    poster: "/assets/posters/insta-reel-6-glow-therapy.jpg",
+  }
+]
+</file>
+
+<file path="src/hooks/useInViewVideo.js">
+import { useEffect, useRef, useState } from 'react'
+
+/**
+ * Intelligent viewport-based video playback hook
+ * Pauses video decode and playback when element exits the viewport.
+ * Automatically resumes when visible.
+ */
+export function useInViewVideo(options = { threshold: 0.25, rootMargin: '100px' }) {
+  const videoRef = useRef(null)
+  const [isInView, setIsInView] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsInView(entry.isIntersecting)
+      if (entry.isIntersecting) {
+        setIsLoaded(true)
+        // Resume playback smoothly if it was paused
+        const playPromise = video.play()
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            // Autoplay policy fallback: keep muted and retry
+            video.muted = true
+            video.play().catch(() => {})
+          })
+        }
+      } else {
+        video.pause()
+      }
+    }, {
+      threshold: options.threshold || 0.2,
+      rootMargin: options.rootMargin || '120px',
+    })
+
+    observer.observe(video)
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [options.threshold, options.rootMargin])
+
+  return { videoRef, isInView, isLoaded }
+}
+</file>
+
+<file path="src/App.jsx">
+import React, { useState, useEffect } from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Founder from './components/Founder'
+import Services from './components/Services'
+import Training from './components/Training'
+import StarVisits from './components/StarVisits'
+import BeforeAfter from './components/BeforeAfter'
+import Shop from './components/Shop'
+import InstagramFeed from './components/InstagramFeed'
+import Footer from './components/Footer'
+import BookingModal from './components/BookingModal'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+// Register GSAP plugins
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger)
+}
+
+export default function App() {
+  const [bookingOpen, setBookingOpen] = useState(false)
+
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReducedMotion) return
+
+    const isMobile = window.innerWidth < 768
+
+    const ctx = gsap.context(() => {
+      // 1. Initial Hero Mount Animation (if present)
+      if (document.querySelector('.reveal-hero-logo')) {
+        const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
+        tl.fromTo(
+          '.reveal-hero-logo',
+          { scale: 0.8, opacity: 0, y: 20 },
+          { scale: 1, opacity: 1, y: 0, duration: 1.1 }
+        )
+        .fromTo(
+          '.reveal-hero-title',
+          { y: 45, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1.1 },
+          '-=0.7'
+        )
+        .fromTo(
+          '.reveal-hero-sub',
+          { y: 25, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.9 },
+          '-=0.6'
+        )
+      }
+
+      // 2. Scroll-driven Section Headings Animation (excluding pinned sections)
+      const titles = document.querySelectorAll('section:not(#services):not(#training) h2, .reveal-title')
+      titles.forEach((title) => {
+        gsap.fromTo(
+          title,
+          { y: isMobile ? 20 : 35, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power3.out',
+            clearProps: 'transform',
+            scrollTrigger: {
+              trigger: title,
+              start: 'top 88%',
+              toggleActions: 'play none none none',
+            },
+          }
+        )
+      })
+
+      // 3. Staggered Grid Card Animations (Star Visits, Shop, Instagram)
+      const grids = document.querySelectorAll('#star-visits .grid, #shop .grid, #instagram .grid')
+      grids.forEach((grid) => {
+        const items = Array.from(grid.children)
+        gsap.fromTo(
+          items,
+          { y: isMobile ? 20 : 35, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            stagger: isMobile ? 0.06 : 0.12,
+            ease: 'power2.out',
+            clearProps: 'transform',
+            scrollTrigger: {
+              trigger: grid,
+              start: 'top 85%',
+              toggleActions: 'play none none none',
+            },
+          }
+        )
+      })
+
+      // 4. Scroll-driven Paragraphs, Quotes and Text Blocks
+      const textBlocks = document.querySelectorAll('blockquote, .reveal-text p')
+      textBlocks.forEach((tb) => {
+        gsap.fromTo(
+          tb,
+          { y: 18, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            ease: 'power2.out',
+            clearProps: 'transform',
+            scrollTrigger: {
+              trigger: tb,
+              start: 'top 88%',
+              toggleActions: 'play none none none',
+            },
+          }
+        )
+      })
+
+      // Refresh ScrollTrigger after DOM setup
+      ScrollTrigger.refresh()
+    })
+
+    return () => ctx.revert()
+  }, [])
+
+  return (
+    <div className="min-h-screen bg-jet-black text-pure-white selection:bg-signature-pink selection:text-pure-white antialiased overflow-x-clip">
+      {/* Navigation */}
+      <Navbar onOpenBooking={() => setBookingOpen(true)} />
+
+      {/* Main Content Sections */}
+      <main>
+        {/* 1. Hero / Home - Saamne Ka Front Area (Signature Black Luxury Theme) */}
+        <Hero onOpenBooking={() => setBookingOpen(true)} />
+
+        {/* 2. Lower Content Sections - Neeche Ka Area (White Luxury Background Theme) */}
+        <div className="theme-light-sections bg-[#FAF8F5] text-[#181412]">
+          {/* Founder Section */}
+          <Founder />
+
+          {/* Services Catalogue */}
+          <Services onOpenBooking={() => setBookingOpen(true)} />
+
+          {/* Academy & Training */}
+          <Training onOpenBooking={() => setBookingOpen(true)} />
+
+          {/* Star Visits */}
+          <StarVisits />
+
+          {/* Before & After */}
+          <BeforeAfter onOpenBooking={() => setBookingOpen(true)} />
+
+          {/* Shop & Boutique */}
+          <Shop onOpenBooking={() => setBookingOpen(true)} />
+
+          {/* Instagram Reels Feed */}
+          <InstagramFeed />
+
+          {/* Final Contact / CTA Footer */}
+          <Footer onOpenBooking={() => setBookingOpen(true)} />
+        </div>
+      </main>
+
+      {/* Booking & Admissions Modal */}
+      <BookingModal isOpen={bookingOpen} onClose={() => setBookingOpen(false)} />
+    </div>
+  )
+}
+</file>
+
+<file path="src/index.css">
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  /* Custom minimal luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #282522;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d4b59f;
+  }
+}
+
+/* Custom luxury utilities */
+.font-display {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Luxury hairline borders */
+.border-luxe {
+  border-color: rgba(212, 181, 159, 0.16);
+}
+
+.border-luxe-hover:hover {
+  border-color: rgba(212, 181, 159, 0.4);
+}
+
+/* Subtle glassmorphism */
+.glass-panel {
+  background: rgba(12, 12, 12, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 181, 159, 0.12);
+}
+
+.glass-nav {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(212, 181, 159, 0.15);
+}
+
+/* Hardware accelerated transform utility */
+.gpu-accel {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Hide scrollbars for reels scroll container */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ========================================================= */
+/* NEECHE KA THEME: White / Alabaster Luxury Lower Sections */
+/* ========================================================= */
+.theme-light-sections {
+  background-color: #FAF8F5 !important;
+  color: #181412 !important;
+}
+
+/* Alternating clean white / warm ivory backgrounds for lower sections */
+.theme-light-sections section#founder,
+.theme-light-sections section#training,
+.theme-light-sections section#transformations,
+.theme-light-sections section#instagram {
+  background-color: #FFFFFF !important;
+}
+
+.theme-light-sections section#services,
+.theme-light-sections section#star-visits,
+.theme-light-sections section#shop {
+  background-color: #FAF8F5 !important;
+}
+
+.theme-light-sections footer#contact {
+  background-color: #F4ECE3 !important;
+  border-top: 1px solid rgba(158, 111, 77, 0.22) !important;
+}
+
+/* Typography in lower sections */
+.theme-light-sections h1,
+.theme-light-sections h2,
+.theme-light-sections h3:not(.absolute *),
+.theme-light-sections h4:not(.absolute *),
+.theme-light-sections .text-pure-white:not(.absolute *):not(button.bg-signature-pink *):not(.bg-signature-pink) {
+  color: #181412 !important;
+}
+
+.theme-light-sections p:not(.absolute *),
+.theme-light-sections [class*="text-white/70"]:not(.absolute *),
+.theme-light-sections [class*="text-white/80"]:not(.absolute *),
+.theme-light-sections [class*="text-white/85"]:not(.absolute *),
+.theme-light-sections [class*="text-white/90"]:not(.absolute *) {
+  color: #38302B !important;
+}
+
+.theme-light-sections [class*="text-white/60"]:not(.absolute *),
+.theme-light-sections [class*="text-white/50"]:not(.absolute *),
+.theme-light-sections [class*="text-white/40"]:not(.absolute *) {
+  color: #6E6259 !important;
+}
+
+.theme-light-sections .text-nude-beige:not(.absolute *) {
+  color: #9E6F4D !important;
+}
+
+/* Cards & containers in lower sections */
+.theme-light-sections .bg-luxe-card {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 8px 24px rgba(158, 111, 77, 0.08) !important;
+  border: 1px solid rgba(158, 111, 77, 0.16) !important;
+}
+
+.theme-light-sections .bg-luxe-card:hover {
+  border-color: rgba(255, 59, 141, 0.45) !important;
+}
+
+.theme-light-sections [class*="border-white/"] {
+  border-color: rgba(24, 20, 18, 0.12) !important;
+}
+
+.theme-light-sections blockquote {
+  color: #38302B !important;
+  border-left-color: #9E6F4D !important;
+}
+
+/* Services category pills */
+.theme-light-sections .bg-black\/70 {
+  background-color: #FFFFFF !important;
+  color: #38302B !important;
+  border: 1px solid rgba(158, 111, 77, 0.25) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-light-sections .bg-black\/70:hover {
+  color: #FF3B8D !important;
+  border-color: #FF3B8D !important;
+}
+
+/* Ensure text directly on dark media & video overlays remains white */
+.theme-light-sections video ~ [class*="absolute"] *,
+.theme-light-sections .dark-overlay-content * {
+  color: #FFFFFF !important;
+}
+
+/* Maintain crisp white text on solid pink buttons */
+.bg-signature-pink,
+[class*="bg-signature-pink"]:not([class*="bg-signature-pink/"]) {
+  color: #FFFFFF !important;
+}
+.bg-signature-pink * {
+  color: #FFFFFF !important;
+}
+
+/* Maintain crisp text on all Specular Buttons regardless of light/dark theme */
+.theme-light-sections .specular-button,
+.theme-light-sections .specular-button *,
+.specular-button,
+.specular-button * {
+  color: var(--sb-text-color, #ffffff) !important;
+}
+.theme-light-sections .specular-button svg,
+.specular-button svg {
+  stroke: currentColor !important;
+}
+</file>
+
+<file path="src/main.jsx">
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="en" class="scroll-smooth bg-jet-black text-pure-white antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Nazakat Salon & Academy | Raipur, Chhattisgarh</title>
+    <meta name="title" content="Nazakat Salon & Academy | Hair • Skin • Nails • Bridal • Academy" />
+    <meta name="description" content="Raipur's premier luxury salon and professional artistry academy. Discover signature hair transformations, clinical skincare rituals, editorial bridal artistry, and world-class beauty education." />
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nazakatsalon.com/" />
+    <meta property="og:title" content="Nazakat Salon & Academy | Raipur, Chhattisgarh" />
+    <meta property="og:description" content="Hair • Skin • Nails • Bridal • Makeup Artistry & Professional Academy in Raipur. Discover true bespoke luxury." />
+    <meta property="og:image" content="/assets/logo.png" />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body class="bg-jet-black text-pure-white selection:bg-signature-pink selection:text-pure-white overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="package.json">
+{
+  "name": "nazakat-salon-academy",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "gsap": "^3.12.5",
+    "lucide-react": "^0.441.0",
+    "motion": "^13.2.0",
+    "ogl": "^1.0.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.2"
+  }
+}
+</file>
+
+<file path="postcss.config.js">
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+</file>
+
+<file path="tailwind.config.js">
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'jet-black': '#000000',
+        'luxe-black': '#080808',
+        'luxe-card': '#101010',
+        'luxe-card-hover': '#161616',
+        'nude-beige': '#D4B59F',
+        'nude-light': '#F4EAE2',
+        'nude-dark': '#A37E65',
+        'signature-pink': '#FF3B8D',
+        'signature-pink-light': '#FF65A5',
+        'signature-pink-dark': '#D61A6E',
+        'pure-white': '#FFFFFF',
+      },
+      fontFamily: {
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['"Cormorant Garamond"', '"Playfair Display"', 'serif'],
+      },
+      letterSpacing: {
+        'luxury': '0.25em',
+        'ultra': '0.35em',
+      },
+      boxShadow: {
+        'luxe': '0 20px 40px -15px rgba(0, 0, 0, 0.7)',
+        'luxe-glow': '0 0 35px -5px rgba(255, 59, 141, 0.15)',
+        'beige-glow': '0 0 35px -5px rgba(212, 181, 159, 0.12)',
+      },
+      animation: {
+        'float-slow': 'float 8s ease-in-out infinite',
+        'pulse-subtle': 'pulseSubtle 4s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+        pulseSubtle: {
+          '0%, 100%': { opacity: '0.8' },
+          '50%': { opacity: '1' },
+        }
+      }
+    },
+  },
+  plugins: [],
+}
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 3000,
+    open: false,
+  }
+})
+</file>
+
+</files>
