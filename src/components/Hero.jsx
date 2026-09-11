@@ -13,8 +13,8 @@ export default function Hero({ onOpenBooking }) {
   return (
     <section className="relative w-full bg-black">
       <ScrollExpand
-        src="/assets/shop-styling-stations.mp4"
-        poster="/assets/posters/shop-styling-stations.jpg"
+        src={brandData.heroVideo || "/assets/hero-interior-animated.mp4"}
+        poster={brandData.heroPoster || "/assets/posters/hero-interior-animated.jpg"}
         mediaType="video"
         title="NAZAKAT"
         scrollHint="Scroll to Enter"
