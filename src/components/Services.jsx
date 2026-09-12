@@ -48,6 +48,7 @@ const cleanServiceData = [
 
 export default function Services({ onOpenBooking }) {
   const [activeIndex, setActiveIndex] = useState(0)
+  const [isMobile, setIsMobile] = useState(false)
   const sectionRef = useRef(null)
   const pinContainerRef = useRef(null)
   const videoRef = useRef(null)
@@ -55,10 +56,20 @@ export default function Services({ onOpenBooking }) {
 
   const activeService = cleanServiceData[activeIndex]
 
+  // Track responsive screen size
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   // Setup GSAP Pinning: Scrolling automatically selects 01 -> 02 -> 03 -> 04
   useEffect(() => {
     if (!sectionRef.current || !pinContainerRef.current) return
-    const isMobile = window.innerWidth < 768
+    const isSmall = window.innerWidth < 768
 
     const ctx = gsap.context(() => {
       const st = ScrollTrigger.create({
@@ -66,7 +77,7 @@ export default function Services({ onOpenBooking }) {
         trigger: sectionRef.current,
         pin: pinContainerRef.current,
         start: 'top top',
-        end: () => `+=${isMobile ? window.innerHeight * 1.6 : window.innerHeight * 2.2}`,
+        end: () => `+=${isSmall ? window.innerHeight * 1.5 : window.innerHeight * 2.2}`,
         scrub: 0.3,
         anticipatePin: 1,
         onUpdate: (self) => {
@@ -121,20 +132,20 @@ export default function Services({ onOpenBooking }) {
       {/* Pinned Stage Container */}
       <div
         ref={pinContainerRef}
-        className="w-full min-h-screen flex flex-col justify-center py-12 sm:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+        className="w-full min-h-screen flex flex-col justify-start lg:justify-center py-6 sm:py-10 lg:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
       >
         <div className="max-w-7xl mx-auto w-full">
           
           {/* Top Header: Simple & Bold */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12 border-b border-[#181412]/10 pb-6">
-            <div className="max-w-xl space-y-2">
-              <div className="mb-2 w-full max-w-md">
+          <div className="flex items-end justify-between gap-4 mb-4 sm:mb-8 lg:mb-12 border-b border-[#181412]/10 pb-3 sm:pb-6">
+            <div className="max-w-xl space-y-1 sm:space-y-2">
+              <div className="w-full max-w-xs sm:max-w-md">
                 <StrokeText
                   text="OUR SERVICES"
                   strokeColor="#FF3B8D"
                   fillColor="#FF3B8D"
                   strokeWidth={1.6}
-                  fontSize={52}
+                  fontSize={isMobile ? 32 : 52}
                   fontWeight={900}
                   letterSpacing={1.5}
                   trigger="scroll"
@@ -144,7 +155,7 @@ export default function Services({ onOpenBooking }) {
                   align="left"
                 />
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#181412] tracking-tight">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#181412] tracking-tight">
                 Discover Salon Services
               </h2>
             </div>
@@ -154,27 +165,60 @@ export default function Services({ onOpenBooking }) {
               <button
                 onClick={handlePrev}
                 type="button"
-                className="w-10 h-10 rounded-full border border-[#181412]/20 hover:border-signature-pink hover:bg-signature-pink hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm cursor-pointer"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-[#181412]/20 hover:border-signature-pink hover:bg-signature-pink hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm cursor-pointer"
                 aria-label="Previous"
               >
-                <ChevronLeft size={18} />
+                <ChevronLeft size={16} />
               </button>
               <button
                 onClick={handleNext}
                 type="button"
-                className="w-10 h-10 rounded-full border border-[#181412]/20 hover:border-signature-pink hover:bg-signature-pink hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm cursor-pointer"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-[#181412]/20 hover:border-signature-pink hover:bg-signature-pink hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm cursor-pointer"
                 aria-label="Next"
               >
-                <ChevronRight size={18} />
+                <ChevronRight size={16} />
               </button>
             </div>
           </div>
 
-          {/* Main Grid: Left Accordion + Right Circular Lens */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+          {/* Main Layout: Circle Lens + Accordion */}
+          {/* On Mobile (<lg): Circle lens is on top (order-1), accordion below (order-2) */}
+          {/* On Desktop (lg+): Accordion on left (col-span-6), circle lens on right (col-span-6) */}
+          <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-14 items-center">
             
-            {/* Left Column: Clean, simple, bold Accordion (auto-selected on scroll) */}
-            <div className="lg:col-span-6 space-y-3">
+            {/* Terrova Circular Lens & Sleek Number */}
+            <div className="order-1 lg:order-2 lg:col-span-6 relative flex items-center justify-center py-1 sm:py-4">
+              
+              {/* Circular Lens Frame */}
+              <div className="relative w-40 h-40 xs:w-48 xs:h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[420px] lg:h-[420px] rounded-full p-1.5 sm:p-2 bg-gradient-to-tr from-[#9E6F4D]/25 via-white to-signature-pink/30 shadow-xl sm:shadow-2xl">
+                <div className="w-full h-full rounded-full overflow-hidden bg-black relative">
+                  <video
+                    ref={videoRef}
+                    key={activeService.id}
+                    src={activeService.video}
+                    poster={activeService.poster}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                </div>
+              </div>
+
+              {/* Terrova Clean Big Numeral at Bottom Right of Circle */}
+              <div className="absolute bottom-1 right-2 xs:right-4 sm:bottom-2 sm:right-6 lg:right-6 select-none pointer-events-none">
+                <span className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#181412] tracking-tight drop-shadow-sm">
+                  {activeService.number}
+                </span>
+              </div>
+
+            </div>
+
+            {/* Accordion Column: Clean, simple, bold Accordion (auto-selected on scroll) */}
+            <div className="order-2 lg:order-1 lg:col-span-6 space-y-2 sm:space-y-3 w-full">
               {cleanServiceData.map((service, index) => {
                 const isActive = activeIndex === index
 
@@ -182,38 +226,38 @@ export default function Services({ onOpenBooking }) {
                   <div
                     key={service.id}
                     onClick={() => handleSelectTab(index)}
-                    className={`rounded-2xl transition-all duration-500 cursor-pointer overflow-hidden border ${
+                    className={`rounded-xl sm:rounded-2xl transition-all duration-400 cursor-pointer overflow-hidden border ${
                       isActive
-                        ? 'bg-white border-[#181412]/25 shadow-lg p-5 sm:p-6'
-                        : 'bg-white/60 hover:bg-white border-[#181412]/10 p-4 sm:p-5'
+                        ? 'bg-white border-[#181412]/25 shadow-md sm:shadow-lg p-3 sm:p-5'
+                        : 'bg-white/60 hover:bg-white border-[#181412]/10 p-2.5 sm:p-4'
                     }`}
                   >
                     {/* Header Row */}
                     <div className="flex items-center justify-between gap-3">
-                      <div className="flex items-center gap-3.5">
-                        <span className={`text-sm font-bold transition-colors duration-300 ${
+                      <div className="flex items-center gap-2.5 sm:gap-3.5">
+                        <span className={`text-xs sm:text-sm font-bold transition-colors duration-300 ${
                           isActive ? 'text-signature-pink' : 'text-[#8A7A70]'
                         }`}>
                           {service.number}
                         </span>
-                        <h3 className="text-lg sm:text-xl font-bold text-[#181412] tracking-normal">
+                        <h3 className="text-sm sm:text-lg md:text-xl font-bold text-[#181412] tracking-normal">
                           {service.name}
                         </h3>
                       </div>
 
-                      <div className={`w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${
+                      <div className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center transition-all duration-300 ${
                         isActive
                           ? 'bg-signature-pink text-white rotate-90 shadow-sm'
                           : 'bg-[#FAF8F5] text-[#5C524C] border border-[#181412]/15'
                       }`}>
-                        <ChevronRight size={13} />
+                        <ChevronRight size={12} />
                       </div>
                     </div>
 
                     {/* 1-2 Lines of Bold, Clean Text (No clutter, no bullet points) */}
                     {isActive && (
-                      <div className="mt-3 pt-3 border-t border-[#181412]/10 space-y-3.5 animate-fadeIn">
-                        <p className="text-sm font-semibold text-[#2C2420] leading-relaxed">
+                      <div className="mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-[#181412]/10 space-y-2.5 sm:space-y-3.5 animate-fadeIn">
+                        <p className="text-xs sm:text-sm font-semibold text-[#2C2420] leading-relaxed">
                           {service.shortDesc}
                         </p>
 
@@ -235,10 +279,10 @@ export default function Services({ onOpenBooking }) {
                               e.stopPropagation()
                               onOpenBooking()
                             }}
-                            className="text-xs font-bold uppercase tracking-wider shadow-sm"
+                            className="text-[10px] sm:text-xs font-bold uppercase tracking-wider shadow-sm py-1.5 px-3 sm:py-2 sm:px-4"
                           >
                             <span>Book Experience</span>
-                            <ArrowRight size={13} />
+                            <ArrowRight size={12} />
                           </SpecularButton>
                         </div>
                       </div>
@@ -246,37 +290,6 @@ export default function Services({ onOpenBooking }) {
                   </div>
                 )
               })}
-            </div>
-
-            {/* Right Column: Terrova Circular Lens & Sleek Number */}
-            <div className="lg:col-span-6 relative flex items-center justify-center py-4">
-              
-              {/* Circular Lens Frame */}
-              <div className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] rounded-full p-2 bg-gradient-to-tr from-[#9E6F4D]/25 via-white to-signature-pink/30 shadow-2xl">
-                <div className="w-full h-full rounded-full overflow-hidden bg-black relative">
-                  <video
-                    ref={videoRef}
-                    key={activeService.id}
-                    src={activeService.video}
-                    poster={activeService.poster}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
-                </div>
-              </div>
-
-              {/* Terrova Clean Big Numeral at Bottom Right of Circle */}
-              <div className="absolute bottom-2 right-2 sm:right-6 select-none pointer-events-none">
-                <span className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-[#181412] tracking-tight">
-                  {activeService.number}
-                </span>
-              </div>
-
             </div>
 
           </div>

@@ -76,22 +76,22 @@ const ScrollExpand = ({
     if (scrimRef.current) scrimRef.current.style.opacity = `${c.overlayScrim * e}`;
 
     if (titleRef.current) {
-      const out = smoothstep(0.4, 0.88, p);
+      const out = smoothstep(0.08, 0.45, p);
       titleRef.current.style.opacity = `${1 - out}`;
-      titleRef.current.style.transform = `translate3d(0, ${-28 * out}px, 0) scale(${1 + 0.06 * out})`;
+      titleRef.current.style.transform = `translate3d(0, ${-25 * out}px, 0) scale(${1 + 0.04 * out})`;
     }
 
     if (hintRef.current) {
-      const gone = smoothstep(0, 0.12, p);
+      const gone = smoothstep(0, 0.1, p);
       hintRef.current.style.opacity = `${1 - gone}`;
       hintRef.current.style.transform = `translate3d(0, ${8 * gone}px, 0)`;
     }
 
     if (overlayRef.current) {
-      const inn = smoothstep(0.68, 1, p);
+      const inn = smoothstep(0.25, 0.75, p);
       overlayRef.current.style.opacity = `${inn}`;
-      overlayRef.current.style.transform = `translate3d(0, ${18 * (1 - inn)}px, 0)`;
-      overlayRef.current.style.pointerEvents = inn > 0.8 ? 'auto' : 'none';
+      overlayRef.current.style.transform = `translate3d(0, ${15 * (1 - inn)}px, 0)`;
+      overlayRef.current.style.pointerEvents = inn > 0.6 ? 'auto' : 'none';
     }
   }, []);
 
@@ -202,6 +202,7 @@ const ScrollExpand = ({
         muted
         loop
         playsInline
+        preload="auto"
       />
     ) : (
       <img ref={mediaRef} className="scroll-expand__media" src={src} alt={alt} draggable={false} />

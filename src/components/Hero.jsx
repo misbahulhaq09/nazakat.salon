@@ -23,11 +23,11 @@ export default function Hero({ onOpenBooking }) {
         startHeight={58}
         startRadius={24}
         endRadius={0}
-        mediaZoom={1.35}
-        scrollDistance={1.1}
-        holdDistance={0.25}
-        smoothing={0.08}
-        overlayScrim={0.55}
+        mediaZoom={1.03}
+        scrollDistance={0.45}
+        holdDistance={0.1}
+        smoothing={0.03}
+        overlayScrim={0.32}
       >
         {/* Full-bleed Content that reveals as the frame expands */}
         <div className="flex flex-col items-center justify-center max-w-4xl mx-auto text-center px-4 space-y-4 sm:space-y-5 pt-12 sm:pt-16">
