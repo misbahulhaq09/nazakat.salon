@@ -1,0 +1,6 @@
+{
+  "name": "Nazakat Salon & Academy",
+  "description": "Raipur's premier luxury salon and professional artistry academy. Discover signature hair transformations, clinical skincare rituals, editorial bridal artistry, and world-class beauty education.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
