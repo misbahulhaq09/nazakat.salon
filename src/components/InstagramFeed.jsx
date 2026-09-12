@@ -72,6 +72,10 @@ function InstagramReelCard({ reel }) {
           loop
           playsInline
           preload="metadata"
+          onCanPlay={(e) => {
+            e.currentTarget.muted = true
+            e.currentTarget.play().catch(() => {})
+          }}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
         />
 

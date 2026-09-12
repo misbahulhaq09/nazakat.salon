@@ -16,6 +16,8 @@ function TrainingVideoPlayer({ video, isActive }) {
   useEffect(() => {
     const v = videoRef.current
     if (!v) return
+    v.muted = true
+    v.defaultMuted = true
     if (isActive) {
       const playPromise = v.play()
       if (playPromise !== undefined) {
@@ -41,6 +43,10 @@ function TrainingVideoPlayer({ video, isActive }) {
           loop
           playsInline
           preload="metadata"
+          onCanPlay={(e) => {
+            e.currentTarget.muted = true
+            if (isActive) e.currentTarget.play().catch(() => {})
+          }}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />

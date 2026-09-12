@@ -10,7 +10,7 @@ export const brandData = {
   phone: "+91 98261 00000",
   whatsapp: "https://wa.me/919826100000?text=Hello%20Nazakat%20Salon,%20I%20would%20like%20to%20book%20an%20appointment",
   logo: "/assets/logo.png",
-  heroVideo: "/assets/hero-interior-animated.mp4",
+  heroVideo: "/assets/hero-interior-1080p.mp4",
   heroPoster: "/assets/posters/hero-interior-animated.jpg",
 }
 

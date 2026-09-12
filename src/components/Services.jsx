@@ -101,8 +101,13 @@ export default function Services({ onOpenBooking }) {
   // Auto-play active video on change
   useEffect(() => {
     if (videoRef.current) {
+      videoRef.current.muted = true
+      videoRef.current.defaultMuted = true
       videoRef.current.currentTime = 0
-      videoRef.current.play().catch(() => {})
+      const p = videoRef.current.play()
+      if (p !== undefined) {
+        p.catch(() => {})
+      }
     }
   }, [activeIndex])
 
@@ -202,6 +207,10 @@ export default function Services({ onOpenBooking }) {
                     loop
                     playsInline
                     preload="metadata"
+                    onCanPlay={(e) => {
+                      e.currentTarget.muted = true
+                      e.currentTarget.play().catch(() => {})
+                    }}
                     className="w-full h-full object-cover transition-transform duration-700 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />

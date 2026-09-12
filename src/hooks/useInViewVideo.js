@@ -14,17 +14,29 @@ export function useInViewVideo(options = { threshold: 0.25, rootMargin: '100px' 
     const video = videoRef.current
     if (!video) return
 
+    video.muted = true
+    video.defaultMuted = true
+    video.playsInline = true
+
     const observer = new IntersectionObserver(([entry]) => {
       setIsInView(entry.isIntersecting)
       if (entry.isIntersecting) {
         setIsLoaded(true)
-        // Resume playback smoothly if it was paused
+        video.muted = true
+        video.defaultMuted = true
         const playPromise = video.play()
         if (playPromise !== undefined) {
           playPromise.catch(() => {
-            // Autoplay policy fallback: keep muted and retry
+            // Autoplay policy fallback: keep muted and retry on user interaction
             video.muted = true
-            video.play().catch(() => {})
+            const onInteract = () => {
+              video.muted = true
+              video.play().catch(() => {})
+              window.removeEventListener('click', onInteract)
+              window.removeEventListener('touchstart', onInteract)
+            }
+            window.addEventListener('click', onInteract, { once: true })
+            window.addEventListener('touchstart', onInteract, { once: true })
           })
         }
       } else {
