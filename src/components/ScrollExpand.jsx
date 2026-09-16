@@ -1,5 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Volume2, VolumeX, Play, Pause } from 'lucide-react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import './ScrollExpand.css';
 
 const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
@@ -186,9 +185,6 @@ const ScrollExpand = ({
     };
   }, [applyProgress, useWindowScroll]);
 
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
-
   useEffect(() => {
     const video = mediaRef.current;
     if (mediaType === 'video' && video) {
@@ -196,70 +192,58 @@ const ScrollExpand = ({
       video.defaultMuted = true;
       video.playsInline = true;
 
-      const tryPlay = () => {
+      const playSmoothly = () => {
         if (!video) return;
         video.muted = true;
-        const playPromise = video.play();
-        if (playPromise !== undefined) {
-          playPromise
-            .then(() => setIsPlaying(true))
-            .catch(() => {
-              setIsPlaying(false);
-            });
+        const p = video.play();
+        if (p !== undefined) {
+          p.catch(() => {
+            // Autoplay fallback for strict browser policies: resume on any initial user gesture
+            const onFirstGesture = () => {
+              if (video && video.paused) {
+                video.muted = true;
+                video.play().catch(() => {});
+              }
+            };
+            window.addEventListener('scroll', onFirstGesture, { passive: true, once: true });
+            window.addEventListener('touchstart', onFirstGesture, { passive: true, once: true });
+            window.addEventListener('click', onFirstGesture, { passive: true, once: true });
+            window.addEventListener('mousemove', onFirstGesture, { passive: true, once: true });
+          });
         }
       };
 
-      tryPlay();
+      playSmoothly();
+      video.addEventListener('canplay', playSmoothly, { once: true });
+      video.addEventListener('loadeddata', playSmoothly, { once: true });
 
-      // Trigger playback on first user gesture if restricted by browser policy
-      const unlockGesture = () => {
-        if (video && video.paused) {
+      const handleVisibilityChange = () => {
+        if (!document.hidden && video && video.paused) {
           video.muted = true;
-          video.play()
-            .then(() => setIsPlaying(true))
-            .catch(() => {});
+          video.play().catch(() => {});
         }
       };
-
-      window.addEventListener('click', unlockGesture, { passive: true, once: true });
-      window.addEventListener('touchstart', unlockGesture, { passive: true, once: true });
-      window.addEventListener('scroll', unlockGesture, { passive: true, once: true });
+      document.addEventListener('visibilitychange', handleVisibilityChange);
 
       return () => {
-        window.removeEventListener('click', unlockGesture);
-        window.removeEventListener('touchstart', unlockGesture);
-        window.removeEventListener('scroll', unlockGesture);
+        video.removeEventListener('canplay', playSmoothly);
+        video.removeEventListener('loadeddata', playSmoothly);
+        document.removeEventListener('visibilitychange', handleVisibilityChange);
       };
     }
   }, [mediaType, src]);
 
-  const togglePlay = (e) => {
-    e.stopPropagation();
-    const video = mediaRef.current;
-    if (!video) return;
-    if (video.paused) {
-      video.muted = isMuted;
-      video.play()
-        .then(() => setIsPlaying(true))
-        .catch(() => {});
-    } else {
-      video.pause();
-      setIsPlaying(false);
-    }
-  };
-
-  const toggleMute = (e) => {
-    e.stopPropagation();
-    const video = mediaRef.current;
-    if (!video) return;
-    video.muted = !video.muted;
-    setIsMuted(video.muted);
-  };
-
   const media =
     mediaType === 'video' ? (
       <video
-        ref={mediaRef}
+        ref={(el) => {
+          mediaRef.current = el;
+          if (el) {
+            el.muted = true;
+            el.defaultMuted = true;
+            el.playsInline = true;
+          }
+        }}
         className="scroll-expand__media"
         src={src}
         poster={poster}
@@ -268,12 +252,10 @@ const ScrollExpand = ({
         loop
         playsInline
         preload="auto"
-        onPlay={() => setIsPlaying(true)}
-        onPause={() => setIsPlaying(false)}
         onCanPlay={(e) => {
           e.currentTarget.muted = true;
           const p = e.currentTarget.play();
-          if (p !== undefined) p.then(() => setIsPlaying(true)).catch(() => {});
+          if (p !== undefined) p.catch(() => {});
         }}
       />
     ) : (
@@ -297,30 +279,6 @@ const ScrollExpand = ({
                 {children}
               </div>
             ) : null}
-
-            {/* Video Control Buttons */}
-            {mediaType === 'video' && (
-              <div className="absolute bottom-4 right-4 z-40 flex items-center gap-2 pointer-events-auto">
-                <button
-                  type="button"
-                  onClick={togglePlay}
-                  aria-label={isPlaying ? 'Pause hero video' : 'Play hero video'}
-                  className="p-2 sm:p-2.5 rounded-full bg-black/60 hover:bg-black/85 backdrop-blur-md border border-white/20 hover:border-[#FF3B8D] text-white transition-all shadow-xl cursor-pointer active:scale-95"
-                  title={isPlaying ? 'Pause background video' : 'Play background video'}
-                >
-                  {isPlaying ? <Pause size={14} /> : <Play size={14} className="translate-x-0.5" />}
-                </button>
-                <button
-                  type="button"
-                  onClick={toggleMute}
-                  aria-label={isMuted ? 'Unmute video sound' : 'Mute video sound'}
-                  className="p-2 sm:p-2.5 rounded-full bg-black/60 hover:bg-black/85 backdrop-blur-md border border-white/20 hover:border-[#FF3B8D] text-white transition-all shadow-xl cursor-pointer active:scale-95"
-                  title={isMuted ? 'Unmute audio' : 'Mute audio'}
-                >
-                  {isMuted ? <VolumeX size={14} /> : <Volume2 size={14} />}
-                </button>
-              </div>
-            )}
           </div>
           {title ? (
             <div ref={titleRef} className="scroll-expand__title">

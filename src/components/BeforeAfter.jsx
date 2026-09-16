@@ -110,7 +110,7 @@ export default function BeforeAfter({ onOpenBooking }) {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className={`grid grid-cols-1 ${hairRestorations.length > 1 ? 'md:grid-cols-2 max-w-3xl' : 'max-w-md'} gap-6 mx-auto`}>
             {hairRestorations.map((item) => (
               <div
                 key={item.id}

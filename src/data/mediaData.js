@@ -75,14 +75,6 @@ export const beforeAfterData = [
     stats: "Precision Cut • Ash Mochaccino",
   },
   {
-    id: "hair-fixing",
-    category: "Restoration & Fixing",
-    title: "New Hair Life",
-    description: "Non-surgical hair restoration and volumetric densification for effortless youth.",
-    image: "/assets/transformation-hair-fixing.jpg",
-    stats: "Hair Fixing • Natural Hairline",
-  },
-  {
     id: "hair-treatment",
     category: "Hair Therapy & Spa",
     title: "Keratin & Moisture Revival",

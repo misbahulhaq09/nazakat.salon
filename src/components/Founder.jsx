@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { founderData } from '../data/mediaData'
-import { Award, Users, Sparkles, BookOpen } from 'lucide-react'
 import StrokeText from './StrokeText'
-import GlareHover from './GlareHover'
 
 function AnimatedCounter({ target, suffix = '', label }) {
   const [count, setCount] = useState(0)
@@ -39,7 +37,7 @@ function AnimatedCounter({ target, suffix = '', label }) {
   }, [target])
 
   return (
-    <div ref={ref} className="p-4 rounded-xl bg-white border border-[#9E6F4D]/20 shadow-sm hover:shadow-md hover:border-signature-pink/40 transition-all duration-300">
+    <div ref={ref} className="p-4 sm:p-5 rounded-xl bg-white border border-[#9E6F4D]/20 shadow-sm hover:shadow-md hover:border-signature-pink/40 transition-all duration-300">
       <span className="block font-serif text-2xl sm:text-3xl font-bold text-[#181412]">
         {count.toLocaleString()}{suffix}
       </span>
@@ -53,86 +51,47 @@ function AnimatedCounter({ target, suffix = '', label }) {
 export default function Founder() {
   return (
     <section id="founder" className="relative py-20 sm:py-28 bg-white text-[#181412] overflow-hidden border-t border-b border-[#181412]/10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          
-          {/* Left Column: Authentic Founder Graphic Banner with GlareHover */}
-          <div className="lg:col-span-7 relative reveal-media">
-            <GlareHover
-              width="100%"
-              height="auto"
-              background="#ffffff"
-              borderRadius="1rem"
-              borderColor="rgba(24, 20, 18, 0.15)"
-              glareColor="#ffffff"
-              glareOpacity={0.45}
-              glareAngle={-30}
-              glareSize={280}
-              transitionDuration={750}
-              playOnce={false}
-              className="shadow-2xl group w-full"
-            >
-              <div className="relative aspect-video w-full bg-white flex items-center justify-center overflow-hidden">
-                <img
-                  src={founderData.image || "/assets/founder-nazakat-ali.png"}
-                  alt="Nazakat Ali - Founder & Creative Director"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                />
-                
-                {/* Minimal clean label at bottom */}
-                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between pointer-events-none z-10">
-                  <span className="text-xs uppercase tracking-wider text-white font-medium drop-shadow-md">
-                    Nazakat Ali • Founder
-                  </span>
-                  <span className="w-2 h-2 rounded-full bg-signature-pink shadow-md" />
-                </div>
-              </div>
-            </GlareHover>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="space-y-8 reveal-text text-center flex flex-col items-center">
+          <div>
+            <div className="mb-4 w-full flex justify-center">
+              <StrokeText
+                text="MEET OUR FOUNDER"
+                strokeColor="#FF3B8D"
+                fillColor="#FF3B8D"
+                strokeWidth={1.6}
+                fontSize={52}
+                fontWeight={900}
+                letterSpacing={1.5}
+                trigger="scroll"
+                fillMode="wipe"
+                drawDuration={1.2}
+                fillDelay={0.2}
+                align="center"
+              />
+            </div>
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#181412] tracking-tight">
+              Nazakat Ali
+            </h2>
+            <p className="text-xs sm:text-sm text-[#9E6F4D] uppercase tracking-wider font-semibold mt-1.5">
+              Founder & Creative Director
+            </p>
           </div>
 
-          {/* Right Column: Founder Info + Terrova-style Bento Stats Counters */}
-          <div className="lg:col-span-5 space-y-6 reveal-text">
-            <div>
-              <div className="mb-3 w-full">
-                <StrokeText
-                  text="MEET OUR FOUNDER"
-                  strokeColor="#FF3B8D"
-                  fillColor="#FF3B8D"
-                  strokeWidth={1.6}
-                  fontSize={52}
-                  fontWeight={900}
-                  letterSpacing={1.5}
-                  trigger="scroll"
-                  fillMode="wipe"
-                  drawDuration={1.2}
-                  fillDelay={0.2}
-                  align="left"
-                />
-              </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#181412] tracking-tight">
-                Nazakat Ali
-              </h2>
-              <p className="text-xs sm:text-sm text-[#9E6F4D] uppercase tracking-wider font-semibold mt-1">
-                Founder & Creative Director
-              </p>
-            </div>
+          <div className="h-[2px] w-16 bg-signature-pink" />
 
-            <div className="h-[2px] w-16 bg-signature-pink" />
+          {/* Direct Quote */}
+          <blockquote className="text-base sm:text-lg text-[#38302B] max-w-2xl mx-auto border-y border-[#9E6F4D]/25 py-4 px-4 leading-relaxed italic">
+            "{founderData.quote}"
+          </blockquote>
 
-            {/* Direct Quote */}
-            <blockquote className="text-sm sm:text-base text-[#38302B] border-l-2 border-[#9E6F4D] pl-4 py-1 leading-relaxed italic">
-              "{founderData.quote}"
-            </blockquote>
-
-            {/* Terrova Bento Stats Cards with Live Counting Numbers */}
-            <div className="grid grid-cols-2 gap-3 pt-2">
-              <AnimatedCounter target={15} suffix="+" label="Years Mastery" />
-              <AnimatedCounter target={10000} suffix="+" label="Happy Clients" />
-              <AnimatedCounter target={50} suffix="+" label="Masterclasses" />
-              <AnimatedCounter target={100} suffix="%" label="Bespoke Care" />
-            </div>
+          {/* Bento Stats Cards with Live Counting Numbers */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 sm:gap-4 w-full pt-2">
+            <AnimatedCounter target={15} suffix="+" label="Years Mastery" />
+            <AnimatedCounter target={10000} suffix="+" label="Happy Clients" />
+            <AnimatedCounter target={50} suffix="+" label="Masterclasses" />
+            <AnimatedCounter target={100} suffix="%" label="Bespoke Care" />
           </div>
-
         </div>
       </div>
     </section>
