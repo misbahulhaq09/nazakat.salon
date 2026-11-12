@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Founder from './components/Founder'
 import Services from './components/Services'
-import Training from './components/Training'
-import StarVisits from './components/StarVisits'
 import BeforeAfter from './components/BeforeAfter'
+import Training from './components/Training'
+import Founder from './components/Founder'
+import StarVisits from './components/StarVisits'
 import Shop from './components/Shop'
 import InstagramFeed from './components/InstagramFeed'
 import Footer from './components/Footer'
@@ -20,6 +20,13 @@ if (typeof window !== 'undefined') {
 
 export default function App() {
   const [bookingOpen, setBookingOpen] = useState(false)
+  const [selectedService, setSelectedService] = useState('')
+  const [currentMode, setCurrentMode] = useState('salon')
+
+  const handleOpenBooking = (service = 'Hair Artistry & Balayage') => {
+    setSelectedService(service)
+    setBookingOpen(true)
+  }
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -50,64 +57,20 @@ export default function App() {
         )
       }
 
-      // 2. Scroll-driven Section Headings Animation (excluding pinned sections)
-      const titles = document.querySelectorAll('section:not(#services):not(#training) h2, .reveal-title')
+      // 2. Scroll-driven Section Headings Animation
+      const titles = document.querySelectorAll('section h2, .reveal-title')
       titles.forEach((title) => {
         gsap.fromTo(
           title,
-          { y: isMobile ? 20 : 35, opacity: 0 },
+          { y: isMobile ? 18 : 28, opacity: 0 },
           {
             y: 0,
             opacity: 1,
-            duration: 0.8,
+            duration: 0.7,
             ease: 'power3.out',
             clearProps: 'transform',
             scrollTrigger: {
               trigger: title,
-              start: 'top 88%',
-              toggleActions: 'play none none none',
-            },
-          }
-        )
-      })
-
-      // 3. Staggered Grid Card Animations (Star Visits, Shop, Instagram)
-      const grids = document.querySelectorAll('#star-visits .grid, #shop .grid, #instagram .grid')
-      grids.forEach((grid) => {
-        const items = Array.from(grid.children)
-        gsap.fromTo(
-          items,
-          { y: isMobile ? 20 : 35, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.7,
-            stagger: isMobile ? 0.06 : 0.12,
-            ease: 'power2.out',
-            clearProps: 'transform',
-            scrollTrigger: {
-              trigger: grid,
-              start: 'top 85%',
-              toggleActions: 'play none none none',
-            },
-          }
-        )
-      })
-
-      // 4. Scroll-driven Paragraphs, Quotes and Text Blocks
-      const textBlocks = document.querySelectorAll('blockquote, .reveal-text p')
-      textBlocks.forEach((tb) => {
-        gsap.fromTo(
-          tb,
-          { y: 18, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.7,
-            ease: 'power2.out',
-            clearProps: 'transform',
-            scrollTrigger: {
-              trigger: tb,
               start: 'top 88%',
               toggleActions: 'play none none none',
             },
@@ -124,44 +87,49 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-jet-black text-pure-white selection:bg-signature-pink selection:text-pure-white antialiased overflow-x-clip">
-      {/* Navigation */}
-      <Navbar onOpenBooking={() => setBookingOpen(true)} />
+      {/* HEADER: Sticky Header with Dual Mode Toggle [ SALON SERVICES | PROFESSIONAL ACADEMY ] */}
+      <Navbar
+        currentMode={currentMode}
+        onModeChange={(mode) => setCurrentMode(mode)}
+        onOpenBooking={handleOpenBooking}
+      />
 
       {/* Main Content Sections */}
       <main>
-        {/* 1. Hero / Home - Saamne Ka Front Area (Signature Black Luxury Theme) */}
-        <Hero onOpenBooking={() => setBookingOpen(true)} />
+        {/* SECTION 1: Luxury Hero Banner (Untouched with original video & scroll expand) */}
+        <Hero onOpenBooking={() => handleOpenBooking('Hair Artistry & Balayage')} />
 
-        {/* 2. Lower Content Sections - Neeche Ka Area (White Luxury Background Theme) */}
-        <div className="theme-light-sections bg-[#FAF8F5] text-[#181412]">
-          {/* Founder Section */}
+        {/* SECTION 2: Interactive Service Menu (Promoted to Block 2 with 4-Column Visual Category Cards) */}
+        <Services onOpenBooking={handleOpenBooking} />
+
+        {/* SECTION 3: Before & After Transformation Vault (Promoted to Block 3 with 9:16 Video Hub & Filter Tabs) */}
+        <BeforeAfter onOpenBooking={handleOpenBooking} />
+
+        {/* SECTION 4: Nazakat Academy Spotlight (Warm beige hub, Course Cards, Syllabus Download & Classrooms) */}
+        <Training onOpenBooking={handleOpenBooking} />
+
+        {/* SECTION 5: Social Proof, Founder Bio & Celebrity Visits */}
+        <div className="theme-light-sections bg-white text-[#181412]">
           <Founder />
-
-          {/* Services Catalogue */}
-          <Services onOpenBooking={() => setBookingOpen(true)} />
-
-          {/* Academy & Training */}
-          <Training onOpenBooking={() => setBookingOpen(true)} />
-
-          {/* Star Visits */}
-          <StarVisits />
-
-          {/* Before & After */}
-          <BeforeAfter onOpenBooking={() => setBookingOpen(true)} />
-
-          {/* Shop & Boutique */}
-          <Shop onOpenBooking={() => setBookingOpen(true)} />
-
-          {/* Instagram Reels Feed */}
-          <InstagramFeed />
-
-          {/* Final Contact / CTA Footer */}
-          <Footer onOpenBooking={() => setBookingOpen(true)} />
         </div>
+        <StarVisits />
+
+        {/* SECTION 6: Curated Product Boutique & Hair Science */}
+        <Shop onOpenBooking={handleOpenBooking} />
+
+        {/* SECTION 7: Instagram Community Reels */}
+        <InstagramFeed />
+
+        {/* FOOTER: Location / Google Maps, Hours, WhatsApp Concierge */}
+        <Footer onOpenBooking={handleOpenBooking} />
       </main>
 
       {/* Booking & Admissions Modal */}
-      <BookingModal isOpen={bookingOpen} onClose={() => setBookingOpen(false)} />
+      <BookingModal
+        isOpen={bookingOpen}
+        onClose={() => setBookingOpen(false)}
+        initialService={selectedService}
+      />
     </div>
   )
 }

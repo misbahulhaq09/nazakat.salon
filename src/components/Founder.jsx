@@ -38,7 +38,7 @@ function AnimatedCounter({ target, suffix = '', label }) {
 
   return (
     <div ref={ref} className="p-4 sm:p-5 rounded-xl bg-white border border-[#9E6F4D]/20 shadow-sm hover:shadow-md hover:border-signature-pink/40 transition-all duration-300">
-      <span className="block font-serif text-2xl sm:text-3xl font-bold text-[#181412]">
+      <span className="block font-sans text-2xl sm:text-3xl font-extrabold text-[#181412]">
         {count.toLocaleString()}{suffix}
       </span>
       <span className="text-[11px] text-[#5C524C] uppercase tracking-wider font-medium mt-0.5 block">
@@ -70,7 +70,7 @@ export default function Founder() {
                 align="center"
               />
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#181412] tracking-tight">
+            <h2 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#181412] tracking-tight">
               Nazakat Ali
             </h2>
             <p className="text-xs sm:text-sm text-[#9E6F4D] uppercase tracking-wider font-semibold mt-1.5">

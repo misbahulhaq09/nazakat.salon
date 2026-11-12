@@ -1,257 +1,254 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { trainingData } from '../data/mediaData'
-import { ArrowUpRight } from 'lucide-react'
+import { GraduationCap, Clock, Award, BookOpen, Download, ArrowRight, CheckCircle2, Play } from 'lucide-react'
 import StrokeText from './StrokeText'
 import SpecularButton from './SpecularButton'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger)
-}
-
-function TrainingVideoPlayer({ video, isActive }) {
-  const videoRef = useRef(null)
-
-  useEffect(() => {
-    const v = videoRef.current
-    if (!v) return
-    v.muted = true
-    v.defaultMuted = true
-    if (isActive) {
-      const playPromise = v.play()
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          v.muted = true
-          v.play().catch(() => {})
-        })
-      }
-    } else {
-      v.pause()
-    }
-  }, [isActive])
-
-  return (
-    <div className="relative rounded-xl overflow-hidden border border-white/15 bg-black shadow-2xl">
-      <div className="aspect-video w-full relative">
-        <video
-          ref={videoRef}
-          src={video.video}
-          poster={video.poster}
-          autoPlay={isActive}
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          onCanPlay={(e) => {
-            e.currentTarget.muted = true
-            if (isActive) e.currentTarget.play().catch(() => {})
-          }}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none" />
-        <div className="absolute bottom-3 left-4 right-4 pointer-events-none">
-          <p className="text-sm sm:text-base font-semibold text-pure-white">{video.title}</p>
-          <p className="text-xs text-nude-beige">{video.subtitle}</p>
-        </div>
-      </div>
-    </div>
-  )
-}
+const featuredCourses = [
+  {
+    id: 'hair-mastery',
+    title: 'Masterclass in Precision Hair Dressing & Cut Engineering',
+    category: 'Hair Architecture',
+    duration: '12 Weeks',
+    level: 'Advanced Masterclass',
+    badge: 'Flagship Program',
+    fee: 'Batch Starting Soon',
+    summary: 'Comprehensive mastery from foundational biomechanics to French editorial cuts, texturizing, and live client salon simulations.',
+    modules: [
+      'Architectural Sectioning & Precision Angles',
+      'French Cutting & European Layering Techniques',
+      'Advanced Blowouts, Heat Styling & Finishing',
+      'Live Client Consultations & Salon Floor Simulation'
+    ]
+  },
+  {
+    id: 'bridal-hd',
+    title: 'Advanced Bridal & High-Definition Makeup Artistry',
+    category: 'Bridal Artistry',
+    duration: '10 Weeks',
+    level: 'Professional Diploma',
+    badge: 'High Demand',
+    fee: 'Batch Starting Soon',
+    summary: 'Step-by-step editorial, royal bridal, and camera-ready HD airbrush artistry paired with professional hair draping.',
+    modules: [
+      'High-Definition & Airbrush Base Creation',
+      'Contouring, Eye Architecture & Lash Crafting',
+      'Traditional Royal & Modern Bridal Looks',
+      'Dupatta Draping, Jewelry Placement & Portfolio'
+    ]
+  },
+  {
+    id: 'color-balayage',
+    title: 'Color Chemistry & Creative Balayage Masterclass',
+    category: 'Color Chemistry',
+    duration: '8 Weeks',
+    level: 'Specialization Course',
+    badge: 'Industry Certified',
+    fee: 'Batch Starting Soon',
+    summary: 'Deep dive into color wheel physics, freehand French balayage, foilayage, root melts, and corrective chemistry.',
+    modules: [
+      'Pigment Neutralization & Decolorization Physics',
+      'Freehand Contouring & Root Melting Rituals',
+      'Toning Formulas, Glossing & Bond Multipliers',
+      'Color Correction from Box Dye & Patchiness'
+    ]
+  }
+]
 
 export default function Training({ onOpenBooking }) {
-  const [selectedVideoIndex, setSelectedVideoIndex] = useState(0)
-  const sectionRef = useRef(null)
-  const pinContainerRef = useRef(null)
-  const videoPanelsRef = useRef([])
-  const scrollTriggerRef = useRef(null)
+  const [activeVideoIndex, setActiveVideoIndex] = useState(0)
+  const videoRef = useRef(null)
 
-  // Stage progress targets for click shortcut:
-  // 0: Lecture Hall, 1: Hair Crafting, 2: Studio Classroom, 3: Teammate Grooming
-  const stageTargets = [0.05, 0.36, 0.69, 0.95]
+  const activeVideo = trainingData.videos[activeVideoIndex]
 
-  const handleItemClick = (idx) => {
-    if (!scrollTriggerRef.current) return
-    const st = scrollTriggerRef.current
-    const targetProgress = stageTargets[idx]
-    const targetScroll = st.start + targetProgress * (st.end - st.start)
-    window.scrollTo({
-      top: targetScroll,
-      behavior: 'smooth',
-    })
+  const handleDownloadProspectus = (courseTitle) => {
+    const text = encodeURIComponent(`Hello Nazakat Academy Raipur! I would like to download the full syllabus & prospectus for "${courseTitle}".`)
+    window.open(`https://wa.me/919826100000?text=${text}`, '_blank')
   }
 
-  useEffect(() => {
-    const isMobile = window.innerWidth < 768
-    const panels = videoPanelsRef.current.filter(Boolean)
-    if (!sectionRef.current || !pinContainerRef.current || panels.length < 4) return
-
-    const ctx = gsap.context(() => {
-      // Set initial video card panel states: Panel 0 visible, Panels 1, 2, 3 hidden
-      gsap.set(panels[0], { autoAlpha: 1, y: 0, scale: 1 })
-      gsap.set([panels[1], panels[2], panels[3]], {
-        autoAlpha: 0,
-        y: 20,
-        scale: 0.98,
-      })
-
-      const tl = gsap.timeline({
-        defaults: { ease: 'power2.out' },
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          pin: pinContainerRef.current,
-          start: 'top top',
-          end: () => `+=${isMobile ? window.innerHeight * 1.1 : window.innerHeight * 1.4}`,
-          scrub: 0.3,
-          anticipatePin: 1,
-          invalidateOnRefresh: true,
-          onUpdate: (self) => {
-            const p = self.progress
-            let idx = 0
-            if (p < 0.25) idx = 0
-            else if (p < 0.52) idx = 1
-            else if (p < 0.78) idx = 2
-            else idx = 3
-
-            setSelectedVideoIndex((prev) => (prev !== idx ? idx : prev))
-          },
-        },
-      })
-
-      scrollTriggerRef.current = tl.scrollTrigger
-
-      // Responsive timeline mapping scroll progress across 4 training videos:
-      // Total duration = 100
-      // 0 - 8: Video 0 (Lecture Hall) settled
-      // 8 - 32: Video 0 -> Video 1 transition
-      // 32 - 40: Video 1 (Hair Crafting) settled
-      // 40 - 64: Video 1 -> Video 2 transition
-      // 64 - 72: Video 2 (Studio Classroom) settled
-      // 72 - 94: Video 2 -> Video 3 transition
-      // 94 - 100: Video 3 (Teammate Grooming) settled
-      tl
-        .to({}, { duration: 8 })
-        .to(panels[0], { autoAlpha: 0, y: -20, scale: 0.98, duration: 24 }, 8)
-        .to(panels[1], { autoAlpha: 1, y: 0, scale: 1, duration: 24 }, 8)
-        .to({}, { duration: 8 })
-        .to(panels[1], { autoAlpha: 0, y: -20, scale: 0.98, duration: 24 }, 40)
-        .to(panels[2], { autoAlpha: 1, y: 0, scale: 1, duration: 24 }, 40)
-        .to({}, { duration: 8 })
-        .to(panels[2], { autoAlpha: 0, y: -20, scale: 0.98, duration: 22 }, 72)
-        .to(panels[3], { autoAlpha: 1, y: 0, scale: 1, duration: 22 }, 72)
-        .to({}, { duration: 6 })
-    }, sectionRef)
-
-    return () => {
-      ctx.revert()
-    }
-  }, [])
-
   return (
-    <section id="training" ref={sectionRef} className="relative bg-jet-black overflow-hidden border-t border-b border-white/10">
-      {/* Pinned Cinematic Stage */}
-      <div ref={pinContainerRef} className="w-full flex flex-col justify-center py-10 sm:py-14 md:py-16 px-4 sm:px-6 lg:px-8">
+    <section id="training" className="relative py-16 sm:py-24 bg-[#F5EFEB] text-[#181412] border-t border-[#181412]/10 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header Section */}
-        <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row md:items-end justify-between mb-8 gap-5">
-          <div className="max-w-2xl space-y-2">
-            <div className="mb-2 w-full max-w-xs">
-              <StrokeText
-                text="ACADEMY"
-                strokeColor="#FF3B8D"
-                fillColor="#FF3B8D"
-                strokeWidth={1.6}
-                fontSize={52}
-                fontWeight={900}
-                letterSpacing={1.5}
-                trigger="scroll"
-                fillMode="wipe"
-                drawDuration={1.2}
-                fillDelay={0.2}
-                align="left"
-              />
-            </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-pure-white tracking-tight">
-              Nazakat Academy
-            </h2>
-            <p className="text-sm text-white/70 pt-1">
-              Professional Hair Dressing, Skin Aesthetics & Makeup Courses in Raipur.
-            </p>
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14 space-y-2">
+          <div className="w-full max-w-xs mx-auto">
+            <StrokeText
+              text="ACADEMY"
+              strokeColor="#FF3B8D"
+              fillColor="#FF3B8D"
+              strokeWidth={1.6}
+              fontSize={40}
+              fontWeight={900}
+              letterSpacing={1.5}
+              trigger="scroll"
+              fillMode="wipe"
+              drawDuration={1.2}
+              fillDelay={0.2}
+              align="center"
+            />
           </div>
-
-          <SpecularButton
-            onClick={onOpenBooking}
-            size="sm"
-            radius={999}
-            tint="#181412"
-            tintOpacity={1}
-            textColor="#FFFFFF"
-            lineColor="#FF3B8D"
-            baseColor="#2A1E24"
-            className="self-start md:self-end text-xs uppercase tracking-wider font-bold shadow-md shrink-0 hover:border-signature-pink transition-all px-5 py-2.5"
-          >
-            <span>Inquire Admissions</span>
-            <ArrowUpRight size={14} />
-          </SpecularButton>
+          <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#181412] tracking-tight">
+            Nazakat Professional Academy
+          </h2>
+          <p className="text-xs sm:text-sm text-[#523B2C] max-w-2xl mx-auto leading-relaxed">
+            Where passion transforms into world-class artistry. International curriculum, personalized mentorship by Nazakat Ali, and live client floor exposure in Raipur.
+          </p>
         </div>
 
-        {/* Live Video Stage & Switcher */}
-        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center mb-10">
-          
-          {/* Main Visual Stage (Stacked CSS Grid) */}
-          <div className="lg:col-span-8">
-            <div className="grid grid-cols-1 grid-rows-1 w-full items-center">
-              {trainingData.videos.map((vid, index) => {
-                const isCurrentActive = index === selectedVideoIndex
-                return (
-                  <div
-                    key={vid.id}
-                    ref={(el) => (videoPanelsRef.current[index] = el)}
-                    className="col-start-1 row-start-1 w-full will-change-[transform,opacity]"
-                    style={{
-                      opacity: index === 0 ? 1 : 0,
-                      visibility: index === 0 ? 'visible' : 'hidden',
-                      transform: index === 0 ? 'none' : 'translate3d(0, 20px, 0)',
-                    }}
-                  >
-                    <TrainingVideoPlayer video={vid} isActive={isCurrentActive} />
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-
-          {/* Right-Side Training Video Indicators */}
-          <div className="lg:col-span-4 space-y-2.5">
-            <span className="text-xs uppercase tracking-wider text-nude-beige font-semibold block mb-1">
-              Training Videos:
-            </span>
-            {trainingData.videos.map((vid, idx) => {
-              const isSelected = idx === selectedVideoIndex
-              return (
-                <div
-                  key={vid.id}
-                  onClick={() => handleItemClick(idx)}
-                  className={`p-3.5 rounded-xl cursor-pointer border transition-all duration-300 flex items-center justify-between ${
-                    isSelected
-                      ? 'bg-luxe-card border-nude-beige shadow-md ring-1 ring-signature-pink/30'
-                      : 'bg-black/40 border-white/5 hover:border-white/20'
-                  }`}
-                >
-                  <div className="space-y-0.5">
-                    <p className={`text-xs sm:text-sm font-semibold transition-colors duration-300 ${isSelected ? 'text-signature-pink' : 'text-pure-white'}`}>
-                      {vid.title}
-                    </p>
-                    <p className="text-xs text-white/60 truncate max-w-[240px]">
-                      {vid.subtitle}
-                    </p>
-                  </div>
-                  <span className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${isSelected ? 'bg-signature-pink scale-110 shadow-sm' : 'bg-white/20'}`} />
+        {/* Featured Course Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-14 sm:mb-18">
+          {featuredCourses.map((course) => (
+            <div
+              key={course.id}
+              className="rounded-2xl bg-white border border-[#181412]/15 p-6 sm:p-7 shadow-sm hover:shadow-xl hover:border-signature-pink/40 transition-all duration-300 flex flex-col justify-between"
+            >
+              <div className="space-y-4">
+                {/* Badges & Meta */}
+                <div className="flex items-center justify-between gap-2">
+                  <span className="px-2.5 py-1 rounded-full bg-signature-pink/10 text-signature-pink text-[11px] font-bold uppercase tracking-wider">
+                    {course.category}
+                  </span>
+                  <span className="text-xs font-semibold text-[#8A7A70] flex items-center gap-1">
+                    <Clock size={13} />
+                    {course.duration}
+                  </span>
                 </div>
-              )
-            })}
+
+                {/* Course Title */}
+                <h3 className="font-sans text-lg sm:text-xl font-bold text-[#181412] leading-snug">
+                  {course.title}
+                </h3>
+
+                <p className="text-xs text-[#523B2C] leading-relaxed">
+                  {course.summary}
+                </p>
+
+                {/* Key Syllabus Modules */}
+                <div className="pt-3 border-t border-[#181412]/10 space-y-2">
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#8A7A70] block">
+                    Core Curriculum Modules:
+                  </span>
+                  <ul className="space-y-2 text-xs text-[#3D332D]">
+                    {course.modules.map((mod, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 size={13} className="text-signature-pink shrink-0 mt-0.5" />
+                        <span>{mod}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="pt-6 mt-6 border-t border-[#181412]/10 space-y-2.5">
+                <SpecularButton
+                  onClick={() => onOpenBooking(`Academy Admission Inquiry - ${course.title}`)}
+                  size="sm"
+                  radius={999}
+                  tint="#181412"
+                  tintOpacity={1}
+                  textColor="#ffffff"
+                  lineColor="#FF3B8D"
+                  baseColor="#3d2c22"
+                  intensity={1.2}
+                  shineSize={14}
+                  shineFade={35}
+                  thickness={1.4}
+                  followMouse={true}
+                  className="w-full text-xs font-bold uppercase tracking-wider justify-center shadow-md py-2.5 cursor-pointer"
+                >
+                  <span>Apply for Batch</span>
+                  <ArrowRight size={13} />
+                </SpecularButton>
+
+                <button
+                  type="button"
+                  onClick={() => handleDownloadProspectus(course.title)}
+                  className="w-full py-2 px-3 rounded-full border border-[#181412]/20 hover:border-[#181412] text-xs font-bold uppercase tracking-wider text-[#181412] flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                >
+                  <Download size={13} />
+                  <span>Download Syllabus</span>
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Academy Classrooms & Studio Tour */}
+        <div className="rounded-2xl bg-white border border-[#181412]/15 p-6 sm:p-10 shadow-md">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            {/* Left: Video Player */}
+            <div className="lg:col-span-7">
+              <div className="relative aspect-video rounded-xl overflow-hidden bg-black shadow-lg border border-black/10">
+                <video
+                  ref={videoRef}
+                  key={activeVideo.id}
+                  src={activeVideo.video}
+                  poster={activeVideo.poster}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-4 left-4 right-4 text-white pointer-events-none">
+                  <span className="text-[10px] uppercase font-bold tracking-widest text-signature-pink">
+                    Academy Tour
+                  </span>
+                  <h4 className="font-sans text-base sm:text-lg font-bold">{activeVideo.title}</h4>
+                  <p className="text-xs text-white/80">{activeVideo.subtitle}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Classroom Selector Tabs */}
+            <div className="lg:col-span-5 space-y-3">
+              <span className="text-xs uppercase font-bold tracking-wider text-signature-pink block">
+                World-Class Infrastructure
+              </span>
+              <h3 className="font-sans text-xl sm:text-2xl font-bold text-[#181412]">
+                Explore Our Training Classrooms
+              </h3>
+              <p className="text-xs text-[#523B2C] leading-relaxed">
+                Take a virtual tour of our lecture theaters, ergonomic student styling stations, and live salon mock rooms.
+              </p>
+
+              <div className="pt-2 space-y-2">
+                {trainingData.videos.map((vid, idx) => {
+                  const isCurrent = activeVideoIndex === idx
+                  return (
+                    <button
+                      key={vid.id}
+                      type="button"
+                      onClick={() => setActiveVideoIndex(idx)}
+                      className={`w-full text-left p-3 rounded-xl border transition-all duration-300 flex items-center justify-between cursor-pointer ${
+                        isCurrent
+                          ? 'bg-[#181412] text-white border-[#181412] shadow-md'
+                          : 'bg-[#FAF8F5] text-[#181412] border-[#181412]/10 hover:border-signature-pink'
+                      }`}
+                    >
+                      <div className="space-y-0.5">
+                        <span className={`text-xs font-bold block ${isCurrent ? 'text-signature-pink' : 'text-[#181412]'}`}>
+                          {vid.title}
+                        </span>
+                        <span className={`text-[11px] line-clamp-1 ${isCurrent ? 'text-white/70' : 'text-[#8A7A70]'}`}>
+                          {vid.subtitle}
+                        </span>
+                      </div>
+                      <Play size={13} className={isCurrent ? 'text-signature-pink' : 'text-[#8A7A70]'} />
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+
           </div>
         </div>
+
       </div>
     </section>
   )
